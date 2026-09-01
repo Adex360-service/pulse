@@ -38,7 +38,7 @@ export default function Migration({ steps }) {
             </article>
           ))}
         </div>
-        <div className="mt-10 flex items-center justify-between border-y border-[#76559b] py-7 max-sm:gap-5">
+        <div className="mt-10 flex flex-col md:flex-row items-center justify-between border-y border-[#76559b] py-7 max-sm:gap-5">
           <p className="font-[family-name:var(--font-fraunces)] text-lg italic text-[#9a87b4]">
             Ready to make the switch?
           </p>

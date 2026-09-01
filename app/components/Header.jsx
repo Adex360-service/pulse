@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const menuLink = "group flex items-center gap-3 text-[16px] font-semibold text-[#17192b] transition-colors hover:text-[#7c36ed]";
 const iconClass = "grid h-7 w-7 shrink-0 place-items-center rounded-lg text-[16px] font-bold text-[#7041ce]";
@@ -60,13 +61,53 @@ function CompareMenu() {
   );
 }
 
+function MobileRouteLink({ href, pathname, close, children, className = "" }) {
+  const active = href !== "/" && (pathname === href || pathname.startsWith(`${href}/`));
+  const styles = `${active ? "text-[#7c36ed]" : "text-[#292929]"} ${className}`;
+  if (href.startsWith("http")) return <a className={styles} href={href} onClick={close}>{children}</a>;
+  return <Link className={styles} href={href} onClick={close}>{children}</Link>;
+}
+
+function MobileAccordion({ id, label, openSection, setOpenSection, children }) {
+  const open = openSection === id;
+  return <div><button className="flex w-full items-center gap-3 border-0 bg-transparent px-0 py-3 text-left text-[16px] text-[#292929]" type="button" aria-expanded={open} onClick={() => setOpenSection(open ? null : id)}>{label}<Chevron open={open} /></button><div className={`grid transition-[grid-template-rows,opacity] duration-300 ease-out ${open ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}><div className="min-h-0 overflow-hidden">{children}</div></div></div>;
+}
+
+function MobileDrawer({ open, close, pathname }) {
+  const [openSection, setOpenSection] = useState(null);
+  const mobileItem = "flex items-center gap-3 text-[16px] font-semibold";
+  return <div aria-hidden={!open} className={`fixed inset-x-0 top-[68px] z-[105] h-[calc(100dvh-68px)] overflow-y-auto bg-[#e4e4e4] px-[18px] py-5 transition-[transform,visibility] duration-300 ease-[cubic-bezier(.22,1,.36,1)] lg:hidden ${open ? "visible translate-y-0" : "invisible -translate-y-full"}`}>
+    <MobileAccordion id="platform" label="Platform" openSection={openSection} setOpenSection={setOpenSection}><div className="rounded-b-2xl border-t-4 border-[#6030aa] bg-white px-8 py-6 shadow-[0_20px_35px_#00000015]"><p className="mb-5 text-sm font-bold text-[#666] uppercase">Product</p><div className="grid gap-5"><MobileRouteLink className={mobileItem} pathname={pathname} close={close} href="/acquire"><span className={iconClass}>◔</span>Acquire</MobileRouteLink><MobileRouteLink className={mobileItem} pathname={pathname} close={close} href="/retention"><span className={iconClass}>$</span>Retain</MobileRouteLink><MobileRouteLink className={mobileItem} pathname={pathname} close={close} href="/management-features"><span className={iconClass}>✦</span>Manage</MobileRouteLink></div><p className="mt-7 mb-4 text-sm font-bold text-[#666] uppercase">Features</p><div className="grid gap-5"><MobileRouteLink className={mobileItem} pathname={pathname} close={close} href="/feature/loop-flows"><span className={iconClass}>⌘</span>Loop Flows</MobileRouteLink><MobileRouteLink className={mobileItem} pathname={pathname} close={close} href="/feature/bundle-builder"><span className={iconClass}>♧</span>Bundles</MobileRouteLink><MobileRouteLink className={mobileItem} pathname={pathname} close={close} href="/feature/cancellation-flows"><span className={iconClass}>⇄</span>Cancellation Flows</MobileRouteLink><MobileRouteLink className={mobileItem} pathname={pathname} close={close} href="/feature/customer-portal"><span className={iconClass}>▣</span>Customer Portal</MobileRouteLink><MobileRouteLink className={mobileItem} pathname={pathname} close={close} href="/feature/dunning-management"><span className={iconClass}>◈</span>Dunning Management</MobileRouteLink><MobileRouteLink className={mobileItem} pathname={pathname} close={close} href="/feature/upsell"><span className={iconClass}>◉</span>Upsell</MobileRouteLink></div></div></MobileAccordion>
+    <MobileAccordion id="stories" label="Success Stories" openSection={openSection} setOpenSection={setOpenSection}><div className="rounded-b-2xl border-t-4 border-[#6030aa] bg-white px-8 py-6 shadow-[0_20px_35px_#00000015]"><div className="grid gap-5"><MobileRouteLink className={mobileItem} pathname={pathname} close={close} href="/customer-stories"><span className={iconClass}>♛</span>Case Studies</MobileRouteLink><MobileRouteLink className={mobileItem} pathname={pathname} close={close} href="/reviews"><span className={iconClass}>★</span>Wall of love</MobileRouteLink><MobileRouteLink className={mobileItem} pathname={pathname} close={close} href="/template-gallery"><span className={iconClass}>▰</span><span>Template Gallery<small className="block text-sm font-normal text-[#666]">Personalize flows & reduce subscriber churn</small></span></MobileRouteLink></div><MobileRouteLink pathname={pathname} close={close} href="/customer-stories/primal-queen" className="mt-6 block rounded-xl bg-[#faf8fb] p-3"><span className="block aspect-[1.45] rounded-lg bg-cover bg-center" style={{ backgroundImage: 'url("https://cdn.prod.website-files.com/625e799b877c107387cdf3ac/6a5633b3f28ba56e56def608_image%20(74).avif")' }} /><b className="mt-4 block text-base text-[#8b43fd] uppercase">Primal Queen</b><strong className="mt-3 block text-[15px]">Scaled subscription revenue 50× in under two years.</strong><span className="mt-4 block text-sm font-semibold">Read success story →</span></MobileRouteLink></div></MobileAccordion>
+    <MobileRouteLink className="block py-5 text-[16px]" pathname={pathname} close={close} href="/migration">Migration</MobileRouteLink>
+    <MobileRouteLink className="block py-5 text-[16px]" pathname={pathname} close={close} href="/pricing">Pricing</MobileRouteLink>
+    <MobileAccordion id="resources" label="Resources" openSection={openSection} setOpenSection={setOpenSection}><div className="rounded-b-2xl border-t-4 border-[#6030aa] bg-white px-8 py-6 shadow-[0_20px_35px_#00000015]"><div className="grid gap-5"><MobileRouteLink className={mobileItem} pathname={pathname} close={close} href="/blog"><span className={iconClass}>▤</span>Blogs</MobileRouteLink><MobileRouteLink className={mobileItem} pathname={pathname} close={close} href="https://help.loopwork.co/en/"><span className={iconClass}>?</span>Help Centre</MobileRouteLink><MobileRouteLink className={mobileItem} pathname={pathname} close={close} href="https://developer.loopwork.co/reference/api-reference"><span className={iconClass}>◷</span>Developer Hub</MobileRouteLink><MobileRouteLink className={mobileItem} pathname={pathname} close={close} href="/integrations-overview"><span className={iconClass}>✣</span>Integrations directory</MobileRouteLink><MobileRouteLink className={mobileItem} pathname={pathname} close={close} href="https://updates.loopwork.co/"><span className={iconClass}>▤</span>Changelog 2026</MobileRouteLink><MobileRouteLink className={mobileItem} pathname={pathname} close={close} href="/playbooks"><span className={iconClass}>◉</span>Playbooks</MobileRouteLink></div><a href="https://demo.loopwork.co/" className="mt-6 block rounded-xl bg-[#faf8fb] p-3"><span className="block h-24 rounded-lg bg-cover bg-center" style={{ backgroundImage: 'url("https://cdn.prod.website-files.com/625e799b877c107387cdf3ac/6a019b4ed0faa0f83cf72454_Rectangle%203426%20(1).avif")' }} /><strong className="mt-3 block text-[15px]">Take a tour of our demo store</strong><p className="mt-2 text-sm">Get a sneak peek of our intuitive demo store now!</p><span className="mt-3 block text-sm">View demo store</span></a></div></MobileAccordion>
+    <MobileAccordion id="compare" label="Comparing subscriptions app?" openSection={openSection} setOpenSection={setOpenSection}><div className="rounded-b-2xl border-t-4 border-[#6030aa] bg-white px-8 py-6 shadow-[0_20px_35px_#00000015]"><div className="grid gap-5"><MobileRouteLink className="font-semibold" pathname={pathname} close={close} href="/compare/recharge-alternative">Loop vs. Recharge</MobileRouteLink><MobileRouteLink className="font-semibold" pathname={pathname} close={close} href="/compare/skio-alternative">Loop vs. Skio</MobileRouteLink><MobileRouteLink className="font-semibold" pathname={pathname} close={close} href="/compare/ordergroove-alternative">Loop vs. Ordergroove</MobileRouteLink><MobileRouteLink className="font-semibold" pathname={pathname} close={close} href="/compare/stayai-alternative">Loop vs. Stay.ai</MobileRouteLink></div><form className="mt-6 rounded-xl bg-[#f8f7fb] p-4"><b className="text-base text-[#5630ae]">Get a detailed comparison</b><div className="mt-3 flex gap-3"><input className="h-11 min-w-0 flex-1 rounded-xl border border-[#ddd] px-3" type="email" placeholder="Enter your email" aria-label="Email" /><button className="rounded-full bg-[linear-gradient(90deg,#b274ff,#6f9bf5)] px-6 text-white">Submit</button></div></form></div></MobileAccordion>
+    <MobileRouteLink pathname={pathname} close={close} href="/book-a-demo" className="mt-6 block rounded-full bg-[#292a2e] px-6 py-4 text-center text-lg font-semibold !text-white">Book demo</MobileRouteLink>
+  </div>;
+}
+
 export default function Header() {
+  const pathname = usePathname();
   const [openMenu, setOpenMenu] = useState(null);
+  const [mobileOpen, setMobileOpen] = useState(false);
   useEffect(() => {
-    const close = (event) => event.key === "Escape" && setOpenMenu(null);
+    const close = (event) => {
+      if (event.key !== "Escape") return;
+      setOpenMenu(null);
+      setMobileOpen(false);
+    };
     window.addEventListener("keydown", close);
     return () => window.removeEventListener("keydown", close);
   }, []);
+  useEffect(() => {
+    if (!mobileOpen) return;
+    const previous = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = previous;
+    };
+  }, [mobileOpen]);
 
   return <>
     <header className="sticky top-0 z-[110] h-[68px] border-b border-[#dedede] bg-white" onMouseLeave={() => setOpenMenu(null)}>
@@ -74,10 +115,11 @@ export default function Header() {
         <Link href="/" className="w-[88px] shrink-0 leading-none text-[#8b43fd]" aria-label="Loop home"><svg className="h-auto w-full" viewBox="0 0 114 40"><path d="M8 8v14c0 6 4 9 10 9h7c8 0 12-5 12-11s-4-11-12-11-12 5-12 11 4 11 12 11h16c8 0 12-5 12-11S49 9 41 9s-12 5-12 11 4 11 12 11h16c8 0 12-5 12-11S65 9 57 9s-12 5-12 11 4 11 12 11h16c8 0 12-5 12-11S81 9 73 9s-12 5-12 11v18" fill="none" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" /></svg></Link>
         <nav className="flex items-center gap-[34px] max-lg:hidden"><MenuButton id="platform" openMenu={openMenu} setOpenMenu={setOpenMenu}>Platform</MenuButton><MenuButton id="stories" openMenu={openMenu} setOpenMenu={setOpenMenu}>Success Stories</MenuButton><a className="text-sm font-medium" href="/migration">Migration</a><a className="text-sm font-medium" href="/pricing">Pricing</a><MenuButton id="resources" openMenu={openMenu} setOpenMenu={setOpenMenu}>Resources</MenuButton></nav>
         <div className="ml-auto flex items-center gap-[42px] max-lg:hidden"><MenuButton id="compare" openMenu={openMenu} setOpenMenu={setOpenMenu}>Comparing Loop with?</MenuButton><a href="/book-a-demo" className="inline-flex items-center justify-center rounded-full bg-[linear-gradient(100deg,#8d43ff,#315be7)] px-[27px] py-[11px] text-[15px] font-semibold text-white">Book a demo</a></div>
-        <details className="relative ml-auto hidden max-lg:block"><summary className="grid w-[34px] cursor-pointer list-none gap-[5px] [&::-webkit-details-marker]:hidden" aria-label="Open navigation"><i className="h-0.5 w-[27px] bg-[#282624]" /><i className="h-0.5 w-[27px] bg-[#282624]" /><i className="h-0.5 w-[27px] bg-[#282624]" /></summary><nav className="absolute top-[41px] right-[-20px] grid min-w-[240px] gap-4 bg-white p-5 shadow-[0_15px_40px_#0002]"><a href="/acquire">Platform</a><a href="/customer-stories">Success Stories</a><a href="/migration">Migration</a><a href="/pricing">Pricing</a><a href="/blog">Resources</a><a href="/book-a-demo">Book a demo</a></nav></details>
+        <button type="button" className={`-mr-5 ml-auto hidden h-[68px] w-[62px] place-items-center border-0 transition-colors max-lg:grid ${mobileOpen ? "bg-[#c9c9c9]" : "bg-transparent"}`} aria-label={mobileOpen ? "Close navigation" : "Open navigation"} aria-expanded={mobileOpen} onClick={() => setMobileOpen((value) => !value)}><span className="grid gap-[5px]"><i className={`block h-0.5 w-[27px] ${mobileOpen ? "bg-white" : "bg-[#282624]"}`} /><i className={`block h-0.5 w-[27px] ${mobileOpen ? "bg-white" : "bg-[#282624]"}`} /><i className={`block h-0.5 w-[27px] ${mobileOpen ? "bg-white" : "bg-[#282624]"}`} /></span></button>
         {openMenu === "platform" && <PlatformMenu />}{openMenu === "stories" && <StoriesMenu />}{openMenu === "resources" && <ResourcesMenu />}{openMenu === "compare" && <CompareMenu />}
       </div>
     </header>
+    <MobileDrawer open={mobileOpen} close={() => setMobileOpen(false)} pathname={pathname} />
     {openMenu && <button className="fixed inset-0 top-[68px] z-[100] cursor-default border-0 bg-black/65" aria-label="Close menu" onClick={() => setOpenMenu(null)} />}
   </>;
 }
