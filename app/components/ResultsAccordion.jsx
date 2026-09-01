@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Container from "./ui/Container";
 
 const stories = [
   {
@@ -44,61 +45,61 @@ export default function ResultsAccordion() {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section id="results" className="results section-pad">
-      <div className="shell narrow">
-        <div className="section-intro results-intro">
-          <p className="eyebrow">Shows up as your results</p>
-          <h2>
+    <section id="results" className="bg-white pt-10 pb-[130px] max-sm:pt-[50px] max-sm:pb-[55px]">
+      <Container>
+        <div>
+          <p className="mb-[70px] inline-flex items-center gap-2.5 text-[11px] font-semibold tracking-[3.2px] text-[#9b43ff] uppercase max-sm:mb-7"><svg className="h-3.5 w-3.5" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4"><circle cx="8" cy="4.5" r="2.5" /><path d="M2.8 14c.4-3 2.1-4.5 5.2-4.5s4.8 1.5 5.2 4.5" /></svg>Shows up as your results</p>
+          <h2 className="font-[family-name:var(--font-fraunces)] text-[66px] leading-[1.06] font-normal tracking-[-1.8px] text-[#3b197f] max-sm:text-[40px]">
             1,100+ brands <em>migrated</em> to Loop.
             <br />
             Here&apos;s what happened.
           </h2>
         </div>
-        <div className="results-list">
+        <div className="mt-10">
           {stories.map((story, index) => {
             const isOpen = openIndex === index;
             return (
               <article
                 key={story.brand}
-                className={isOpen ? "open-result" : ""}
+                className="border-t border-dashed border-[#ded8e6] last:border-b"
               >
-                <div className="result-row">
+                <div className="flex min-h-[76px] items-center gap-[18px] max-sm:gap-2.5">
                   <button
-                    className="result-trigger"
+                    className="flex min-h-[76px] min-w-0 flex-1 cursor-pointer items-center gap-4 border-0 bg-transparent p-0 text-left text-[#3b197f] max-sm:gap-2.5"
                     type="button"
                     aria-expanded={isOpen}
                     aria-controls={`result-panel-${index}`}
                     onClick={() => setOpenIndex(isOpen ? -1 : index)}
                   >
                     <span
-                      className="result-logo"
+                      className="block h-[46px] w-[46px] shrink-0 rounded bg-[#3b197f] bg-contain bg-center bg-no-repeat max-sm:h-[38px] max-sm:w-[38px]"
                       style={{ backgroundImage: `url("${story.logo}")` }}
                     />
-                    <span className="result-copy">
+                    <span className="min-w-0 flex-1 text-[19px] leading-[1.35] max-lg:text-base max-sm:text-xs">
                       <strong>{story.brand}</strong> {story.copy}
                     </span>
                     {!isOpen && (
-                      <span className="result-action" aria-hidden="true">
+                      <span className="ml-auto grid h-[46px] w-[46px] shrink-0 place-items-center rounded bg-[#f6f0ff] text-[22px] text-[#8b43fd] max-sm:h-[38px] max-sm:w-[38px]" aria-hidden="true">
                         +
                       </span>
                     )}
                   </button>
                   {isOpen && (
-                    <a className="story-link" href={story.href}>
+                    <a className="inline-flex h-11 min-w-[175px] items-center justify-center gap-2.5 rounded-[3px] border border-[#ddd2ec] px-5 text-[13px] font-semibold text-[#7726d9] max-sm:w-11 max-sm:min-w-11 max-sm:px-0 max-sm:text-[0]" href={story.href}>
                       Read the story <span>→</span>
                     </a>
                   )}
                 </div>
                 <div
                   id={`result-panel-${index}`}
-                  className={`result-panel${isOpen ? " is-open" : ""}`}
+                  className={`grid overflow-hidden transition-[grid-template-rows,opacity] duration-500 ease-[cubic-bezier(.22,1,.36,1)] motion-reduce:duration-0 ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}
                   aria-hidden={!isOpen}
                 >
-                  <div className="result-panel-inner">
+                  <div className="min-h-0 overflow-hidden">
                     <a
                       href={story.href}
                       aria-label={`Read the ${story.brand} customer story`}
-                      className="result-image"
+                      className={`block h-[590px] w-full origin-top bg-cover bg-center bg-no-repeat transition-transform duration-500 ease-[cubic-bezier(.22,1,.36,1)] motion-reduce:duration-0 max-sm:h-[260px] ${isOpen ? "translate-y-0 scale-100" : "-translate-y-2.5 scale-[.995]"}`}
                       tabIndex={isOpen ? 0 : -1}
                       style={{ backgroundImage: `url("${story.image}")` }}
                     />
@@ -108,7 +109,7 @@ export default function ResultsAccordion() {
             );
           })}
         </div>
-      </div>
+      </Container>
     </section>
   );
 }
