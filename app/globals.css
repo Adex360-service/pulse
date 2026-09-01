@@ -10,6 +10,12 @@
   }
 }
 
+@keyframes migrationLogoMarquee {
+  to {
+    transform: translateX(calc(-50% - 33px));
+  }
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
