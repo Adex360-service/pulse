@@ -16,6 +16,21 @@
   }
 }
 
+@keyframes acquireLogoMarquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.acquire-results-scroll {
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.acquire-results-scroll::-webkit-scrollbar {
+  display: none;
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;
