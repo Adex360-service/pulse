@@ -21,7 +21,8 @@ function MenuButton({ id, openMenu, setOpenMenu, children }) {
 }
 
 function Item({ icon, title, href, description }) {
-  return <a className={menuLink} href={href}><span className={iconClass}>{icon}</span><span><strong className="block font-semibold">{title}</strong>{description && <small className="mt-0.5 block max-w-[230px] text-sm leading-[1.35] font-normal text-[#666]">{description}</small>}</span></a>;
+  const resolvedHref = title === "Help Centre" ? "/help-center" : href;
+  return <a className={menuLink} href={resolvedHref}><span className={iconClass}>{icon}</span><span><strong className="block font-semibold">{title}</strong>{description && <small className="mt-0.5 block max-w-[230px] text-sm leading-[1.35] font-normal text-[#666]">{description}</small>}</span></a>;
 }
 
 function PlatformMenu() {
@@ -62,10 +63,11 @@ function CompareMenu() {
 }
 
 function MobileRouteLink({ href, pathname, close, children, className = "" }) {
-  const active = href !== "/" && (pathname === href || pathname.startsWith(`${href}/`));
+  const resolvedHref = href === "https://help.loopwork.co/en/" ? "/help-center" : href;
+  const active = resolvedHref !== "/" && (pathname === resolvedHref || pathname.startsWith(`${resolvedHref}/`));
   const styles = `${active ? "text-[#7c36ed]" : "text-[#292929]"} ${className}`;
-  if (href.startsWith("http")) return <a className={styles} href={href} onClick={close}>{children}</a>;
-  return <Link className={styles} href={href} onClick={close}>{children}</Link>;
+  if (resolvedHref.startsWith("http")) return <a className={styles} href={resolvedHref} onClick={close}>{children}</a>;
+  return <Link className={styles} href={resolvedHref} onClick={close}>{children}</Link>;
 }
 
 function MobileAccordion({ id, label, openSection, setOpenSection, children }) {
