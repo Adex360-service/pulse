@@ -1,0 +1,6 @@
+import Container from "../ui/Container";
+
+export default function PortalFeatureSection({ section, index }) {
+  const imageFirst = section.imageFirst;
+  return <section id={index === 0 ? "know-more" : undefined} className="bg-white py-24"><Container className="grid grid-cols-2 items-center gap-16 max-lg:gap-10 max-md:grid-cols-1"><div className={imageFirst ? "max-md:order-2" : "order-2 max-md:order-2"}><img src={section.image} alt={section.imageAlt} className="mx-auto max-h-[610px] w-full object-contain" /></div><div className={imageFirst ? "max-md:order-1" : "order-1 max-md:order-1"}><h2 className="font-[family-name:var(--font-display)] text-[48px] leading-[1.08] text-[#2d155f] max-sm:text-4xl">{section.title}</h2><p className="mt-4 font-semibold text-[#8a3eff]">{section.eyebrow}</p><div className="mt-5 divide-y divide-[#ded8df]">{section.items.map(([icon, title, description]) => <article key={title} className="py-5"><div className="flex items-center gap-3"><img src={icon} alt="" className="h-7 w-7 object-contain" /><h3 className="text-xl font-semibold text-[#373238]">{title}</h3></div><p className="mt-2 text-base leading-[1.45] text-[#716b73]">{description}</p></article>)}</div></div></Container></section>;
+}
