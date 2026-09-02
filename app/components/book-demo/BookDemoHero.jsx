@@ -1,4 +1,5 @@
 import Container from "../ui/Container";
+import LogoMarquee from "../ui/LogoMarquee";
 import { demoLogos } from "../../content/bookDemo";
 
 export default function BookDemoHero() {
@@ -34,15 +35,7 @@ export default function BookDemoHero() {
         </div>
         <div className="mt-14 overflow-hidden">
           <h2 className="text-xl font-semibold text-[#2d155f]">Trusted by 2400+ Shopify subscription brands</h2>
-          <div className="mt-7 overflow-hidden">
-            <div className="flex w-max animate-[migrationLogoMarquee_32s_linear_infinite] items-center motion-reduce:animate-none">
-              {[0, 1].map((copy) => (
-                <div key={copy} aria-hidden={copy === 1} className="flex shrink-0 items-center gap-16 pr-16">
-                  {demoLogos.map(([name, image]) => <img key={`${copy}-${name}`} src={image} alt={copy ? "" : name} className="h-12 w-[145px] shrink-0 object-contain grayscale" />)}
-                </div>
-              ))}
-            </div>
-          </div>
+          <LogoMarquee logos={demoLogos} wrapperClassName="mt-7 overflow-hidden" trackClassName="flex w-max animate-[migrationLogoMarquee_32s_linear_infinite] items-center motion-reduce:animate-none" groupClassName="flex shrink-0 items-center gap-16 pr-16" imageClassName="h-12 w-[145px] shrink-0 object-contain grayscale" />
         </div>
       </Container>
     </section>
