@@ -1,6 +1,5 @@
 import localFont from "next/font/local";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import SiteChrome from "./components/SiteChrome";
 import "./globals.css";
 const inter = localFont({
   src: [
@@ -39,9 +38,7 @@ export default function RootLayout({ children }) {
       className={`${inter.variable} ${dmSerif.variable} ${fraunces.variable}`}
     >
       <body>
-        <Header />
-        {children}
-        <Footer />
+        <SiteChrome>{children}</SiteChrome>
       </body>
     </html>
   );
