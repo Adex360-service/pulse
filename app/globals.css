@@ -33,7 +33,7 @@
 
 @layer base {
   html {
-    scroll-behavior: smooth;
+    data-scroll-behavior: smooth;
   }
 
   body {

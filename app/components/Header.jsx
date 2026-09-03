@@ -21,7 +21,7 @@ function MenuButton({ id, openMenu, setOpenMenu, children }) {
 }
 
 function Item({ icon, title, href, description }) {
-  const resolvedHref = title === "Help Centre" ? "/help-center" : href;
+  const resolvedHref = title === "Help Centre" ? "/help-center" : title === "Developer Hub" ? "/developer-hub" : href;
   return <a className={menuLink} href={resolvedHref}><span className={iconClass}>{icon}</span><span><strong className="block font-semibold">{title}</strong>{description && <small className="mt-0.5 block max-w-[230px] text-sm leading-[1.35] font-normal text-[#666]">{description}</small>}</span></a>;
 }
 
@@ -63,7 +63,7 @@ function CompareMenu() {
 }
 
 function MobileRouteLink({ href, pathname, close, children, className = "" }) {
-  const resolvedHref = href === "https://help.loopwork.co/en/" ? "/help-center" : href;
+  const resolvedHref = href === "https://help.loopwork.co/en/" ? "/help-center" : href.includes("developer.loopwork.co") ? "/developer-hub" : href;
   const active = resolvedHref !== "/" && (pathname === resolvedHref || pathname.startsWith(`${resolvedHref}/`));
   const styles = `${active ? "text-[#7c36ed]" : "text-[#292929]"} ${className}`;
   if (resolvedHref.startsWith("http")) return <a className={styles} href={resolvedHref} onClick={close}>{children}</a>;

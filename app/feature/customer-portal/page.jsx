@@ -1,5 +1,3 @@
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
 import AcquireResults from "../../components/acquire/AcquireResults";
 import PortalBenefits from "../../components/customer-portal/PortalBenefits";
 import PortalCta from "../../components/customer-portal/PortalCta";
@@ -23,8 +21,7 @@ export const metadata = {
 export default function CustomerPortalPage() {
   return (
     <>
-      <Header />
-      <main className="overflow-hidden bg-white text-[#2d155f]">
+      <div className="overflow-hidden bg-white text-[#2d155f]">
         <PortalHero />
         <PortalTrust logos={portalLogos} />
         <PortalProof />
@@ -38,8 +35,7 @@ export default function CustomerPortalPage() {
         <AcquireResults stories={resultStories} compact />
         <PortalBenefits groups={portalBenefits} />
         <PortalCta />
-      </main>
-      <Footer />
+      </div>
     </>
   );
 }

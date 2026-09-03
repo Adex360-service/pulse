@@ -1,4 +1,6 @@
 import localFont from "next/font/local";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 import "./globals.css";
 const inter = localFont({
   src: [
@@ -36,7 +38,11 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${inter.variable} ${dmSerif.variable} ${fraunces.variable}`}
     >
-      <body id="top">{children}</body>
+      <body>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
