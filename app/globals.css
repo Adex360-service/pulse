@@ -22,6 +22,7 @@
   }
 }
 
+
 .acquire-results-scroll {
   scrollbar-width: none;
   -webkit-overflow-scrolling: touch;
@@ -53,4 +54,21 @@
   [role="button"] {
     cursor: pointer;
   }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
 }

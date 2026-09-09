@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${inter.variable} ${dmSerif.variable} ${fraunces.variable}`}
     >
-      <body>
+      <body suppressHydrationWarning>
         <SiteChrome>{children}</SiteChrome>
       </body>
     </html>
