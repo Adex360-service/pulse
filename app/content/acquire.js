@@ -1,64 +1,70 @@
 export const acquireCdn = "https://cdn.prod.website-files.com/625e799b877c107387cdf3ac";
 
 export const acquireLogos = [
-  ["Mary Ruth's", `${acquireCdn}/695f64d112854e8a7237f5ad_MRO-BnW.png`],
-  ["Beam", `${acquireCdn}/695f64d4ac9731f84381de71_beam-BnW.png`],
-  ["OSEA", `${acquireCdn}/685e5335694c310e1cf7d238_0a_osea-logo.avif`],
-  ["Four Sigmatic", `${acquireCdn}/685e533691e9c0ee8753197d_0b_four-sigmatic-logo.avif`],
-  ["Mammaly", `${acquireCdn}/685e53436ca0deeacf7b1f83_0c_mammaly_logo.avif`],
-  ["Primal Queen", `${acquireCdn}/685e533a13b9da3bb20fd28d_1_Primal_queen_logo.avif`],
-  ["goPure", `${acquireCdn}/685e53366ae52621a3c38670_2_goPure_Logo.avif`],
+  ["Bata", "/images/bata-black.png"],
+  ["Breakout", "/images/breakout-black.png"],
+  ["Butterfly", "/images/butterfly-black.png"],
+  ["Diesel", "/images/diesel-black.png"],
+  ["Generation", "/images/generation-black.png"],
+  ["Kayseria", "/images/kayseria-black.png"],
+  ["Mi", "/images/mi-black.png"],
+  ["Minnie Minors", "/images/minnie-black.png"],
+  ["Rang Ja", "/images/rang-black.png"],
+  ["Sapphira", "/images/sapphire-black.png"],
+  ["Saya", "/images/saya-black.png"],
+  ["Upper Class", "/images/upper-black.png"],
+  ["Yadea", "/images/yadea-black.png"],
 ];
 
 export const widgetFeatures = [
   {
     icon: `${acquireCdn}/686cf1c1f0019b1108c861c0_Icon%20(9).svg`,
-    title: "Faster, lighter, and seamless widget experience",
-    bullets: ["Fast widget load times", "Design unique widgets for every product page", "No custom code required"],
+    title: "Faster, lighter, seamless sending",
+    bullets: ["Sends in seconds, not hours", "No custom code required", "Design unique emails for every campaign"],
   },
   {
     icon: `${acquireCdn}/686cf1ea22d93b411f7a75d1_8491c3914ccfc07d543b0a5269c45f74_Icon.svg`,
-    title: "Make subscribing the obvious choice",
-    bullets: ["Clear subscription benefits", "Smart discount presentation", "Mobile-first design", "A/B testing ready"],
+    title: "Make buying the obvious next step",
+    bullets: ["Clear, personalised offers", "Smart discount presentation", "Mobile-first design", "A/B testing ready"],
   },
 ];
 
 export const countryFeatures = [
   {
     icon: `${acquireCdn}/686cf547a8d07a2ca12da353_language-sharp.png`,
-    title: "Different pricing by country",
-    bullets: ["Region-specific pricing that makes sense locally", "Currency-based offers", "Localized shipping benefits"],
+    title: "Time zone & language aware",
+    bullets: ["Emails sent at the right local time, automatically", "Accurate multi-currency pricing in every email", "Language-ready templates for global stores"],
   },
   {
     icon: `${acquireCdn}/686cf5761d23fb96ca8a60ec_discount.png`,
-    title: "Targeted offers that convert",
-    bullets: ["Location-based discounts", "Country-specific promotions", "Regional availability messaging"],
+    title: "Offers that fit the region",
+    bullets: ["Location-based discount codes", "Country-specific promotions", "Regional shipping & availability messaging"],
   },
 ];
 
 export const bundleFeatures = [
   {
     icon: `${acquireCdn}/686cfdf887f2067ea154fd0d_Icon%20Container-2.svg`,
-    title: "Ready-to-use bundle options",
-    bullets: ["Expert-curated combinations", "Seasonal collections", "Gift-ready sets", "Starter packs"],
+    title: "Ready-to-use flow templates",
+    bullets: ["Expert-designed abandoned cart sequences", "Seasonal campaign templates", "Welcome series starter packs", "Winback templates"],
   },
   {
     icon: `${acquireCdn}/686cfdf889da4352df244c06_Icon%20Container%20(1).svg`,
-    title: "Smart bundling that sells",
-    bullets: ["Volume-based savings", "Category mixing", "Inventory optimization", "Dynamic pricing"],
+    title: "Automation that adapts",
+    bullets: ["Behavior-based triggers", "Send-time optimization", "Dynamic product blocks", "Revenue-based prioritization"],
   },
 ];
 
 export const customerFeatures = [
   {
     icon: `${acquireCdn}/686cf535c30b5e4010a66629_mail-unread-outline.png`,
-    title: "Omnichannel subscription growth",
-    bullets: ["Email campaign integration", "SMS marketing links", "QR codes for physical stores", "Social media promotions"],
+    title: "Grow your list everywhere",
+    bullets: ["Popup forms on your storefront", "Social media bio links", "QR codes for in-store signup", "Landing page signup forms"],
   },
   {
     icon: `${acquireCdn}/686cf52800427b9fca59393a_target.png`,
-    title: "Seamless conversion experience",
-    bullets: ["Pre-filled checkout forms", "Targeted offers embedded", "Mobile-optimized", "Trackable performance"],
+    title: "A seamless signup experience",
+    bullets: ["Instant welcome offer on signup", "Pre-filled forms for returning customers", "Mobile-optimized every time", "Trackable performance by source"],
   },
 ];
 

@@ -69,39 +69,45 @@ function Item({ icon, title, href, description }) {
 
 function PlatformMenu() {
   return (
-    <div
+     <div
       data-mega-panel
-      className="absolute top-full left-[100px] z-[120] grid w-[750px] grid-cols-[140px_1fr] gap-8 rounded-b-2xl bg-white px-8 py-9 shadow-[0_18px_35px_#00000018]"
+      className="absolute top-full left-[100px] z-[120] grid w-[1060px] grid-cols-[330px_1fr] gap-8 rounded-b-2xl bg-white px-8 py-9 shadow-[0_18px_35px_#00000018]"
     >
       <div className="border-r border-[#ddd] pr-7">
         <p className="mb-5 text-xs font-bold text-[#666] uppercase">Product</p>
         <div className="grid gap-5">
-          <Item icon="◔" title="Acquire" href="/acquire" />
-          <Item icon="$" title="Retain" href="/retention" />
-          <Item icon="✦" title="Manage" href="/management-features" />
+          <Item icon="✦" title="Email Marketing" href="/management-features" />
+          <Item icon="◔" title="WhatsApp Marketing " href="/acquire" />
+          <Item icon="$" title="Web Push Notifications" href="/retention" />
+          <Item icon="$" title="Product Feed Management" href="/retention" />
+          <Item icon="$" title="Product Sorting & Merchandising" href="/retention" />
+          <Item icon="$" title="Marketing Automation" href="/retention" />
         </div>
       </div>
       <div>
         <p className="mb-5 text-xs font-bold text-[#666] uppercase">Features</p>
-        <div className="grid grid-cols-2 gap-x-12 gap-y-5">
-          <Item icon="⌘" title="Loop Flows" href="/feature/loop-flows" />
+        <div className="grid grid-cols-1 gap-x-12 gap-y-5">
+          <Item icon="⌘" title="Abandoned Cart Recovery" href="/feature/loop-flows" />
           <Item
             icon="▣"
-            title="Customer Portal"
+            title="Customer Retention & Winback"
             href="/feature/customer-portal"
           />
-          <Item icon="♧" title="Bundles" href="/feature/bundle-builder" />
+          <Item icon="♧" title="New Product Launches" href="/feature/bundle-builder" />
           <Item
             icon="◈"
-            title="Dunning Management"
+            title="Customer Segmentation"
             href="/feature/dunning-management"
           />
           <Item
             icon="⇄"
-            title="Cancellation Flows"
+            title="Retargeting & Ad Feed Optimization"
             href="/feature/cancellation-flows"
           />
-          <Item icon="◉" title="Upsell" href="/feature/upsell" />
+          <Item icon="◉" title="Merchandising & Product Discovery" href="/feature/upsell" />
+          {/* <Item icon="◉" title="Smart Customer Segmentation" href="/feature/upsell" />
+          <Item icon="◉" title="Custom Collection Sorting" href="/feature/upsell" />
+          <Item icon="◉" title="Automatic Out-of-Stock Management" href="/feature/upsell" /> */}
         </div>
       </div>
     </div>
@@ -320,7 +326,7 @@ function MobileDrawer({ open, close, pathname }) {
               close={close}
               href="/acquire"
             >
-              <span className={iconClass}>◔</span>Acquire
+              <span className={iconClass}>◔</span>Email Marketing
             </MobileRouteLink>
             <MobileRouteLink
               className={mobileItem}
@@ -328,7 +334,7 @@ function MobileDrawer({ open, close, pathname }) {
               close={close}
               href="/retention"
             >
-              <span className={iconClass}>$</span>Retain
+              <span className={iconClass}>$</span>WhatsApp Marketing 
             </MobileRouteLink>
             <MobileRouteLink
               className={mobileItem}
@@ -336,7 +342,31 @@ function MobileDrawer({ open, close, pathname }) {
               close={close}
               href="/management-features"
             >
-              <span className={iconClass}>✦</span>Manage
+              <span className={iconClass}>✦</span>Web Push Notifications
+            </MobileRouteLink>
+            <MobileRouteLink
+              className={mobileItem}
+              pathname={pathname}
+              close={close}
+              href="/management-features"
+            >
+              <span className={iconClass}>✦</span>Product Feed Management
+            </MobileRouteLink>
+            <MobileRouteLink
+              className={mobileItem}
+              pathname={pathname}
+              close={close}
+              href="/management-features"
+            >
+              <span className={iconClass}>✦</span> Product Sorting & Merchandising
+            </MobileRouteLink>
+            <MobileRouteLink
+              className={mobileItem}
+              pathname={pathname}
+              close={close}
+              href="/management-features"
+            >
+              <span className={iconClass}>✦</span> Marketing Automation
             </MobileRouteLink>
           </div>
           <p className="mt-7 mb-4 text-sm font-bold text-[#666] uppercase">
@@ -349,7 +379,7 @@ function MobileDrawer({ open, close, pathname }) {
               close={close}
               href="/feature/loop-flows"
             >
-              <span className={iconClass}>⌘</span>Loop Flows
+              <span className={iconClass}>⌘</span>Abandoned Cart Recovery
             </MobileRouteLink>
             <MobileRouteLink
               className={mobileItem}
@@ -357,7 +387,7 @@ function MobileDrawer({ open, close, pathname }) {
               close={close}
               href="/feature/bundle-builder"
             >
-              <span className={iconClass}>♧</span>Bundles
+              <span className={iconClass}>♧</span>Customer Retention & Winback
             </MobileRouteLink>
             <MobileRouteLink
               className={mobileItem}
@@ -365,7 +395,7 @@ function MobileDrawer({ open, close, pathname }) {
               close={close}
               href="/feature/cancellation-flows"
             >
-              <span className={iconClass}>⇄</span>Cancellation Flows
+              <span className={iconClass}>⇄</span>New Product Launches
             </MobileRouteLink>
             <MobileRouteLink
               className={mobileItem}
@@ -373,7 +403,7 @@ function MobileDrawer({ open, close, pathname }) {
               close={close}
               href="/feature/customer-portal"
             >
-              <span className={iconClass}>▣</span>Customer Portal
+              <span className={iconClass}>▣</span>Customer Segmentation
             </MobileRouteLink>
             <MobileRouteLink
               className={mobileItem}
@@ -381,7 +411,7 @@ function MobileDrawer({ open, close, pathname }) {
               close={close}
               href="/feature/dunning-management"
             >
-              <span className={iconClass}>◈</span>Dunning Management
+              <span className={iconClass}>◈</span>Retargeting & Ad Feed Optimization
             </MobileRouteLink>
             <MobileRouteLink
               className={mobileItem}
@@ -389,8 +419,24 @@ function MobileDrawer({ open, close, pathname }) {
               close={close}
               href="/feature/upsell"
             >
-              <span className={iconClass}>◉</span>Upsell
+              <span className={iconClass}>◉</span>Merchandising & Product Discovery
             </MobileRouteLink>
+            {/* <MobileRouteLink
+              className={mobileItem}
+              pathname={pathname}
+              close={close}
+              href="/feature/dunning-management"
+            >
+              <span className={iconClass}>◈</span>Custom Collection Sorting
+            </MobileRouteLink>
+            <MobileRouteLink
+              className={mobileItem}
+              pathname={pathname}
+              close={close}
+              href="/feature/upsell"
+            >
+              <span className={iconClass}>◉</span>Automatic Out-of-Stock Management
+            </MobileRouteLink> */}
           </div>
         </div>
       </MobileAccordion>

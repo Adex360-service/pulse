@@ -1,4 +1,5 @@
 import ResultsAccordion from "./components/ResultsAccordion";
+import TextAccordion from "./components/TextAccordion";
 import Hero from "./components/home/Hero";
 import Migration from "./components/home/Migration";
 import Platform from "./components/home/Platform";
@@ -21,9 +22,10 @@ export default function Home() {
       <Problems items={problems} />
       <Team reviews={reviews} />
       <Platform features={features} cancellationStages={cancellationStages} />
-      <ResultsAccordion />
+      {/* <ResultsAccordion /> */}
       <Migration steps={migrationSteps} />
       <Pricing />
+      <TextAccordion />
     </>
   );
 }
