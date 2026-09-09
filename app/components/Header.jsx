@@ -710,16 +710,7 @@ export default function Header() {
             className="w-[88px] shrink-0 leading-none text-[#8b43fd]"
             aria-label="Loop home"
           >
-            <svg className="h-auto w-full" viewBox="0 0 114 40">
-              <path
-                d="M8 8v14c0 6 4 9 10 9h7c8 0 12-5 12-11s-4-11-12-11-12 5-12 11 4 11 12 11h16c8 0 12-5 12-11S49 9 41 9s-12 5-12 11 4 11 12 11h16c8 0 12-5 12-11S65 9 57 9s-12 5-12 11 4 11 12 11h16c8 0 12-5 12-11S81 9 73 9s-12 5-12 11v18"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="3.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
+            <img src="/images/pulse-logo.png" />
           </Link>
           <nav className="flex items-center gap-[34px] max-lg:hidden">
             <MenuButton
