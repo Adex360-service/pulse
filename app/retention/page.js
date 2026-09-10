@@ -4,6 +4,7 @@ import RetentionHero from "../components/retention/RetentionHero";
 import RetentionStories from "../components/retention/RetentionStories";
 import RetentionZone from "../components/retention/RetentionZone";
 import ZoneNavigator from "../components/retention/ZoneNavigator";
+import TextAccordion from "../components/TextAccordion";
 import {
   retentionClouds,
   retentionCopy,
@@ -11,6 +12,7 @@ import {
   retentionPhases,
   retentionStories,
   retentionZones,
+  whatsappFaqs,
 } from "../content/retention";
 
 export const metadata = {
@@ -34,6 +36,7 @@ export default function Retention() {
       <ZoneNavigator zones={retentionZones} />
       <RetentionConsultation content={retentionCopy.consultation} />
       <RetentionStories stories={retentionStories} clouds={retentionClouds} />
+      <TextAccordion items={whatsappFaqs} />
     </main>
   );
 }

@@ -103,26 +103,26 @@ export const retentionZones = [
     eyebrow: "VIP Experience",
     accent: "pink",
     description:
-      "These subscribers generate the highest LTV. They've built the ritual now ensure they never leave by making them feel truly exclusive.",
+      "Once an order ships, keep customers informed at every step, so they never have to ask 'where's my order?",
     cards: [
       {
-        title: "Exclusive Portal Experience",
-        text: "Different interface showing VIP status",
+        title: "Order Packed",
+        text: "Confirms the order is ready to ship, right after confirmation",
         image: `${cdn}/68c40c4c3e359ca5858f85cb_Image.avif`,
       },
       {
-        title: "Premium Access",
-        text: "First launches, VIP-only products, deeper discounts",
+        title: "Order Shipped",
+        text: "Tracking details sent the moment the courier picks it up",
         image: `${cdn}/68c40c4c8bd7dc827b511ae2_Image-1.avif`,
       },
       {
-        title: "Advanced Cross-sell",
-        text: "Secondary benefits at exclusive pricing",
+        title: "Out for Delivery",
+        text: "A same-day nudge so someone's ready to receive it ",
         image: `${cdn}/68c40c4cceb8dc06f3672f45_Container-1.avif`,
       },
       {
-        title: "Personalized Campaigns",
-        text: "Milestone celebrations, founder notes",
+        title: "Delivered",
+        text: "Confirms delivery and closes the loop, no follow-up needed",
         image: `${cdn}/68c40c4c014762e065a9f8fd_b82b146b58ea4980466b3dbabd90eb70_Container.png`,
       },
     ],
@@ -132,26 +132,26 @@ export const retentionZones = [
     eyebrow: "Cancellation flow",
     accent: "orange",
     description:
-      "They clicked cancel. Remind them why they started, find the real reason, offer a solution, and use incentives last.",
+      "Not everyone replies the same way. Treat them differently, automatically.",
     cards: [
       {
-        title: "Benefits Pages",
-        text: "When users click Cancel, show personalized content on subscription value.",
+        title: "Reply Detection",
+        text: "Every customer reply is automatically tracked, so no response gets missed in a sea of broadcasts.",
         image: `${cdn}/68c40d407cd9788ebd08b8dd_ef3557c3bd0a1d28b4a6d6a650554b8a_Container-3.png`,
       },
       {
-        title: "Smart Survey",
-        text: "Subscribers past the benefits page see a survey capturing cancellation reasons.",
+        title: "Engaged Segment",
+        text: "Customers who reply or click get moved into their own segment, separate from those who stayed silent.",
         image: `${cdn}/68c40d4089f7a19b3f66246c_04d4e128380e06486a5373f19d37e3b4_Container-1.png`,
       },
       {
-        title: "Alternatives",
-        text: "Subscribers select a cancellation reason, and the system suggests alternatives.",
+        title: "Smart Follow-up",
+        text: "The engaged segment receives a different next message, based on how they actually responded.",
         image: `${cdn}/68c40d404c8e49bed38672b5_b55913fe7112971820f9f82eaf044169_Container-2.png`,
       },
       {
-        title: "Offers",
-        text: "If subscribers decline options, the system offers incentives based on reasons.",
+        title: "Full Funnel Visibility",
+        text: "See Sent, Delivered, Read, and Replied for every campaign, so you know what's working.",
         image: `${cdn}/68c40d4057d45f1090f47fe0_f95113bfb1402894ebb6e342f46091df_Container.png`,
       },
     ],
@@ -188,4 +188,49 @@ export const retentionStories = [
 export const retentionClouds = [
   `${cdn}/68c4058720072d7785de2f56_clouds1%203.avif`,
   `${cdn}/68c405874c8e49bed383ef7c_clouds1%202.avif`,
+];
+
+export const whatsappFaqs = [
+  {
+    heading: 'Do I need a WhatsApp Business API account to use this?',
+    copy:
+      "Yes, a WhatsApp Business API connection is required. We guide you through the Meta approval process during setup.",
+  },
+  {
+    heading: 'Are the message templates approved by Meta?',
+    copy:
+      "Yes. Every template goes through Meta's approval process before it can be sent, so your messages stay compliant and don't get flagged.",
+  },
+  {
+    heading: 'Will customers get too many WhatsApp messages?',
+    copy:
+      'No. Automations are triggered by specific behavior — an abandoned cart, a restock, an order update — not sent on a fixed schedule, so customers only hear from you when it’s relevant.',
+  },
+  {
+    heading: 'Can customers actually reply, or is it one-way?',
+    copy:
+      'Customers can reply directly, and every reply is tracked. Order confirmation messages also include tap-to-respond buttons, so customers can confirm or cancel without typing anything.',
+  },
+  {
+    heading: 'Does this help with fake or unconfirmed COD orders?',
+    copy:
+      'Yes. The order confirmation automation sends a WhatsApp message the moment an order is placed, so customers confirm intent before you pack and ship.',
+  },
+  {
+    heading:
+      'How is this different from just adding a WhatsApp chat button to my store?',
+    copy:
+      'A chat button waits for customers to reach out. This runs automations — cart recovery, restock alerts, delivery updates — that reach out to customers automatically, based on their behavior.',
+  },
+  {
+    heading:
+      "What happens if a customer's number is invalid or WhatsApp isn't installed?",
+    copy:
+      'Failed sends are flagged in your dashboard so you can see delivery issues and follow up through another channel if needed.',
+  },
+  {
+    heading: 'Can I segment who receives broadcast campaigns?',
+    copy:
+      "Yes. Campaigns can be sent to specific segments — for example, only customers who've engaged before — rather than your entire subscriber list.",
+  },
 ];

@@ -2,6 +2,7 @@ import ManagementApi from "../components/management/ManagementApi";
 import ManagementCardGrid from "../components/management/ManagementCardGrid";
 import ManagementHero from "../components/management/ManagementHero";
 import ManagementSplit from "../components/management/ManagementSplit";
+import TextAccordion from "../components/TextAccordion";
 import SubscriptionCta from "../components/ui/SubscriptionCta";
 import {
   alerts,
@@ -12,6 +13,7 @@ import {
   managementCta,
   managementHero,
   managementLogos,
+  pushNotificationFaqs
 } from "../content/management";
 
 export const metadata = {
@@ -38,6 +40,7 @@ export default function ManagementFeaturesPage() {
         title={managementCta.title}
         copy={managementCta.copy}
       />
+      <TextAccordion items={pushNotificationFaqs}/>
     </main>
   );
 }
