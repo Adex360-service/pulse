@@ -22,7 +22,7 @@ export default function ManagementHero({ content, logos }) {
           {content.copy}
         </p>
         <div className="mt-8">
-          <ManagementButton>Book demo</ManagementButton>
+          <ManagementButton>Start Free</ManagementButton>
         </div>
       </div>
       <div className="mx-auto mt-[70px] max-w-[1280px]">

@@ -15,7 +15,7 @@ export default function ManagementCardGrid({ section, tone = "peach" }) {
               {section.copy}
             </p>
             <div className="mt-8">
-              <ManagementButton />
+              <ManagementButton>See all automations</ManagementButton>
             </div>
           </div>
         </div>

@@ -78,10 +78,8 @@ function PlatformMenu() {
         <div className="grid gap-5">
           <Item icon="✦" title="Email Marketing" href="/acquire" />
           <Item icon="◔" title="WhatsApp Marketing " href="/retention" />
-          <Item icon="$" title="Web Push Notifications" href="/retention" />
-          <Item icon="$" title="Product Feed Management" href="/retention" />
-          <Item icon="$" title="Product Sorting & Merchandising" href="/retention" />
-          <Item icon="$" title="Marketing Automation" href="/retention" />
+          <Item icon="$" title="Web Push Notifications" href="/management-features" />
+          <Item icon="$" title="Analytics" href="/retention" />
         </div>
       </div>
       <div>
@@ -101,10 +99,10 @@ function PlatformMenu() {
           />
           <Item
             icon="⇄"
-            title="Retargeting & Ad Feed Optimization"
+            title="Restock & Price Alerts"
             href="/feature/cancellation-flows"
           />
-          <Item icon="◉" title="Merchandising & Product Discovery" href="/feature/upsell" />
+          <Item icon="◉" title="Delivery Updates" href="/feature/upsell" />
           {/* <Item icon="◉" title="Smart Customer Segmentation" href="/feature/upsell" />
           <Item icon="◉" title="Custom Collection Sorting" href="/feature/upsell" />
           <Item icon="◉" title="Automatic Out-of-Stock Management" href="/feature/upsell" /> */}
@@ -350,24 +348,9 @@ function MobileDrawer({ open, close, pathname }) {
               close={close}
               href="/management-features"
             >
-              <span className={iconClass}>✦</span>Product Feed Management
+              <span className={iconClass}>✦</span>Analytics
             </MobileRouteLink>
-            <MobileRouteLink
-              className={mobileItem}
-              pathname={pathname}
-              close={close}
-              href="/management-features"
-            >
-              <span className={iconClass}>✦</span> Product Sorting & Merchandising
-            </MobileRouteLink>
-            <MobileRouteLink
-              className={mobileItem}
-              pathname={pathname}
-              close={close}
-              href="/management-features"
-            >
-              <span className={iconClass}>✦</span> Marketing Automation
-            </MobileRouteLink>
+            
           </div>
           <p className="mt-7 mb-4 text-sm font-bold text-[#666] uppercase">
             Features
@@ -411,7 +394,7 @@ function MobileDrawer({ open, close, pathname }) {
               close={close}
               href="/feature/dunning-management"
             >
-              <span className={iconClass}>◈</span>Retargeting & Ad Feed Optimization
+              <span className={iconClass}>◈</span>Restock & Price Alerts
             </MobileRouteLink>
             <MobileRouteLink
               className={mobileItem}
@@ -419,7 +402,7 @@ function MobileDrawer({ open, close, pathname }) {
               close={close}
               href="/feature/upsell"
             >
-              <span className={iconClass}>◉</span>Merchandising & Product Discovery
+              <span className={iconClass}>◉</span>Delivery Updates
             </MobileRouteLink>
             {/* <MobileRouteLink
               className={mobileItem}

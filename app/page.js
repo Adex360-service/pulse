@@ -10,6 +10,7 @@ import {
   brandLogos,
   cancellationStages,
   features,
+  items,
   migrationSteps,
   problems,
   reviews,
@@ -25,7 +26,7 @@ export default function Home() {
       {/* <ResultsAccordion /> */}
       <Migration steps={migrationSteps} />
       <Pricing />
-      <TextAccordion />
+      <TextAccordion items={items} />
     </>
   );
 }
