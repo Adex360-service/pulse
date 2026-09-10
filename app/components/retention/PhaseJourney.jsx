@@ -42,7 +42,7 @@ export default function PhaseJourney({ content, clouds, phases }) {
     <section
       ref={sectionRef}
       id="retention-phases"
-      className="relative h-[360vh] bg-[#dcecff] text-[#351267] max-lg:h-auto"
+      className="relative h-[360vh] bg-[#DAF7E3] text-[#351267] max-lg:h-auto"
     >
       <div className="sticky top-[68px] h-[calc(100vh-68px)] overflow-hidden px-5 max-lg:relative max-lg:top-0 max-lg:h-auto max-lg:min-h-screen max-lg:py-24">
         <img

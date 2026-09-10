@@ -76,8 +76,8 @@ function PlatformMenu() {
       <div className="border-r border-[#ddd] pr-7">
         <p className="mb-5 text-xs font-bold text-[#666] uppercase">Product</p>
         <div className="grid gap-5">
-          <Item icon="✦" title="Email Marketing" href="/management-features" />
-          <Item icon="◔" title="WhatsApp Marketing " href="/acquire" />
+          <Item icon="✦" title="Email Marketing" href="/acquire" />
+          <Item icon="◔" title="WhatsApp Marketing " href="/retention" />
           <Item icon="$" title="Web Push Notifications" href="/retention" />
           <Item icon="$" title="Product Feed Management" href="/retention" />
           <Item icon="$" title="Product Sorting & Merchandising" href="/retention" />

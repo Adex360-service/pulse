@@ -8,7 +8,7 @@ export default function AcquireBundles({ features }) {
     <section className="bg-[linear-gradient(135deg,#fff8f8,#ffe8dc)] py-28">
       <Container className="grid grid-cols-2 items-center gap-20 max-lg:grid-cols-1">
         <img
-          src={`${acquireCdn}/685d2d9809e6d65eb97675bf_Group%2048096237.png`}
+          src="/images/email-3.png"
           alt="Build your own bundle interface"
           className="w-full object-contain"
         />

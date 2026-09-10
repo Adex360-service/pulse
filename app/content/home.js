@@ -54,32 +54,32 @@ export const problems = [
 
 export const reviews = [
   [
-    "LINENS LIMITED",
-    "HOME & BEDDING",
+    "COUGAR",
+    "FASHION & LIFESTYLE",
     "Quality products and a seamless experience from start to finish.",
     "/images/brand-5.png",
   ],
   [
-    "ROUTE2HEALTH",
-    "HEALTH & WELLNESS",
+    "SILENT LUXURY",
+    "FASHION & ACCESSORIES",
     "A seamless experience from strategy to execution.",
     "/images/brand-2.png",
   ],
   [
-    "Be Amazing",
-    "Migrated from Recharge",
+    "GENERATION",
+    " FASHION & LIFESTYLE",
     "A+ support makes Loop my favorite piece of SaaS.",
     "/images/brand-3.png",
   ],
   [
-    "Primal Queen",
-    "Migrated from Skio",
+    "SUMMIT",
+    " FASHION & LIFESTYLE",
     "Team is super responsive and is constantly helping us.",
     "/images/brand-4.png",
   ],
   [
-    "COUGAR",
-    "FASHION & LIFESTYLE",
+    "ROUTE2HEALTH",
+    "HEALTH & WELLNESS",
     "Fresh ideas, smooth execution, and real results.",
     "/images/brand-1.png",
   ],
@@ -90,7 +90,7 @@ export const reviews = [
     "/images/brand-6.png",
   ],
   [
-    "ORIENT TEXTILE",
+    "OUTFITTERS",
     "TEXTILE MANUFACTURING",
     "Reliable quality and a team that understands our needs.",
     "/images/brand-7.png",
