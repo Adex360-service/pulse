@@ -37,7 +37,13 @@
 }
 
 .retention-hero-bg {
-  background-image: url("https://cdn.prod.website-files.com/625e799b877c107387cdf3ac/685d4113d4faeda1f0cb4926_Mask%20group%20%281%29.png");
+  background-image: url("/images/new-whatsapp-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.retention-second-bg {
+  background-image: url("/images/sec-bg-whatsapp.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100% 100%;

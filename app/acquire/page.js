@@ -30,7 +30,7 @@ export default function AcquirePage() {
           title="Built for every market you sell to."
           description="Localized send times, currency, and offers, so every subscriber gets an email that feels made for them."
           features={countryFeatures}
-          image={`${acquireCdn}/686b8c957490dc6dac69fdf7_24d43ccbdb397ede96863c89ad3d5954_March%20%282%29%201.avif`}
+          image={`/images/email-2.png`}
           imageAlt="Localized country discount visualization"
           tinted
         />
@@ -39,7 +39,7 @@ export default function AcquirePage() {
           title="Grow your email list, everywhere."
           description="Turn every storefront visit, social bio, and landing page into a new email subscriber."
           features={customerFeatures}
-          image={`${acquireCdn}/686cfb94b7a7aae8a2a6d96e_Group%2048096266%20(1).png`}
+          image="/images/email-4.png"
           imageAlt="One-click subscription checkout flow"
           tinted
         />

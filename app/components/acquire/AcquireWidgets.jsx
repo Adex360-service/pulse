@@ -10,7 +10,7 @@ export default function AcquireWidgets({ features }) {
         <div className="flex items-center justify-between gap-8 max-md:flex-col max-md:items-start">
           <div>
             <h2 className="font-[family-name:var(--font-display)] text-[48px] leading-tight text-[#2d155f] max-sm:text-4xl">
-              Email that builds itself around your customer.
+              Turn every campaign into a growth engine.
             </h2>
             <p className="mt-3 text-xl text-[#746c72]">
               Fast, personalized campaigns that feel like your brand, and convert subscribers into buyers
@@ -21,7 +21,7 @@ export default function AcquireWidgets({ features }) {
         <div className="mt-20 grid grid-cols-[1.35fr_1fr_1fr] gap-8 max-lg:grid-cols-2 max-md:grid-cols-1">
           <div className="flex min-h-[410px] items-center justify-center max-lg:col-span-2 max-md:col-span-1">
             <img
-              src={`${acquireCdn}/685d303e996658f873cd47ba_4f3dad4dcb9cffd296f534dbb3852082_Group%2048096249.webp`}
+              src="/images/email-1.png"
               alt="Subscription widget interface"
               className="h-full max-h-[450px] w-full object-contain"
             />
