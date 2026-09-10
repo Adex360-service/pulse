@@ -133,3 +133,71 @@
 .animate-marquee:hover {
   animation-play-state: paused;
 }
+
+/* Shared Loop-style liquid hover for primary CTAs. */
+.loop-liquid-button {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border: 1px solid transparent;
+  transition: color 600ms ease, border-color 600ms ease, box-shadow 600ms ease;
+}
+
+.loop-liquid-inner {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: inherit;
+  background: inherit;
+}
+
+.loop-liquid-blobs {
+  position: relative;
+  display: block;
+  height: 100%;
+  filter: url("#loop-liquid-goo");
+}
+
+.loop-liquid-blob {
+  position: absolute;
+  top: 2px;
+  width: 25%;
+  height: 100%;
+  border-radius: 100%;
+  background: #fff;
+  transform: translate3d(0, 150%, 0) scale(1.4);
+  transition: transform 700ms cubic-bezier(.65, 0, .2, 1);
+}
+
+.loop-liquid-blob:nth-child(1) { left: 0; transition-delay: 0ms; }
+.loop-liquid-blob:nth-child(2) { left: 30%; transition-delay: 110ms; }
+.loop-liquid-blob:nth-child(3) { left: 60%; transition-delay: 220ms; }
+.loop-liquid-blob:nth-child(4) { left: 90%; transition-delay: 330ms; }
+
+.loop-liquid-button > :not(.loop-liquid-inner, svg) {
+  position: relative;
+  z-index: 1;
+}
+
+.loop-liquid-button:hover,
+.loop-liquid-button:focus-visible {
+  border-color: #7928dc;
+  color: #7928dc;
+  box-shadow: none;
+}
+
+.loop-liquid-button:hover .loop-liquid-blob,
+.loop-liquid-button:focus-visible .loop-liquid-blob {
+  transform: translate3d(0, 0, 0) scale(1.4);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loop-liquid-button,
+  .loop-liquid-blob {
+    transition-duration: 0ms;
+  }
+}

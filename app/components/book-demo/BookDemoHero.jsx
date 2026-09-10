@@ -1,5 +1,6 @@
 import Container from "../ui/Container";
 import LogoMarquee from "../ui/LogoMarquee";
+import LiquidButtonLayers from "../ui/LiquidButtonLayers";
 import { demoLogos } from "../../content/bookDemo";
 
 export default function BookDemoHero() {
@@ -26,7 +27,7 @@ export default function BookDemoHero() {
               <option value="" disabled>How did you hear about Loop? (Optional)</option>
               <option>Google or Bing Search</option><option>Shopify App Store</option><option>Merchant or Partner Referral</option><option>Loop Marketing Emails</option><option>Social media</option><option>ChatGPT</option><option>Other</option>
             </select>
-            <button className="mt-5 h-14 w-full rounded-full bg-[#873cff] font-semibold text-white transition hover:bg-[#7126df]" type="submit">Book a Demo</button>
+            <button className="loop-liquid-button mt-5 h-14 w-full rounded-full bg-[#873cff] font-semibold text-white" type="submit"><span>Book a Demo</span><LiquidButtonLayers /></button>
             <label className="mt-5 flex items-center justify-center gap-3 text-sm text-[#555] max-sm:items-start">
               <input type="checkbox" defaultChecked required className="mt-0.5 h-5 w-5 accent-[#873cff]" />
               <span>I agree with <a className="font-semibold text-[#222]" href="#">Terms of Service</a> and <a className="font-semibold text-[#222]" href="#">Privacy Policy</a>.</span>

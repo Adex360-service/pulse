@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import LiquidButtonLayers from "./ui/LiquidButtonLayers";
 
 const menuLink =
   "group flex items-center gap-3 text-[16px] font-semibold text-[#17192b] transition-colors hover:text-[#7c36ed]";
@@ -754,9 +755,10 @@ export default function Header() {
             </MenuButton>
             <a
               href="/book-a-demo"
-              className="inline-flex items-center justify-center rounded-full bg-[linear-gradient(100deg,#8d43ff,#315be7)] px-[27px] py-[11px] text-[15px] font-semibold text-white"
+              className="loop-liquid-button inline-flex items-center justify-center rounded-full bg-[linear-gradient(100deg,#8d43ff,#315be7)] px-[27px] py-[11px] text-[15px] font-semibold text-white"
             >
               Book a demo
+              <LiquidButtonLayers />
             </a>
           </div>
           <button

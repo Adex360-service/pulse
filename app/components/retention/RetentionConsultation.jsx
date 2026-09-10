@@ -1,4 +1,5 @@
 import Link from "next/link";
+import LiquidButtonLayers from "../ui/LiquidButtonLayers";
 import Reveal from "./Reveal";
 
 export default function RetentionConsultation({ content }) {
@@ -26,7 +27,7 @@ export default function RetentionConsultation({ content }) {
           </div>
           <Link
             href="/book-a-demo"
-            className="mt-12 inline-flex min-w-[390px] items-center justify-center gap-3 rounded-full bg-[linear-gradient(100deg,#8b3eff,#326df4)] px-10 py-[18px] text-[20px] font-semibold text-white max-sm:min-w-0 max-sm:w-full"
+            className="loop-liquid-button mt-12 inline-flex min-w-[390px] items-center justify-center gap-3 rounded-full bg-[linear-gradient(100deg,#8b3eff,#326df4)] px-10 py-[18px] text-[20px] font-semibold text-white max-sm:min-w-0 max-sm:w-full"
           >
             <svg
               viewBox="0 0 24 24"
@@ -39,6 +40,7 @@ export default function RetentionConsultation({ content }) {
               <path d="m16 17 1 1 2-2" stroke="#5267f5" strokeWidth="1.5" />
             </svg>
             {content.buttonLabel}
+            <LiquidButtonLayers />
           </Link>
           <div className="mt-10 flex items-center justify-center gap-1.5 text-[14px] font-semibold">
             <span>{content.review.count}</span>

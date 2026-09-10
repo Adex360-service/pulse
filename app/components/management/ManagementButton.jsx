@@ -1,4 +1,5 @@
 import Link from "next/link";
+import LiquidButtonLayers from "../ui/LiquidButtonLayers";
 export default function ManagementButton({
   children = "Get expert advice",
   href = "/book-a-demo",
@@ -7,9 +8,9 @@ export default function ManagementButton({
   return (
     <Link
       href={href}
-      className={`inline-flex items-center justify-center rounded-full bg-[#7928dc] px-8 py-3 text-sm font-semibold text-white transition hover:bg-[#5d18bd] ${className}`}
+      className={`loop-liquid-button inline-flex items-center justify-center rounded-full bg-[#7928dc] px-8 py-3 text-sm font-semibold text-white ${className}`}
     >
-      {children}
+      <span>{children}</span><LiquidButtonLayers />
     </Link>
   );
 }
