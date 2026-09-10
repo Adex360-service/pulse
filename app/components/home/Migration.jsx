@@ -1,5 +1,6 @@
 import SectionIntro from "./SectionIntro";
 import Container from "../ui/Container";
+import Link from "next/link";
 
 export default function Migration({ steps }) {
   return (
@@ -42,12 +43,12 @@ export default function Migration({ steps }) {
           <p className="font-[family-name:var(--font-fraunces)] text-lg italic text-[#9a87b4]">
             Ready to make the switch?
           </p>
-          <a
+          <Link
             className="rounded-[3px] bg-white px-[26px] py-4 text-[13px] font-semibold text-[#3b197f]"
             href="#contact"
           >
             Let&apos;s talk about your migration →
-          </a>
+          </Link>
         </div>
       </Container>
     </section>

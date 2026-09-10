@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import Container from "./ui/Container";
 
 const stories = [
@@ -108,13 +109,13 @@ export default function ResultsAccordion() {
                     )}
                   </button>
                   {isOpen && (
-                    <a
+                    <Link
                       className="inline-flex h-11 min-w-[175px] items-center justify-center gap-2.5 rounded-[3px] border border-[#ddd2ec] px-5 text-[13px] font-semibold text-[#7726d9] max-sm:h-10 max-sm:w-10 max-sm:min-w-10 max-sm:shrink-0 max-sm:gap-0 max-sm:border-0 max-sm:bg-[#3b197f] max-sm:p-0 max-sm:text-white"
                       href={story.href}
                     >
                       <span className="max-sm:hidden">Read the story</span>
                       <span className="max-sm:text-[32px] max-sm:leading-none">→</span>
-                    </a>
+                    </Link>
                   )}
                 </div>
                 <div
@@ -123,7 +124,7 @@ export default function ResultsAccordion() {
                   aria-hidden={!isOpen}
                 >
                   <div className="min-h-0 overflow-hidden">
-                    <a
+                    <Link
                       href={story.href}
                       aria-label={`Read the ${story.brand} customer story`}
                       className={`block h-[590px] w-full origin-top bg-cover bg-center bg-no-repeat transition-transform duration-500 ease-[cubic-bezier(.22,1,.36,1)] motion-reduce:duration-0 max-sm:h-[260px] ${isOpen ? "translate-y-0 scale-100" : "-translate-y-2.5 scale-[.995]"}`}

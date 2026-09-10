@@ -1,6 +1,7 @@
 import Container from "../ui/Container";
 import AcquireButton from "../acquire/AcquireButton";
 import { portalCdn } from "../../content/customerPortal";
+import Link from "next/link";
 
 export default function PortalHero() {
   return (
@@ -18,12 +19,12 @@ export default function PortalHero() {
           </p>
           <div className="mt-10 flex flex-wrap gap-5">
             <AcquireButton>Book a demo</AcquireButton>
-            <a
+            <Link
               href="#know-more"
               className="inline-flex min-h-14 items-center justify-center rounded-full border border-[#8b35ff] px-12 font-semibold text-[#8b35ff]"
             >
               Know more
-            </a>
+            </Link>
           </div>
         </div>
         <img

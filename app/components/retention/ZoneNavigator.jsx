@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 
 export default function ZoneNavigator({ zones }) {
   const animationRef = useRef(null);
@@ -70,14 +71,14 @@ export default function ZoneNavigator({ zones }) {
       aria-label="Retention zones"
     >
       {zones.map((zone, index) => (
-        <a
+        <Link
           key={zone.id}
           href={`#${zone.id}`}
           onClick={(event) => goToZone(event, zone.id)}
           className={`flex-1 whitespace-nowrap px-6 py-4 text-center text-sm font-semibold uppercase transition-colors max-sm:px-3 ${active === index ? (index === 3 ? "bg-[#ff5a0a]" : "bg-[#7135ff]") : "hover:bg-white/10"}`}
         >
           Zone {index + 1}
-        </a>
+        </Link>
       ))}
     </nav>
   );

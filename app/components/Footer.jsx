@@ -1,4 +1,5 @@
 import Container from "./ui/Container";
+import Link from "next/link";
 
 const groups = [
   [["Product", "Acquire", "Retain", "Manage"], ["Features", "Loop Flows", "Cancellation Flows", "Dunning Management", "Bundles", "Customer Portal", "Upsell & Cross Sell"]],
@@ -23,7 +24,7 @@ export default function Footer() {
               {column.map(([title, ...links]) => (
                 <section className="mb-[22px] max-sm:mb-8" key={title}>
                   <h3 className="mb-[15px] text-base leading-[1.2] font-bold max-sm:text-lg">{title}</h3>
-                  {links.map((link) => <a className="mb-3 block text-sm text-[#363432] max-sm:mb-5 max-sm:text-lg" href={link === "Help Center" ? "/help-center" : link === "Developer hub" ? "/developer-hub" : "#"} key={link}>{link}</a>)}
+                  {links.map((link) => <Link className="mb-3 block text-sm text-[#363432] max-sm:mb-5 max-sm:text-lg" href={link === "Help Center" ? "/help-center" : link === "Developer hub" ? "/developer-hub" : "#"} key={link}>{link}</Link>)}
                 </section>
               ))}
               {i === 3 && (
@@ -40,10 +41,10 @@ export default function Footer() {
         </div>
 
         <div className="flex items-center gap-6 border-y border-[#eee] py-5 max-lg:flex-wrap max-sm:flex-col max-sm:items-start max-sm:gap-4 max-sm:py-6">
-          <a className="h-[42px] w-[106px] shrink-0 bg-contain bg-center bg-no-repeat" style={{ backgroundImage: 'url("https://cdn.prod.website-files.com/625e799b877c107387cdf3ac/64d64c3870a418ff730a354c_91ae17956a95542ff4276cdbb7f25676_loop.png")' }} href="#top" aria-label="Loop home" />
+          <Link className="h-[42px] w-[106px] shrink-0 bg-contain bg-center bg-no-repeat" style={{ backgroundImage: 'url("https://cdn.prod.website-files.com/625e799b877c107387cdf3ac/64d64c3870a418ff730a354c_91ae17956a95542ff4276cdbb7f25676_loop.png")' }} href="#top" aria-label="Loop home" />
           <a className="h-[54px] w-[178px] shrink-0 bg-contain bg-center bg-no-repeat" style={{ backgroundImage: 'url("https://cdn.prod.website-files.com/625e799b877c107387cdf3ac/63906d8c10a19843247091b5_Shopify-App-Store-Badge-Final-White.png")' }} href="https://apps.shopify.com/loop-subscriptions" target="_blank" rel="noreferrer" aria-label="Find Loop on the Shopify App Store" />
           <nav className="ml-auto flex gap-3 text-[13px] max-lg:ml-0 max-lg:w-full max-lg:flex-wrap max-sm:mt-2 max-sm:gap-x-3 max-sm:gap-y-4 max-sm:text-base" aria-label="Legal links">
-            <a href="#">Careers</a><i>•</i><a href="#">Terms of Service</a><i>•</i><a href="#">Cookie Policy</a><i>•</i><a href="#">Privacy Policy</a><i>•</i><a href="#">California ARL</a>
+            <Link href="#">Careers</Link><i>•</i><Link href="#">Terms of Service</Link><i>•</i><Link href="#">Cookie Policy</Link><i>•</i><Link href="#">Privacy Policy</Link><i>•</i><Link href="#">California ARL</Link>
           </nav>
         </div>
 
@@ -54,7 +55,7 @@ export default function Footer() {
             ))}
           </div>
           <p className="max-sm:m-0">© Loop Solutions 2021 - 2026. All rights reserved.</p>
-          <a className="text-[13px] text-[#8b43fd] max-sm:text-base" href="#top">Back to top <span className="ml-[7px] inline-block text-[22px] leading-none" aria-hidden="true">↑</span></a>
+          <Link className="text-[13px] text-[#8b43fd] max-sm:text-base" href="#top">Back to top <span className="ml-[7px] inline-block text-[22px] leading-none" aria-hidden="true">↑</span></Link>
         </div>
       </Container>
     </footer>

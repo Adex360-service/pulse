@@ -38,7 +38,7 @@ function MenuButton({ id, openMenu, setOpenMenu, children }) {
       onFocus={() => setOpenMenu(id)}
       onClick={() => setOpenMenu(open ? null : id)}
       aria-expanded={open}
-      className={`relative flex h-[68px] items-center gap-2 border-0 bg-transparent px-0 text-sm font-medium after:absolute after:right-0 after:bottom-0 after:left-0 after:h-1 after:rounded-t after:bg-[#7041ce] after:transition-transform ${open ? "after:scale-x-100" : "after:scale-x-0"}`}
+      className={`relative flex h-[68px] items-center gap-2 border-0 bg-transparent px-0 text-sm font-medium text-[#2d2c2b] after:absolute after:right-0 after:bottom-0 after:left-0 after:h-1 after:rounded-t after:bg-[#7041ce] after:transition-transform ${open ? "after:scale-x-100" : "after:scale-x-0"}`}
     >
       {children}
       <Chevron open={open} />
@@ -53,8 +53,8 @@ function Item({ icon, title, href, description }) {
       : title === "Developer Hub"
         ? "/developer-hub"
         : href;
-  return (
-    <a className={menuLink} href={resolvedHref}>
+  const content = (
+    <>
       <span className={iconClass}>{icon}</span>
       <span>
         <strong className="block font-semibold">{title}</strong>
@@ -64,7 +64,12 @@ function Item({ icon, title, href, description }) {
           </small>
         )}
       </span>
-    </a>
+    </>
+  );
+  return resolvedHref.startsWith("http") ? (
+    <a className={menuLink} href={resolvedHref}>{content}</a>
+  ) : (
+    <Link className={menuLink} href={resolvedHref}>{content}</Link>
   );
 }
 
@@ -131,7 +136,7 @@ function StoriesMenu() {
           description="Personalize flows & reduce subscriber churn"
         />
       </div>
-      <a
+      <Link
         href="/customer-stories/primal-queen"
         className="grid min-h-[200px] grid-cols-[55%_45%] overflow-hidden rounded-xl bg-[#faf8fb] p-3"
       >
@@ -151,7 +156,7 @@ function StoriesMenu() {
             Read success story →
           </span>
         </span>
-      </a>
+      </Link>
     </div>
   );
 }
@@ -223,13 +228,13 @@ function CompareMenu() {
     >
       <div className="flex flex-wrap gap-4">
         {comparisons.map(([name, href]) => (
-          <a
+          <Link
             className="rounded-full bg-[linear-gradient(100deg,#f0ecff,#faeeee)] px-5 py-2 text-sm font-medium text-[#4b258d]"
             href={href}
             key={name}
           >
             {name}
-          </a>
+          </Link>
         ))}
       </div>
       <form className="mt-8 rounded-xl bg-[#f8f7fb] p-4">
@@ -729,14 +734,14 @@ export default function Header() {
               Success Stories
             </MenuButton>
             <Link
-              className={`text-sm font-medium ${pathname === "/migration" ? "text-[#8b43fd]" : ""}`}
+              className={`text-sm font-medium ${pathname === "/migration" ? "text-[#8b43fd]" : "text-[#2d2c2b]"}`}
               href="/migration"
             >
               Migration
             </Link>
-            <a className="text-sm font-medium" href="/pricing">
+            <Link className={`text-sm font-medium ${pathname === "/pricing" ? "text-[#8b43fd]" : "text-[#2d2c2b]"}`} href="/pricing">
               Pricing
-            </a>
+            </Link>
             <MenuButton
               id="resources"
               openMenu={openMenu}
@@ -753,13 +758,13 @@ export default function Header() {
             >
               Comparing Loop with?
             </MenuButton>
-            <a
+            <Link
               href="/book-a-demo"
               className="loop-liquid-button inline-flex items-center justify-center rounded-full bg-[linear-gradient(100deg,#8d43ff,#315be7)] px-[27px] py-[11px] text-[15px] font-semibold text-white"
             >
               Book a demo
               <LiquidButtonLayers />
-            </a>
+            </Link>
           </div>
           <button
             type="button"

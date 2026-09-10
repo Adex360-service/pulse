@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function RetentionHero({ content, cards }) {
   return (
     <section className="retention-hero-bg relative min-h-[calc(100vh-68px)] overflow-hidden px-5 pt-[100px] pb-[110px] text-[#321166] max-sm:px-3 max-sm:py-[60px]">
@@ -10,7 +12,7 @@ export default function RetentionHero({ content, cards }) {
          <div className="flex items-start justify-center gap-8 max-sm:w-full max-sm:flex-col max-sm:gap-6">
             {cards.map((card, index) => (
               <div key={card.image} className="flex max-w-[500px] flex-col">
-                <a
+                <Link
                   href="#retention-phases"
                   className="block overflow-hidden"
                 >
@@ -19,7 +21,7 @@ export default function RetentionHero({ content, cards }) {
                     alt={index ? "Reactive retention" : "Proactive retention"}
                     className="h-[350px] w-auto object-cover max-md:h-[220px] max-sm:h-auto max-sm:w-full"
                   />
-                </a>
+                </Link>
 
                 <p className="mt-5 text-center text-[16px] leading-5 text-[#321166] mx-auto max-w-80">
                   {card.title}

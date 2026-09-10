@@ -1,4 +1,5 @@
 import { heroContent } from "@/app/content/home";
+import Link from "next/link";
 import LiquidButtonLayers from "../ui/LiquidButtonLayers";
 
 export default function Hero({ logos }) {
@@ -46,12 +47,12 @@ export default function Hero({ logos }) {
               </span>
             ))}
           </h1>
-          <a
+          <Link
             className="loop-liquid-button inline-flex items-center justify-center gap-3.5 bg-[linear-gradient(100deg,#8d43ff,#315be7)] px-[23px] py-4 text-[15px] font-semibold text-white"
             href="#contact"
           >
             <span>{cta.text}</span> <span>→</span><LiquidButtonLayers />
-          </a>
+          </Link>
         </div>
       </section>
       <section className="bg-[#6f12ff] px-[3.5%] pt-[27px] pb-7 text-center text-white max-sm:px-8 max-sm:py-10">

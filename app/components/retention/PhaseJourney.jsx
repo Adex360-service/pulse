@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 
 const clamp = (value) => Math.max(0, Math.min(1, value));
 
@@ -70,7 +71,7 @@ export default function PhaseJourney({ content, clouds, phases }) {
               const opacity =
                 index === 3 ? clamp((progress - 0.12) / 0.09) : cardReveal;
               return (
-                <a
+                <Link
                   href={`#${phase.id}`}
                   key={phase.id}
                   className="retention-phase-stage block h-fit shrink-0 overflow-hidden rounded-[14px] bg-white shadow-[0_16px_40px_#7441aa20] max-lg:w-auto max-lg:opacity-100"
@@ -89,7 +90,7 @@ export default function PhaseJourney({ content, clouds, phases }) {
                       {phase.summary}
                     </p>
                   </div>
-                </a>
+                </Link>
               );
             })}
           </div>
