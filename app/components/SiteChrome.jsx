@@ -6,7 +6,7 @@ import Header from "./Header";
 
 export default function SiteChrome({ children }) {
   const pathname = usePathname();
-  const isHelpCenter = pathname === "/help-center";
+  const isHelpCenter = pathname.startsWith("/help-center") || pathname.startsWith("/articles/");
 
   return (
     <>

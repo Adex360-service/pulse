@@ -697,9 +697,9 @@ export default function Header() {
           <Link
             href="/"
             className="w-[88px] shrink-0 leading-none text-[#8b43fd]"
-            aria-label="Loop home"
+            aria-label="Pulse home"
           >
-            <img src="/images/pulse-logo.png" />
+            <img src="/images/pulse-logo.png" alt="Pulse" />
           </Link>
           <nav className="flex items-center gap-[34px] max-lg:hidden">
             <MenuButton
