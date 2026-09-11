@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { helpLogo } from "../../content/helpCenter";
 
 const footerGroups = [
   [
@@ -42,9 +41,9 @@ export function HelpCenterHeader({ home = false, query = "", onQueryChange }) {
       <div className="mx-auto flex w-[min(960px,calc(100%-40px))] items-center justify-between pt-5">
         <Link href="/help-center">
           <img
-            src={helpLogo}
-            alt="Loop help centre"
-            className="h-[48px] w-auto object-contain"
+            src="/images/pulse-logo.png"
+            alt="Pulse"
+            className="h-auto w-[88px] object-contain"
           />
         </Link>
         <nav className="flex gap-7 text-[14px] font-semibold">
@@ -93,16 +92,11 @@ export function HelpCenterFooter() {
   return (
     <footer className="mx-auto mt-36 grid w-[min(960px,calc(100%-40px))] grid-cols-[1.4fr_repeat(4,1fr)] gap-12 pb-12 text-[14px] text-[#9ca7b2] max-md:grid-cols-2">
       <div>
-        <svg className="h-auto w-[92px] text-[#8b43fd]" viewBox="0 0 114 40">
-          <path
-            d="M8 8v14c0 6 4 9 10 9h7c8 0 12-5 12-11s-4-11-12-11-12 5-12 11 4 11 12 11h16c8 0 12-5 12-11S49 9 41 9s-12 5-12 11 4 11 12 11h16c8 0 12-5 12-11S65 9 57 9s-12 5-12 11 4 11 12 11h16c8 0 12-5 12-11S81 9 73 9s-12 5-12 11v18"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="3.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
+        <img
+          src="/images/pulse-logo.png"
+          alt="Pulse"
+          className="h-auto w-[92px] object-contain"
+        />
         <p className="mt-7">© 2025</p>
         <div className="mt-9 flex gap-5">
           <span>▶</span>

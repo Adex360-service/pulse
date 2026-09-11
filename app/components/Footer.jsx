@@ -41,7 +41,9 @@ export default function Footer() {
         </div>
 
         <div className="flex items-center gap-6 border-y border-[#eee] py-5 max-lg:flex-wrap max-sm:flex-col max-sm:items-start max-sm:gap-4 max-sm:py-6">
-          <Link className="h-[42px] w-[106px] shrink-0 bg-contain bg-center bg-no-repeat" style={{ backgroundImage: 'url("https://cdn.prod.website-files.com/625e799b877c107387cdf3ac/64d64c3870a418ff730a354c_91ae17956a95542ff4276cdbb7f25676_loop.png")' }} href="#top" aria-label="Loop home" />
+          <Link className="w-[106px] shrink-0" href="#top" aria-label="Pulse home">
+            <img src="/images/pulse-logo.png" alt="Pulse" className="h-auto w-full object-contain" />
+          </Link>
           <a className="h-[54px] w-[178px] shrink-0 bg-contain bg-center bg-no-repeat" style={{ backgroundImage: 'url("https://cdn.prod.website-files.com/625e799b877c107387cdf3ac/63906d8c10a19843247091b5_Shopify-App-Store-Badge-Final-White.png")' }} href="https://apps.shopify.com/loop-subscriptions" target="_blank" rel="noreferrer" aria-label="Find Loop on the Shopify App Store" />
           <nav className="ml-auto flex gap-3 text-[13px] max-lg:ml-0 max-lg:w-full max-lg:flex-wrap max-sm:mt-2 max-sm:gap-x-3 max-sm:gap-y-4 max-sm:text-base" aria-label="Legal links">
             <Link href="#">Careers</Link><i>•</i><Link href="#">Terms of Service</Link><i>•</i><Link href="#">Cookie Policy</Link><i>•</i><Link href="#">Privacy Policy</Link><i>•</i><Link href="#">California ARL</Link>

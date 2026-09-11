@@ -2,8 +2,6 @@ import { articleRecords } from "./helpCenterArticles";
 
 const asset = "https://downloads.intercomcdn.com/i/o/kmcpsev1";
 
-export const helpLogo = `${asset}/805987/7de5ddcddd5af361fccbe1ff1d3c/601e4593f30f8da1a2046ace91f9a846.png`;
-
 export const helpCollections = [
   [
     "Getting started",
