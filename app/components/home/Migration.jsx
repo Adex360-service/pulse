@@ -10,17 +10,17 @@ export default function Migration({ steps }) {
     >
       <Container>
         <SectionIntro
-          eyebrow="Shows up for the switch"
+          eyebrow="SHOWS UP FOR THE SWITCH"
           light
           eyebrowClassName="mb-[22px] text-xs"
           headingClassName="text-[64px] leading-[1.05] max-sm:text-[40px]"
         >
-          That <em>migration fear?</em>
+          That switching fear?
           <br />
           We handle the whole thing.
         </SectionIntro>
         <p className="mt-[22px] text-base text-[#b7a8ca]">
-          1100+ brands migrated to Loop. Here&apos;s what it looks like.
+          Here's exactly what moving to Pulse looks like..
         </p>
         <div className="mt-[110px] grid grid-cols-4 border-t border-[#76559b] max-sm:mt-[60px] max-sm:grid-cols-1 max-sm:border-t-0 max-sm:border-l">
           {steps.map(([time, title, copy], index) => (
@@ -47,7 +47,7 @@ export default function Migration({ steps }) {
             className="rounded-[3px] bg-white px-[26px] py-4 text-[13px] font-semibold text-[#3b197f]"
             href="#contact"
           >
-            Let&apos;s talk about your migration →
+            Let's talk about your migration →
           </Link>
         </div>
       </Container>

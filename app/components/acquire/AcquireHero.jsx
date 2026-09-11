@@ -17,7 +17,7 @@ export default function AcquireHero({ logos }) {
         <h1 className="mt-8 max-w-[720px] font-[family-name:var(--font-display)] text-[62px] leading-[1.02] font-semibold text-[#2d155f] max-sm:mt-5 max-sm:text-[42px]">
           Email marketing that already knows what your customer wants.
         </h1>
-        <p className="mt-7 max-w-[710px] text-[20px] leading-[1.35] text-[#6e686d] max-sm:text-base">
+        <p className="mt-7 max-w-[730px] text-[20px] leading-[1.35] text-[#6e686d] max-sm:text-base">
           Welcome series, abandoned cart, post-purchase, and winback flows, built from real behavior and live product data. Not templates you have to guess at.
         </p>
         <div className="mt-8">
