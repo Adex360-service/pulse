@@ -69,7 +69,7 @@ export default function Platform({ features, cancellationStages }) {
           <em className="font-normal text-[#8628ec]">Agents</em> built to run your store while you sleep.
         </SectionIntro>
         <p className="mx-auto mt-[30px] max-w-[700px] text-center text-[18px] leading-[1.5] text-[#666] max-sm:mt-5 max-sm:px-4 max-sm:text-[15px]">
-            Two AI agents that understand your brand, your customers, and your catalog
+            AI agents that understand your brand, your customers,
             and act on it automatically, across every channel.
           </p>
         <div className="mt-[70px] grid grid-cols-20 items-stretch gap-2.5 max-lg:grid-cols-1 max-sm:mt-12 max-sm:gap-3">
