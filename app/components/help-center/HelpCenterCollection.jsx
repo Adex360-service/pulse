@@ -51,6 +51,20 @@ export default function HelpCenterCollection({ collection }) {
             No articles have been added yet.
           </div>
         )}
+        {collection.slug === "automations" && (
+          <div className="mt-8 text-[16px] leading-[1.55] text-[#505050]">
+            <h2 className="text-[21px] font-bold text-[#252525]">
+              A note on getting started
+            </h2>
+            <p className="mt-4">
+              You don't need to turn on every automation at once. A reasonable
+              starting point on any channel is Cart Recovery or Abandoned Cart,
+              since it directly targets revenue that's already close to being
+              captured. From there, add the others as you get comfortable with
+              how each one performs.
+            </p>
+          </div>
+        )}
       </section>
       <HelpCenterFooter />
       <HelpChat />

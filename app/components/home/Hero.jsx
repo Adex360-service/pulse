@@ -25,7 +25,7 @@ export default function Hero({ logos }) {
         </video>
         <div className="absolute inset-0 bg-[linear-gradient(#2d111663,#2d11167a)] bg-[#4b1f1830]" />
         <div className="relative z-[2] flex flex-col items-center text-center">
-          <div className="flex items-center rounded-full border border-white bg-[#ffffff2c] px-3 py-[7px] text-[10px]">
+          {/* <div className="flex items-center rounded-full border border-white bg-[#ffffff2c] px-3 py-[7px] text-[10px]">
             {badge.reviewCount} &nbsp;{badge.rating} <b className="text-[15px] text-[#ffda58]">★</b>&nbsp;
             {badge.text}&nbsp;
             <span
@@ -38,7 +38,7 @@ export default function Hero({ logos }) {
               }}
             />
             <strong className="text-sm italic">{badge.platform}</strong>
-          </div>
+          </div> */}
           <h1 className="my-10 mb-[72px] max-w-[850px] text-[68px] leading-[.99] font-semibold md:tracking-[-4px] max-md:text-[48px] max-sm:my-8 max-sm:text-[38px]">
             {heading.lines.map((line, i) => (
               <span key={line}>

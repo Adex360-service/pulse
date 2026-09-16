@@ -31,7 +31,7 @@ export default function Problems({ items }) {
             </article>
           ))}
         </div>
-        <div className="relative mt-[35px] text-center before:absolute before:top-[22px] before:left-0 before:w-[34%] before:border-t-[5px] before:border-dotted before:border-[#a76aff] after:absolute after:top-[22px] after:right-0 after:w-[34%] after:border-t-[5px] after:border-dotted after:border-[#a76aff] max-sm:mt-10 max-sm:pt-[26px] max-sm:pb-10 max-sm:before:hidden max-sm:after:hidden">
+        <div className="relative mt-[35px] text-center before:absolute max-sm:mt-10 max-sm:pt-[26px] max-sm:pb-10 ">
           <span
             className="absolute inset-x-0 top-0 hidden h-3 bg-[length:100%_100%] bg-center bg-no-repeat max-sm:block"
             aria-hidden="true"

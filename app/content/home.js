@@ -145,19 +145,19 @@ export const migrationSteps = [
   [
     "Week 1",
     "Kickoff",
-    "Audit your setup, map your data, and build the plan together.",
+    "Audit your existing flows, segments, and lists, and map the migration plan together.",
   ],
   [
     "Week 2–3",
-    "Build & configure",
-    "Your portal, flows, and integrations rebuilt on Loop.",
+    "Build & Migrate",
+    "Your email flows, WhatsApp automations, and push triggers rebuilt on Pulse.",
   ],
   [
     "Week 3–4",
-    "Test & validate",
-    "Every subscription and edge case verified before launch.",
+    "Test & Validate",
+    "Every automation and segment verified before launch.",
   ],
-  ["Go live", "You're on Loop", "Subscribers never notice. You do."],
+  ["Go live", "You're on Pulse", "Subscribers never notice. You do."],
 ];
 
 export const items = [
