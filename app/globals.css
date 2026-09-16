@@ -2,6 +2,18 @@
 
 @theme {
   --animate-review-marquee: reviewMarquee 55s linear infinite;
+  --animate-analytics-cards: analyticsCards 65s linear infinite;
+  --animate-analytics-image: analyticsImage .3s ease;
+
+  @keyframes analyticsCards {
+    from { transform: translateX(-8%); }
+    to { transform: translateX(-41.333333%); }
+  }
+
+  @keyframes analyticsImage {
+    from { opacity: .4; }
+    to { opacity: 1; }
+  }
 }
 
 @keyframes reviewMarquee {

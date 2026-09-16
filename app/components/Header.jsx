@@ -85,7 +85,7 @@ function PlatformMenu() {
           <Item icon="✦" title="Email Marketing" href="/acquire" />
           <Item icon="◔" title="WhatsApp Marketing " href="/retention" />
           <Item icon="$" title="Web Push Notifications" href="/management-features" />
-          <Item icon="$" title="Analytics" href="/retention" />
+          <Item icon="$" title="Analytics" href="/analytics" />
         </div>
       </div>
       <div>
@@ -352,7 +352,7 @@ function MobileDrawer({ open, close, pathname }) {
               className={mobileItem}
               pathname={pathname}
               close={close}
-              href="/management-features"
+              href="/analytics"
             >
               <span className={iconClass}>✦</span>Analytics
             </MobileRouteLink>
