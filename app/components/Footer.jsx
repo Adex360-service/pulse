@@ -24,7 +24,7 @@ const groups = [
   [
     ["Get Started", "Integrations", "Pricing"],
 
-    ["Resources", "Blogs", , "Case Studies"],
+    ["Resources", "Blogs", "Success Stories"],
   ],
   [["Support", "Help Center", "Developer hub"]],
 ];
@@ -52,17 +52,17 @@ const footerLinks = {
   "WhatsApp Marketing": "/whatsapp-marketing",
   "Web Push Notifications": "/web-push-notifications",
   Analytics: "/analytics",
-  "Abandoned Cart Recovery": "/",
-  "Customer Retention & Winback": "/",
-  Templates: "/",
-  "Customer Segmentation": "/",
-  "Delivery Updates": "/",
-  Integrations: "/",
+  "Abandoned Cart Recovery": "/email-marketing",
+  "Customer Retention & Winback": "/email-marketing",
+  Templates: "/email-marketing",
+  "Customer Segmentation": "/email-marketing",
+  "Delivery Updates": "/email-marketing",
+  Integrations: "/integrations",
   Pricing: "/pricing",
   Blogs: "/blog",
-  "Case Studies": "/",
+  "Success Stories": "/success-stories",
   "Help Center": "/help-center",
-  "Developer hub": "/developer-hub",
+  "Developer hub": "/articles/using-loop-webhooks",
 };
 
 export default function Footer() {
@@ -96,11 +96,7 @@ export default function Footer() {
         </div>
 
         <div className="flex items-center gap-6 border-y border-[#eee] py-5 max-lg:flex-wrap max-sm:flex-col max-sm:items-start max-sm:gap-4 max-sm:py-6">
-          <Link
-            className="w-[106px] shrink-0"
-            href="#top"
-            aria-label="Pulse home"
-          >
+          <Link className="w-[106px] shrink-0" href="/" aria-label="Pulse home">
             <img
               src="/images/pulse-logo.png"
               alt="Pulse"
@@ -122,11 +118,11 @@ export default function Footer() {
             className="ml-auto flex gap-3 text-[13px] max-lg:ml-0 max-lg:w-full max-lg:flex-wrap max-sm:mt-2 max-sm:gap-x-3 max-sm:gap-y-4 max-sm:text-base"
             aria-label="Legal links"
           >
-            <Link href="#">Terms of Service</Link>
+            <Link href="/">Terms of Service</Link>
             <i>•</i>
-            <Link href="#">Cookie Policy</Link>
+            <Link href="/">Cookie Policy</Link>
             <i>•</i>
-            <Link href="#">Privacy Policy</Link>
+            <Link href="/">Privacy Policy</Link>
           </nav>
         </div>
 

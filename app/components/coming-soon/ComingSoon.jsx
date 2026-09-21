@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Container from "../ui/Container";
+import LiquidButtonLayers from "../ui/LiquidButtonLayers";
 
 export default function ComingSoon({
   eyebrow,
@@ -53,6 +54,7 @@ export default function ComingSoon({
                 className="loop-liquid-button mt-8 inline-flex items-center justify-center rounded-full bg-[#8b43fd] px-7 py-3.5 text-[15px] font-semibold text-white"
               >
                 <span>{actionLabel}</span>
+                <LiquidButtonLayers />
               </Link>
             </div>
           </div>

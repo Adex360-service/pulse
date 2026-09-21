@@ -11,7 +11,7 @@ const footerGroups = [
   [
     "Resources",
     [
-      ["Developer hub", "/developer-hub"],
+      ["Developer hub", "/articles/using-loop-webhooks"],
       ["Blogs", "/blog"],
       ["Success stories", "/success-stories"],
     ],
@@ -20,8 +20,8 @@ const footerGroups = [
   [
     "Others",
     [
-      ["Terms of service", "/legal/terms"],
-      ["Privacy", "/legal/privacy"],
+      ["Terms of service", "/"],
+      ["Privacy", "/"],
     ],
   ],
 ];

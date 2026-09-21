@@ -8,7 +8,76 @@ import LiquidButtonLayers from "./ui/LiquidButtonLayers";
 const menuLink =
   "group flex items-center gap-3 text-[16px] font-semibold text-[#17192b] transition-colors hover:text-[#7c36ed]";
 const iconClass =
-  "grid h-7 w-7 shrink-0 place-items-center rounded-lg text-[16px] font-bold text-[#7041ce]";
+  "grid h-7 w-7 shrink-0 place-items-center rounded-lg text-[#7041ce] [&>svg]:h-[18px] [&>svg]:w-[18px]";
+
+function Icon({ name }) {
+  const paths = {
+    email: (
+      <>
+        <rect x="3" y="5" width="18" height="14" rx="2" />
+        <path d="m4 7 8 6 8-6" />
+      </>
+    ),
+    whatsapp: (
+      <>
+        <path d="M20 11.5a8 8 0 0 1-11.7 7.1L4 20l1.4-4.1A8 8 0 1 1 20 11.5Z" />
+        <path d="M8.5 8.5c.2 2.7 2.3 5 5 5.5l1.2-1.2" />
+      </>
+    ),
+    push: (
+      <>
+        <path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9Z" />
+        <path d="M10 21h4" />
+      </>
+    ),
+    analytics: (
+      <>
+        <path d="M4 19V5" />
+        <path d="M4 19h17" />
+        <path d="m7 15 3-4 3 2 5-6" />
+      </>
+    ),
+    blog: (
+      <>
+        <path d="M5 3h10l4 4v14H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z" />
+        <path d="M15 3v5h4M7 12h10M7 16h7" />
+      </>
+    ),
+    help: (
+      <>
+        <circle cx="12" cy="12" r="9" />
+        <path d="M9.7 9a2.4 2.4 0 1 1 3.8 1.9c-.9.6-1.5 1-1.5 2.1M12 16h.01" />
+      </>
+    ),
+    developer: (
+      <>
+        <path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 5l-4 14" />
+      </>
+    ),
+    integrations: (
+      <>
+        <path d="M9 7V5a2 2 0 1 1 4 0v2M15 9h2a2 2 0 1 1 0 4h-2M9 15H7a2 2 0 1 1 0-4h2" />
+        <rect x="9" y="7" width="6" height="10" rx="2" />
+      </>
+    ),
+  };
+  const shape = paths[name];
+
+  if (!shape) return name;
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.8"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      {shape}
+    </svg>
+  );
+}
 
 function Chevron({ open = false }) {
   return (
@@ -51,11 +120,13 @@ function Item({ icon, title, href, description }) {
     title === "Help Centre"
       ? "/help-center"
       : title === "Developer Hub"
-        ? "/developer-hub"
+        ? "/articles/using-loop-webhooks"
         : href;
   const content = (
     <>
-      <span className={iconClass}>{icon}</span>
+      <span className={iconClass}>
+        <Icon name={icon} />
+      </span>
       <span>
         <strong className="block font-semibold">{title}</strong>
         {description && (
@@ -86,18 +157,18 @@ function PlatformMenu() {
       <div className="border-r border-[#ddd] pr-7">
         <p className="mb-5 text-xs font-bold text-[#666] uppercase">Product</p>
         <div className="grid gap-5">
-          <Item icon="✦" title="Email Marketing" href="/email-marketing" />
+          <Item icon="email" title="Email Marketing" href="/email-marketing" />
           <Item
-            icon="◔"
+            icon="whatsapp"
             title="WhatsApp Marketing"
             href="/whatsapp-marketing"
           />
           <Item
-            icon="$"
+            icon="push"
             title="Web Push Notifications"
             href="/web-push-notifications"
           />
-          <Item icon="$" title="Analytics" href="/analytics" />
+          <Item icon="analytics" title="Analytics" href="/analytics" />
         </div>
       </div>
       <div>
@@ -106,20 +177,20 @@ function PlatformMenu() {
           <Item
             icon="⌘"
             title="Abandoned Cart Recovery"
-            href="/feature/loop-flows"
+            href="/email-marketing"
           />
           <Item
             icon="▣"
             title="Customer Retention & Winback"
-            href="/feature/customer-portal"
+            href="/email-marketing"
           />
-          <Item icon="♧" title="Templates" href="/feature/bundle-builder" />
+          <Item icon="♧" title="Templates" href="/email-marketing" />
           <Item
             icon="◈"
             title="Customer Segmentation"
-            href="/feature/dunning-management"
+            href="/email-marketing"
           />
-          <Item icon="◉" title="Delivery Updates" href="/feature/upsell" />
+          <Item icon="◉" title="Delivery Updates" href="/email-marketing" />
         </div>
       </div>
     </div>
@@ -133,17 +204,14 @@ function ResourcesMenu() {
       className="absolute top-full left-[410px] z-[120] rounded-b-2xl bg-white px-9 py-9 shadow-[0_18px_35px_#00000018]"
     >
       <div className="grid gap-[18px]">
-        <Item icon="▤" title="Blogs" href="/blog" />
+        <Item icon="blog" title="Blogs" href="/blog" />
+        <Item icon="help" title="Help Centre" href="/help-center" />
         <Item
-          icon="?"
-          title="Help Centre"
-          href="https://help.loopwork.co/en/"
-        />
-        <Item
-          icon="◷"
+          icon="developer"
           title="Developer Hub"
-          href="https://developer.loopwork.co/reference/api-reference"
+          href="/articles/using-loop-webhooks"
         />
+        <Item icon="integrations" title="Integrations" href="/integrations" />
       </div>
     </div>
   );
@@ -154,7 +222,7 @@ function MobileRouteLink({ href, pathname, close, children, className = "" }) {
     href === "https://help.loopwork.co/en/"
       ? "/help-center"
       : href.includes("developer.loopwork.co")
-        ? "/developer-hub"
+        ? "/articles/using-loop-webhooks"
         : href;
   const active =
     resolvedHref !== "/" &&
@@ -220,7 +288,10 @@ function MobileDrawer({ open, close, pathname }) {
               close={close}
               href="/email-marketing"
             >
-              <span className={iconClass}>◔</span>Email Marketing
+              <span className={iconClass}>
+                <Icon name="email" />
+              </span>
+              Email Marketing
             </MobileRouteLink>
             <MobileRouteLink
               className={mobileItem}
@@ -228,7 +299,10 @@ function MobileDrawer({ open, close, pathname }) {
               close={close}
               href="/whatsapp-marketing"
             >
-              <span className={iconClass}>$</span>WhatsApp Marketing
+              <span className={iconClass}>
+                <Icon name="whatsapp" />
+              </span>
+              WhatsApp Marketing
             </MobileRouteLink>
             <MobileRouteLink
               className={mobileItem}
@@ -236,7 +310,10 @@ function MobileDrawer({ open, close, pathname }) {
               close={close}
               href="/web-push-notifications"
             >
-              <span className={iconClass}>✦</span>Web Push Notifications
+              <span className={iconClass}>
+                <Icon name="push" />
+              </span>
+              Web Push Notifications
             </MobileRouteLink>
             <MobileRouteLink
               className={mobileItem}
@@ -244,7 +321,10 @@ function MobileDrawer({ open, close, pathname }) {
               close={close}
               href="/analytics"
             >
-              <span className={iconClass}>✦</span>Analytics
+              <span className={iconClass}>
+                <Icon name="analytics" />
+              </span>
+              Analytics
             </MobileRouteLink>
           </div>
           <p className="mt-7 mb-4 text-sm font-bold text-[#666] uppercase">
@@ -255,7 +335,7 @@ function MobileDrawer({ open, close, pathname }) {
               className={mobileItem}
               pathname={pathname}
               close={close}
-              href="/feature/loop-flows"
+              href="/email-marketing"
             >
               <span className={iconClass}>⌘</span>Abandoned Cart Recovery
             </MobileRouteLink>
@@ -263,7 +343,7 @@ function MobileDrawer({ open, close, pathname }) {
               className={mobileItem}
               pathname={pathname}
               close={close}
-              href="/feature/bundle-builder"
+              href="/email-marketing"
             >
               <span className={iconClass}>♧</span>Customer Retention & Winback
             </MobileRouteLink>
@@ -271,7 +351,7 @@ function MobileDrawer({ open, close, pathname }) {
               className={mobileItem}
               pathname={pathname}
               close={close}
-              href="/feature/cancellation-flows"
+              href="/email-marketing"
             >
               <span className={iconClass}>⇄</span>Templates
             </MobileRouteLink>
@@ -279,7 +359,7 @@ function MobileDrawer({ open, close, pathname }) {
               className={mobileItem}
               pathname={pathname}
               close={close}
-              href="/feature/customer-portal"
+              href="/email-marketing"
             >
               <span className={iconClass}>▣</span>Customer Segmentation
             </MobileRouteLink>
@@ -288,7 +368,7 @@ function MobileDrawer({ open, close, pathname }) {
               className={mobileItem}
               pathname={pathname}
               close={close}
-              href="/feature/upsell"
+              href="/email-marketing"
             >
               <span className={iconClass}>◉</span>Delivery Updates
             </MobileRouteLink>
@@ -326,23 +406,43 @@ function MobileDrawer({ open, close, pathname }) {
               close={close}
               href="/blog"
             >
-              <span className={iconClass}>▤</span>Blogs
+              <span className={iconClass}>
+                <Icon name="blog" />
+              </span>
+              Blogs
             </MobileRouteLink>
             <MobileRouteLink
               className={mobileItem}
               pathname={pathname}
               close={close}
-              href="https://help.loopwork.co/en/"
+              href="/help-center"
             >
-              <span className={iconClass}>?</span>Help Centre
+              <span className={iconClass}>
+                <Icon name="help" />
+              </span>
+              Help Centre
             </MobileRouteLink>
             <MobileRouteLink
               className={mobileItem}
               pathname={pathname}
               close={close}
-              href="https://developer.loopwork.co/reference/api-reference"
+              href="/articles/using-loop-webhooks"
             >
-              <span className={iconClass}>◷</span>Developer Hub
+              <span className={iconClass}>
+                <Icon name="developer" />
+              </span>
+              Developer Hub
+            </MobileRouteLink>
+            <MobileRouteLink
+              className={mobileItem}
+              pathname={pathname}
+              close={close}
+              href="/integrations"
+            >
+              <span className={iconClass}>
+                <Icon name="integration" />
+              </span>
+              Integrations
             </MobileRouteLink>
           </div>
         </div>
@@ -433,7 +533,8 @@ export default function Header() {
           </nav>
           <div className="ml-auto flex items-center gap-5 max-lg:hidden">
             <Link
-              href="/login"
+              href="https://retention.universal-apps.com/login"
+              target="_blank"
               className="group inline-flex items-center gap-2 border-b border-[#8b43fd] pb-1 text-[#8b43fd]"
             >
               Login
@@ -453,7 +554,8 @@ export default function Header() {
               </svg>
             </Link>
             <Link
-              href="/signup"
+              href="https://retention.universal-apps.com/register"
+              target="_blank"
               className="inline-flex items-center justify-center rounded-full border border-[#8b43fd] text-[#8b43fd] px-[27px] py-[11px] text-[15px] font-semibold"
             >
               Sign up
