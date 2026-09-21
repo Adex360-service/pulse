@@ -1,0 +1,1157 @@
+{
+  "recharge-payments-vs-skio-subscriptions": {
+    "slug": "recharge-payments-vs-skio-subscriptions",
+    "title": "Recharge Acquired Skio for $105M. Here's What Shopify Subscription Brands Should Weigh in 2026.",
+    "author": "Devisha Rekhi",
+    "authorImage": "/images/blog/69d640d791da604b2d0f8581.avif",
+    "date": "May 21, 2026",
+    "readTime": "11 min read",
+    "category": "Shopify Apps",
+    "blocks": [
+      {
+        "type": "p",
+        "children": [
+          "On April 30, 2026, Recharge",
+          {
+            "tag": "a",
+            "children": [
+              " acquired Skio for $105 million in cash"
+            ],
+            "href": "https://getrecharge.com/blog/recharge-welcomes-skio-to-build-the-future-of-subscription-commerce/"
+          },
+          ". Skio Subscriptions — ",
+          {
+            "tag": "a",
+            "children": [
+              "$32M ARR at the time of acquisition"
+            ],
+            "href": "https://x.com/icon/status/2049952812679770154?s=20"
+          },
+          ",",
+          {
+            "tag": "a",
+            "children": [
+              " 240+ Shopify App Store reviews"
+            ],
+            "href": "https://apps.shopify.com/skio"
+          },
+          ", the subscription management app DTC brands frequently praised for its modern UX and passwordless login — is now a Recharge product."
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "Of the platforms most often shortlisted by 7-9 figure DTC brands building serious subscription programs on Shopify, two of the larger independents — Recharge and Skio — now sit under one roof. Bold, Smartrr, Stay AI, Ordergroove, Appstle, and others remain in the broader market."
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "Loop is independent. As of May 2026, Loop is trusted by 2,400+ Shopify subscription brands, has run 1,100+ migrations to date — including 400+ brands that migrated from Recharge — and has processed $4B+ in subscription revenue."
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "If you've been comparing Skio vs Recharge for your Shopify subscriptions, the decision just changed. If you're a current Skio merchant: your platform is now part of Recharge. If you're evaluating subscription apps for the first time: the shortlist of major independents got shorter. Here's what to weigh."
+        ]
+      },
+      {
+        "type": "h2",
+        "children": [
+          {
+            "tag": "strong",
+            "children": [
+              "What does the Skio acquisition mean for merchants?"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "Recharge's official position, per its ",
+          {
+            "tag": "a",
+            "children": [
+              "April 30, 2026 announcement"
+            ],
+            "href": "https://getrecharge.com/blog/recharge-welcomes-skio-to-build-the-future-of-subscription-commerce/"
+          },
+          ", is that \"for merchants on both platforms, nothing is changing today,\" with additional details on combined offerings to follow in the months ahead."
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "But subscriptions aren't a 12 or 18-month business. The brands building serious subscription programs today are signing up for a stack they'll operate on for five, seven, ten years. A subscriber acquired in 2026 may still be on the program in 2031. The question that matters for a brand evaluating a subscription platform isn't only \"what happens next quarter\" — it's \"what does my subscription infrastructure look like across the lifetime of the customers I'm acquiring on it.\""
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "That's where the post-acquisition picture matters. Beyond Recharge's initial \"nothing is changing today\" statement, the long-term shape of the platform — what it's called, who runs it, how it's built — has not been publicly committed in either direction."
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "For most product categories that uncertainty is fine. For your subscription stack, it's a strategic variable worth weighing. Subscriptions compound. The platform decision you make today is one you live with for years."
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "What that means for your evaluation depends on where you stand today."
+        ]
+      },
+      {
+        "type": "advisory",
+        "cards": [
+          {
+            "title": "If you're currently on Skio:",
+            "text": "Your day-to-day hasn't changed — but the window after an acquisition is when many brands take a closer look at the long-term shape of their platform stack. Keto Chow and Primal Queen are examples of brands that ran their evaluation and scaled subscriptions on Loop."
+          },
+          {
+            "title": "If you're currently on Recharge:",
+            "text": "Your day-to-day hasn't changed with the acquisition. The brands worth paying attention to are the ones who took the moment to evaluate. MaryRuth's, Four Sigmatic, OSEA, BEAM, Livingood Daily, and other brands have migrated from Recharge to Loop — 400+ in total, per Loop's published migration data. The piece these brands tend to call out most isn't a feature; it's the dedicated CSM working with them on Slack like an extended team."
+          },
+          {
+            "title": "If you're evaluating platforms for the first time:",
+            "text": "The independent-platform shortlist is shorter than it was a month ago."
+          }
+        ]
+      },
+      {
+        "type": "h2",
+        "children": [
+          {
+            "tag": "strong",
+            "children": [
+              "At a glance: Skio vs Recharge vs Loop — post-acquisition"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          {
+            "tag": "em",
+            "children": [
+              "Pricing and review numbers below reflect publicly listed information on the"
+            ]
+          },
+          {
+            "tag": "a",
+            "children": [
+              {
+                "tag": "em",
+                "children": [
+                  " Shopify App Store"
+                ]
+              }
+            ],
+            "href": "https://apps.shopify.com/"
+          },
+          {
+            "tag": "em",
+            "children": [
+              " and each platform's published pricing pages, verified May, 2026. Plans and pricing change; readers should verify current pricing with each platform directly."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "comparison",
+        "headers": [
+          "",
+          "Skio (now part of Recharge)",
+          "Recharge",
+          "Loop"
+        ],
+        "rows": [
+          [
+            "Shopify App Store rating",
+            "5.0 (240+ reviews)",
+            "4.8 (2,100+ reviews)",
+            "4.9 (650+ reviews)"
+          ],
+          [
+            "Listed base pricing",
+            "$599/mo + 1% + $0.20/txn",
+            "$99/mo + 1.49% + $0.19/txn",
+            "$99/mo + 1.0%"
+          ],
+          [
+            "Listed higher tier",
+            "Single plan",
+            "$499/mo + 1.34% + $0.19/txn",
+            "$399/mo + 0.75%"
+          ],
+          [
+            "Per-order fee",
+            "$0.20",
+            "$0.19",
+            "None on listed plans"
+          ],
+          [
+            "Free plan",
+            "No",
+            "$25/mo (≤50 subs, new merchants only)",
+            "Yes (≤50 active subs)"
+          ],
+          [
+            "Ownership",
+            "Acquired by Recharge, April 2026",
+            "Acquirer",
+            "Independent"
+          ]
+        ]
+      },
+      {
+        "type": "h2",
+        "children": [
+          {
+            "tag": "strong",
+            "children": [
+              "Brands that migrated from Skio to Loop"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "Keto Chow and Primal Queen are two brands that ran subscriptions on Skio before migrating to Loop. Their stories are useful because they show what brands look for when a subscription program scales past its first stage of growth."
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          {
+            "tag": "strong",
+            "children": [
+              "Keto Chow"
+            ]
+          },
+          ", a keto meal replacement brand, reached the point where growth required more from their subscription stack — a custom bundle builder with incremental discounts and a personalized portal built against deep API access. The team migrated to Loop in May 2024.",
+          {
+            "tag": "a",
+            "children": [
+              " Keto Chow reports"
+            ],
+            "href": "https://www.loopwork.co/customer-stories/ketochow-case-study-advanced-api-integration"
+          },
+          ": 18% YTD subscription revenue growth ($1.16M) and a 36% cancellation save rate, supported by Loop's 30+ API endpoints and the level of customization they needed."
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          {
+            "tag": "strong",
+            "children": [
+              "Primal Queen's"
+            ]
+          },
+          " path was different. Their subscription business had grown to $2M ARR and the team was ready to invest harder in churn prevention and upselling. After migrating to Loop in April 2024, Primal Queen reports subscription revenue scaled from $2M to $100M+, with reductions in churn that their team has attributed in part to Loop's cancellation flows and dunning management."
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          {
+            "tag": "em",
+            "children": [
+              "Results are self-reported by the merchant and are not typical. Individual results vary significantly based on brand, category, and implementation."
+            ]
+          }
+        ]
+      },
+      {
+        "type": "migrationBanner",
+        "title": "Migration Slots Filling Fast",
+        "description": "Zero fees. Zero subscriber disruption. Migrate on your timeline — not Recharge's.",
+        "label": "Book Now",
+        "href": "/book-a-demo"
+      },
+      {
+        "type": "h2",
+        "children": [
+          {
+            "tag": "strong",
+            "children": [
+              "Brands that migrated from Recharge to Loop"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "Recharge is the most widely installed subscription app on Shopify, so a meaningful share of Loop's migrations — 400+ to date — started there."
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          {
+            "tag": "a",
+            "children": [
+              {
+                "tag": "strong",
+                "children": [
+                  "OSEA Malibu"
+                ]
+              }
+            ],
+            "href": "https://www.loopwork.co/customer-stories/osea-malibu"
+          },
+          ", the premium clean beauty brand, migrated from Recharge in two weeks. OSEA reports that after migration their measured churn moved from 10% to 5% over six months, while upsell revenue contribution moved from 4.5% to 6.8%. The team's set-up used Loop's rewards journey, segmented cancellation flows, and personalized upsell recommendations."
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          {
+            "tag": "a",
+            "children": [
+              {
+                "tag": "strong",
+                "children": [
+                  "NutriPaw"
+                ]
+              }
+            ],
+            "href": "https://www.loopwork.co/customer-stories/nutripaw-saw-3x-subscription-revenue-growth-with-loop"
+          },
+          ", a pet supplement brand, reports their subscription revenue share moved from 5% to 28.6% over a 9-month period."
+        ]
+      },
+      {
+        "type": "h2",
+        "children": [
+          {
+            "tag": "strong",
+            "children": [
+              "Where Skio, Recharge, and Loop differ"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "h3",
+        "children": [
+          {
+            "tag": "strong",
+            "children": [
+              "Cancellation flows"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "When a subscriber clicks \"cancel,\" what happens next is one of the highest-leverage moments in a subscription business. All three platforms support cancellation flows.",
+          {
+            "tag": "a",
+            "children": [
+              " Loop's cancellation flows"
+            ],
+            "href": "https://www.loopwork.co/feature/cancellation-flows"
+          },
+          " are built around two design choices that Loop's product team prioritized: conditional, multi-step journeys that adapt based on subscriber data (order count, subscription duration, cancellation reason, product type), and page-by-page save-rate analytics built in. Check out ",
+          {
+            "tag": "a",
+            "children": [
+              "Loop's Cancellation Playbook"
+            ],
+            "href": "https://www.loopwork.co/feature/cancellation-flows"
+          },
+          "."
+        ]
+      },
+      {
+        "type": "h3",
+        "children": [
+          {
+            "tag": "strong",
+            "children": [
+              "Dunning and payment recovery"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "Failed payments are commonly cited as a leading source of involuntary subscription churn, with industry references suggesting 20-40% of total churn at scale comes from payment failures.¹ Loop, Recharge, and Skio all offer dunning functionality."
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          {
+            "tag": "a",
+            "children": [
+              "Loop's smart dunning"
+            ],
+            "href": "https://www.loopwork.co/feature/dunning-management"
+          },
+          " is built into every paid plan. Automated retries, an auto-charge to a backup card on file when one is available (so when the primary card fails, Loop attempts the secondary), incentivized one-click payment updates that adapt to retry count and failure reason, and real-time analytics. For the step-by-step framework, see",
+          {
+            "tag": "a",
+            "children": [
+              " Loop's Dunning Playbook"
+            ],
+            "href": "https://www.loopwork.co/feature/dunning-management"
+          },
+          "."
+        ]
+      },
+      {
+        "type": "h3",
+        "children": [
+          {
+            "tag": "strong",
+            "children": [
+              "Custom subscription experiences"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "Subscription programs at scale tend to want two things at once — no-code agility so marketing can ship without engineering tickets, and API depth so engineering can build differentiated experiences."
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "Loop is built to do both.",
+          {
+            "tag": "a",
+            "children": [
+              " Loop Flows"
+            ],
+            "href": "https://www.loopwork.co/feature/loop-flows"
+          },
+          " covers the no-code side — drag-and-drop automation for retention, rewards, and journey orchestration.",
+          {
+            "tag": "a",
+            "children": [
+              " Loop's 30+ API endpoints"
+            ],
+            "href": "https://developer.loopwork.co/reference/api-reference"
+          },
+          " cover the engineering side.",
+          {
+            "tag": "a",
+            "children": [
+              " The bundle builder"
+            ],
+            "href": "https://www.loopwork.co/feature/bundle-builder"
+          },
+          " is built in.",
+          {
+            "tag": "a",
+            "children": [
+              " The customer portal"
+            ],
+            "href": "https://www.loopwork.co/feature/customer-portal"
+          },
+          " is customizable down to the component level."
+        ]
+      },
+      {
+        "type": "h2",
+        "children": [
+          {
+            "tag": "strong",
+            "children": [
+              "What your subscription platform costs at scale"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "Consider a brand running 10,000 subscription orders per month at $50 AOV — $500,000 in monthly subscription GMV. Math below applies each platform's publicly listed pricing as of May 5, 2026:"
+        ]
+      },
+      {
+        "type": "pricing",
+        "cards": [
+          {
+            "name": "Skio",
+            "amount": "$7,599/mo",
+            "description": "$599 base + $5,000 (1%) + $2,000 ($0.20 × 10K)"
+          },
+          {
+            "name": "Recharge Plus",
+            "amount": "$9,099/mo",
+            "description": "$499 base + $6,700 (1.34%) + $1,900 ($0.19 × 10K)"
+          },
+          {
+            "name": "Loop Pro",
+            "amount": "$4,149/mo",
+            "description": "$399 base + $3,750 (0.75%) + $0 (zero per-order fee)"
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "Based on those listed rates, Loop's monthly cost at this scale is approximately 45% below Skio's listed pricing and approximately 54% below Recharge Plus's listed pricing. Per-order fees grow with order volume; Loop's listed plans do not include a per-order fee, while Skio's listed price includes $0.20/order and Recharge Plus's includes $0.19/order. Negotiated contracts may differ; merchants should verify directly with each platform."
+        ]
+      },
+      {
+        "type": "h2",
+        "children": [
+          {
+            "tag": "strong",
+            "children": [
+              "What Shopify App Store reviews show"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "As of May 2026, the three platforms' listings on the Shopify App Store carry these public review counts:"
+        ]
+      },
+      {
+        "type": "ul",
+        "items": [
+          [
+            {
+              "tag": "a",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Skio"
+                  ]
+                }
+              ],
+              "href": "https://apps.shopify.com/skio"
+            },
+            ": 240+ reviews, 5.0-star average"
+          ],
+          [
+            {
+              "tag": "a",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Recharge"
+                  ]
+                }
+              ],
+              "href": "https://apps.shopify.com/subscription-payments"
+            },
+            ": 2,100+ reviews, 4.8-star average"
+          ],
+          [
+            {
+              "tag": "a",
+              "children": [
+                {
+                  "tag": "strong",
+                  "children": [
+                    "Loop"
+                  ]
+                }
+              ],
+              "href": "https://apps.shopify.com/loop-subscriptions"
+            },
+            ": 650+ reviews, 4.9-star average"
+          ]
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "Recent public reviews of",
+          {
+            "tag": "a",
+            "children": [
+              " Loop on the Shopify App Store"
+            ],
+            "href": "https://apps.shopify.com/loop-subscriptions/reviews"
+          },
+          " include:"
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "\"We were a bit worried about migration, we were moving from the incumbent to LOOP but they proved us wrong, it was very smooth... The app improved the store churn and LTV of the subscribers.\" — Circles, April 2026 (Shopify App Store)"
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "\"Very excited to be on a more nimble subscription platform. Migration was well handled from our previous vendor and already our customers and our staff are thrilled.\" — Harney & Sons Fine Teas, February 2026 (Shopify App Store)"
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "\"My sales from subscriptions have grown significantly since switching to Loop.\" — Supplement First, January 2026 (Shopify App Store)"
+        ]
+      },
+      {
+        "type": "h2",
+        "children": [
+          {
+            "tag": "strong",
+            "children": [
+              "What to do next"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "Recharge now operates two of the platforms most often shortlisted by mid-to-large Shopify DTC subscription brands. For brands evaluating long-term platform decisions, this consolidation is worth factoring into the conversation."
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "Loop is an independent alternative — a leading",
+          {
+            "tag": "a",
+            "children": [
+              " Skio alternative"
+            ],
+            "href": "https://www.loopwork.co/compare/skio-alternative"
+          },
+          " and",
+          {
+            "tag": "a",
+            "children": [
+              " Recharge alternative"
+            ],
+            "href": "https://www.loopwork.co/compare/recharge-alternative"
+          },
+          " on Shopify. 2,400+ subscription brands, $4B+ processed to date, and continuing to operate as an independent company."
+        ]
+      },
+      {
+        "type": "cta",
+        "eyebrow": "Slots filling up fast",
+        "title": "You don't need to wait to decide what your subscription stack looks like for the next five years.",
+        "label": "Claim your migration slot",
+        "href": "/book-a-demo"
+      },
+      {
+        "type": "h2",
+        "children": [
+          {
+            "tag": "strong",
+            "children": [
+              "FAQs"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          {
+            "tag": "strong",
+            "children": [
+              "Q1. Did Recharge buy Skio?"
+            ]
+          },
+          " "
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "Yes. On April 30, 2026, Recharge",
+          {
+            "tag": "a",
+            "children": [
+              " acquired Skio for $105 million in cash"
+            ],
+            "href": "https://getrecharge.com/blog/recharge-welcomes-skio-to-build-the-future-of-subscription-commerce/"
+          },
+          ". Skio was a",
+          {
+            "tag": "a",
+            "children": [
+              " Y Combinator alum (S20)"
+            ],
+            "href": "https://www.ycombinator.com/companies/skio"
+          },
+          ", ",
+          {
+            "tag": "a",
+            "children": [
+              "reportedly at $32M ARR at the time of acquisition."
+            ],
+            "href": "https://x.com/icon/status/2049952812679770154?s=20"
+          },
+          " Both platforms continue to operate, with a \"combined roadmap\" stated publicly by Recharge."
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          {
+            "tag": "strong",
+            "children": [
+              "Q2. What happens to my Skio subscription if I'm a merchant?"
+            ]
+          },
+          " "
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "Recharge has stated, per its",
+          {
+            "tag": "a",
+            "children": [
+              " official announcement"
+            ],
+            "href": "https://getrecharge.com/blog/recharge-welcomes-skio-to-build-the-future-of-subscription-commerce/"
+          },
+          ", that \"for merchants on both platforms, nothing is changing today,\" with additional details on combined offerings to follow in the months ahead. The longer-term shape of the platform has not been publicly committed in either direction. Merchants evaluating their timeline are reviewing alternatives now rather than later.",
+          {
+            "tag": "a",
+            "children": [
+              " Loop's migration team"
+            ],
+            "href": "https://www.loopwork.co/migration"
+          },
+          " handles the full process; typical timeline 2 weeks."
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          {
+            "tag": "strong",
+            "children": [
+              "Q3. Can I migrate from Skio to Loop without losing subscribers?"
+            ]
+          },
+          " "
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "Yes.",
+          {
+            "tag": "a",
+            "children": [
+              " Loop"
+            ],
+            "href": "https://www.loopwork.co/migration"
+          },
+          " handles subscriber data, payment tokens, billing cycles, and portal setup through a dedicated Slack channel with a named CSM. Typical timeline: 2 weeks.",
+          {
+            "tag": "a",
+            "children": [
+              " Keto Chow"
+            ],
+            "href": "https://www.loopwork.co/customer-stories/ketochow-case-study-advanced-api-integration"
+          },
+          " and Primal Queen are two examples of brands that completed Skio-to-Loop migrations."
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          {
+            "tag": "strong",
+            "children": [
+              "Q4. Can I migrate from Recharge to Loop without losing subscribers?"
+            ]
+          },
+          " "
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "A meaningful share of Loop's completed migrations — 400+ to date — started on Recharge.",
+          {
+            "tag": "a",
+            "children": [
+              " OSEA Malibu's migration"
+            ],
+            "href": "https://www.loopwork.co/customer-stories/osea-malibu"
+          },
+          " completed in approximately two weeks.",
+          {
+            "tag": "a",
+            "children": [
+              " NutriPaw "
+            ],
+            "href": "https://www.loopwork.co/customer-stories/nutripaw-saw-3x-subscription-revenue-growth-with-loop"
+          },
+          "reports their subscription revenue share moved from 5% to 28.6%."
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          {
+            "tag": "strong",
+            "children": [
+              "Q5. Is Skio still independent?"
+            ]
+          },
+          " "
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "No. As of April 30, 2026,",
+          {
+            "tag": "a",
+            "children": [
+              " Skio is a Recharge product"
+            ],
+            "href": "https://getrecharge.com/blog/recharge-welcomes-skio-to-build-the-future-of-subscription-commerce/"
+          },
+          ". Loop is among the larger independent subscription apps remaining on Shopify, with 2,400+ subscription brands and",
+          {
+            "tag": "a",
+            "children": [
+              " 650+ reviews on the Shopify App Store"
+            ],
+            "href": "https://apps.shopify.com/loop-subscriptions"
+          },
+          " at 4.9 stars as of May 2026."
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          {
+            "tag": "strong",
+            "children": [
+              "Q6. What brands have migrated from Skio to Loop?"
+            ]
+          },
+          " "
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "Published case studies include",
+          {
+            "tag": "a",
+            "children": [
+              " Keto Chow"
+            ],
+            "href": "https://www.loopwork.co/customer-stories/ketochow-case-study-advanced-api-integration"
+          },
+          " (reports 18% YTD subscription revenue growth and 36% save rate) and",
+          {
+            "tag": "a",
+            "children": [
+              " Primal Queen"
+            ],
+            "href": "https://www.loopwork.co/customer-stories"
+          },
+          " (reports subscription revenue scaled from $2M to $100M+).",
+          {
+            "tag": "a",
+            "children": [
+              " Browse customer stories →"
+            ],
+            "href": "https://www.loopwork.co/customer-stories"
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          {
+            "tag": "strong",
+            "children": [
+              "Q7. What brands have migrated from Recharge to Loop?"
+            ]
+          },
+          " "
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "Published case studies include",
+          {
+            "tag": "a",
+            "children": [
+              " OSEA Malibu"
+            ],
+            "href": "https://www.loopwork.co/customer-stories/osea-malibu"
+          },
+          " (reports churn moved from ~10% to ~5%, upsell revenue contribution from 4.5% to 6.8%),",
+          {
+            "tag": "a",
+            "children": [
+              " and NutriPaw"
+            ],
+            "href": "https://www.loopwork.co/customer-stories/nutripaw-saw-3x-subscription-revenue-growth-with-loop"
+          },
+          " (reports their subscription revenue share moved from 5% to 28.6% over a 9-month period)."
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          {
+            "tag": "strong",
+            "children": [
+              "Q8. What is a Shopify subscription app with no per-order fees?"
+            ]
+          },
+          {
+            "tag": "a",
+            "children": [
+              " "
+            ],
+            "href": "https://www.loopwork.co/pricing"
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          {
+            "tag": "a",
+            "children": [
+              "Loop's listed plans"
+            ],
+            "href": "https://www.loopwork.co/pricing"
+          },
+          " do not include a per-order fee — Starter ($99/mo + 1.0%), Pro ($399/mo + 0.75%), and a free plan. At 10,000 subscription orders/month, that's approximately $2,000/mo less than Skio's listed per-order math ($0.20/order) and approximately $1,900/mo less than Recharge's listed per-order math ($0.19/order) at the same order count.",
+          {
+            "tag": "a",
+            "children": [
+              " See Loop pricing →"
+            ],
+            "href": "https://www.loopwork.co/pricing"
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          {
+            "tag": "strong",
+            "children": [
+              "Q9. Skio vs Loop: which is better for Shopify subscriptions in 2026?"
+            ]
+          },
+          " "
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "The answer depends on what a specific brand prioritizes — features, pricing, support model, or platform independence. As of May 2026, Skio is part of Recharge; Loop is independent. Loop offers",
+          {
+            "tag": "a",
+            "children": [
+              " 30+ API endpoints"
+            ],
+            "href": "https://developer.loopwork.co/reference/api-reference"
+          },
+          ", no-code automation (",
+          {
+            "tag": "a",
+            "children": [
+              "Loop Flows"
+            ],
+            "href": "https://www.loopwork.co/feature/loop-flows"
+          },
+          "), a built-in",
+          {
+            "tag": "a",
+            "children": [
+              " bundle builder"
+            ],
+            "href": "https://www.loopwork.co/feature/bundle-builder"
+          },
+          ", and",
+          {
+            "tag": "a",
+            "children": [
+              " cancellation flows"
+            ],
+            "href": "https://www.loopwork.co/feature/cancellation-flows"
+          },
+          ". Each brand should evaluate against its own roadmap."
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          {
+            "tag": "strong",
+            "children": [
+              "Q10. How long does it take to migrate from Skio to another subscription app?"
+            ]
+          },
+          " "
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "Migrating to Loop typically takes 2 weeks, regardless of the platform a brand is switching from.",
+          {
+            "tag": "a",
+            "children": [
+              " Loop's migration team"
+            ],
+            "href": "https://www.loopwork.co/migration"
+          },
+          " handles subscriber data transfer, payment token migration, billing cycle preservation, and customer portal setup, with a dedicated CSM and shared Slack channel throughout.",
+          {
+            "tag": "a",
+            "children": [
+              " Keto Chow"
+            ],
+            "href": "https://www.loopwork.co/customer-stories/ketochow-case-study-advanced-api-integration"
+          },
+          " and Primal Queen are two examples of brands that completed Skio-to-Loop migrations.",
+          {
+            "tag": "a",
+            "children": [
+              " Start a migration consultation →"
+            ],
+            "href": "https://www.loopwork.co/migration"
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          "¹ On involuntary churn from payment failures, see",
+          {
+            "tag": "a",
+            "children": [
+              " Recurly's analysis of failed payment recovery"
+            ],
+            "href": "https://recurly.com/blog/failed-payment-recovery-data-based-strategy/"
+          },
+          ", which cites involuntary churn as 20-40% of total subscription churn, and",
+          {
+            "tag": "a",
+            "children": [
+              " Churnkey's involuntary churn benchmarks"
+            ],
+            "href": "https://churnkey.co/blog/involuntary-churn-benchmarks/"
+          },
+          ", based on analysis of 5.4M failed payments and 25M subscriptions. Range cited reflects published industry figures; merchant-level impact varies by category and subscription model."
+        ]
+      },
+      {
+        "type": "h2",
+        "children": [
+          {
+            "tag": "strong",
+            "children": [
+              "Disclaimer"
+            ]
+          }
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          {
+            "tag": "strong",
+            "children": [
+              "Source attribution:"
+            ]
+          },
+          " Competitor feature descriptions and pricing are based on publicly available information, including each platform's official website, help center documentation, and Shopify App Store listings (linked inline throughout), verified May 20, 2026. Features and pricing may have changed since publication."
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          {
+            "tag": "strong",
+            "children": [
+              "Pricing accuracy:"
+            ]
+          },
+          " Pricing in this article reflects publicly listed rates at the time of writing. Actual costs may vary based on negotiated contracts, promotional pricing, or plan changes. Merchants should verify current pricing directly with each platform."
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          {
+            "tag": "strong",
+            "children": [
+              "Performance claims:"
+            ]
+          },
+          " Case study results cited reflect outcomes reported by individual merchants and are not guarantees of typical results. Performance varies based on brand, product category, subscriber base, and implementation. Performance numbers are attributed to the merchant that measured and reported them."
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          {
+            "tag": "strong",
+            "children": [
+              "Trademark notice:"
+            ]
+          },
+          " Recharge®, Skio™, Stay AI™, Smartrr™, Ordergroove™, and Bold™ are trademarks of their respective owners. References to these platforms are for nominative comparative purposes only and do not imply affiliation, endorsement, or sponsorship. External links to competitor websites are provided for source-verification purposes and carry rel=\"nofollow\"."
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          {
+            "tag": "strong",
+            "children": [
+              "Editorial independence:"
+            ]
+          },
+          " This article is published by Loop Subscriptions, a competitor of the platforms discussed. While competitor information is sourced from public documentation as of the verification date above, readers should conduct their own evaluation before making platform decisions."
+        ]
+      },
+      {
+        "type": "p",
+        "children": [
+          {
+            "tag": "strong",
+            "children": [
+              "Corrections:"
+            ]
+          },
+          " Platform features and pricing evolve frequently. If you represent a platform listed and believe any information is factually inaccurate, please contact us at contact@loopwork.co and we will review and correct promptly."
+        ]
+      }
+    ]
+  }
+}
