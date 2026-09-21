@@ -10,32 +10,23 @@ const groups = [
       "Web Push Notifications",
       "Analytics",
     ],
+  ],
+  [
     [
       "Features",
       "Abandoned Cart Recovery",
       "Customer Retention & Winback",
-      "New Product Launches",
+      "Templates",
       "Customer Segmentation",
-      "Restock & Price Alerts",
       "Delivery Updates",
     ],
   ],
   [
-    ["Get Started", "Migration", "Integrations", "Pricing"],
-    // [
-    //   "Compare",
-    //   "Loop vs. Recharge",
-    //   "Loop vs. Skio",
-    //   "Loop vs. Stay AI",
-    //   "Loop vs. Ordergroove",
-    // ],
-    ["Resources", "Blogs", "Events", "Merchant’s features templates"],
+    ["Get Started", "Integrations", "Pricing"],
+
+    ["Resources", "Blogs", , "Case Studies"],
   ],
-  [
-    ["Success Stories", "Case Studies", "Wall of Love"],
-    ["Partners", "Partners", "Agency Partner Directory"],
-  ],
-  [["Support", "Help Center", "Developer hub", "View Demo Store"]],
+  [["Support", "Help Center", "Developer hub"]],
 ];
 
 const socialLinks = [
@@ -56,6 +47,24 @@ const socialLinks = [
   ],
 ];
 
+const footerLinks = {
+  "Email Marketing": "/email-marketing",
+  "WhatsApp Marketing": "/whatsapp-marketing",
+  "Web Push Notifications": "/web-push-notifications",
+  Analytics: "/analytics",
+  "Abandoned Cart Recovery": "/",
+  "Customer Retention & Winback": "/",
+  Templates: "/",
+  "Customer Segmentation": "/",
+  "Delivery Updates": "/",
+  Integrations: "/",
+  Pricing: "/pricing",
+  Blogs: "/blog",
+  "Case Studies": "/",
+  "Help Center": "/help-center",
+  "Developer hub": "/developer-hub",
+};
+
 export default function Footer() {
   return (
     <footer
@@ -68,22 +77,13 @@ export default function Footer() {
             <div className="max-sm:w-full" key={i}>
               {column.map(([title, ...links]) => (
                 <section className="mb-[22px] max-sm:mb-8" key={title}>
-
-                  <h3 className="mb-[15px] text-base leading-[1.2] font-bold max-sm:text-lg">{title}</h3>
-                  {links.map((link) => <Link className="mb-3 block text-sm text-[#363432] max-sm:mb-5 max-sm:text-lg" href={link === "Blogs" ? "/blog" : link === "Help Center" ? "/help-center" : link === "Developer hub" ? "/developer-hub" : "#"} key={link}>{link}</Link>)}
                   <h3 className="mb-[15px] text-base leading-[1.2] font-bold max-sm:text-lg">
                     {title}
                   </h3>
-                  {links.map((link) => (
+                  {links.filter(Boolean).map((link) => (
                     <Link
                       className="mb-3 block text-sm text-[#363432] max-sm:mb-5 max-sm:text-lg"
-                      href={
-                        link === "Help Center"
-                          ? "/help-center"
-                          : link === "Developer hub"
-                            ? "/developer-hub"
-                            : "#"
-                      }
+                      href={footerLinks[link] || "#"}
                       key={link}
                     >
                       {link}
@@ -91,28 +91,6 @@ export default function Footer() {
                   ))}
                 </section>
               ))}
-              {i === 3 && (
-                <form className="mt-[25px] rounded-3xl border border-[#e4e0dd] p-5 max-sm:mt-2 max-sm:mb-6 max-sm:w-full max-sm:rounded-[24px] max-sm:px-4 max-sm:py-5 max-sm:text-center">
-                  <b className="text-sm font-bold max-sm:text-base">
-                    Subscribe for latest updates
-                  </b>
-                  <p className="my-3 text-sm text-[#76716c] max-sm:my-5 max-sm:text-base">
-                    Get subscription insights in your inbox
-                  </p>
-                  <label className="sr-only" htmlFor="email">
-                    Email
-                  </label>
-                  <input
-                    className="h-10 w-full rounded-xl border border-[#dedade] px-3 max-sm:h-12 max-sm:text-base"
-                    id="email"
-                    type="email"
-                    placeholder="Enter your email"
-                  />
-                  <button className="mt-3 h-11 w-full rounded-full border-0 bg-[linear-gradient(90deg,#b274ff,#6f9bf5)] text-white max-sm:h-12 max-sm:text-base">
-                    Subscribe
-                  </button>
-                </form>
-              )}
             </div>
           ))}
         </div>
@@ -144,15 +122,11 @@ export default function Footer() {
             className="ml-auto flex gap-3 text-[13px] max-lg:ml-0 max-lg:w-full max-lg:flex-wrap max-sm:mt-2 max-sm:gap-x-3 max-sm:gap-y-4 max-sm:text-base"
             aria-label="Legal links"
           >
-            <Link href="#">Careers</Link>
-            <i>•</i>
             <Link href="#">Terms of Service</Link>
             <i>•</i>
             <Link href="#">Cookie Policy</Link>
             <i>•</i>
             <Link href="#">Privacy Policy</Link>
-            <i>•</i>
-            <Link href="#">California ARL</Link>
           </nav>
         </div>
 
@@ -170,9 +144,7 @@ export default function Footer() {
               />
             ))}
           </div> */}
-          <p className="max-sm:m-0">
-            © Pulse 2026. All rights reserved.
-          </p>
+          <p className="max-sm:m-0">© Pulse 2026. All rights reserved.</p>
           <Link
             className="text-[13px] text-[#8b43fd] max-sm:text-base"
             href="#top"

@@ -81,21 +81,22 @@ function PlatformMenu() {
   return (
     <div
       data-mega-panel
-      className="absolute top-full left-[100px] z-[120] grid w-[1060px] grid-cols-[330px_1fr] gap-8 rounded-b-2xl bg-white px-8 py-9 shadow-[0_18px_35px_#00000018]"
+      className="absolute top-full left-[100px] z-[120] grid grid-cols-[330px_1fr] gap-8 rounded-b-2xl bg-white px-8 py-9 shadow-[0_18px_35px_#00000018]"
     >
       <div className="border-r border-[#ddd] pr-7">
         <p className="mb-5 text-xs font-bold text-[#666] uppercase">Product</p>
         <div className="grid gap-5">
-          <Item icon="✦" title="Email Marketing" href="/acquire" />
-          <Item icon="◔" title="WhatsApp Marketing " href="/retention" />
+          <Item icon="✦" title="Email Marketing" href="/email-marketing" />
+          <Item
+            icon="◔"
+            title="WhatsApp Marketing"
+            href="/whatsapp-marketing"
+          />
           <Item
             icon="$"
             title="Web Push Notifications"
-            href="/management-features"
+            href="/web-push-notifications"
           />
-          <Item icon="✦" title="Email Marketing" href="/email-marketing" />
-          <Item icon="◔" title="WhatsApp Marketing" href="/whatsapp-marketing" />
-          <Item icon="$" title="Web Push Notifications" href="/web-push-notifications" />
           <Item icon="$" title="Analytics" href="/analytics" />
         </div>
       </div>
@@ -112,68 +113,15 @@ function PlatformMenu() {
             title="Customer Retention & Winback"
             href="/feature/customer-portal"
           />
-          <Item
-            icon="♧"
-            title="New Product Launches"
-            href="/feature/bundle-builder"
-          />
+          <Item icon="♧" title="Templates" href="/feature/bundle-builder" />
           <Item
             icon="◈"
             title="Customer Segmentation"
             href="/feature/dunning-management"
           />
-          <Item
-            icon="⇄"
-            title="Restock & Price Alerts"
-            href="/feature/cancellation-flows"
-          />
           <Item icon="◉" title="Delivery Updates" href="/feature/upsell" />
-          {/* <Item icon="◉" title="Smart Customer Segmentation" href="/feature/upsell" />
-          <Item icon="◉" title="Custom Collection Sorting" href="/feature/upsell" />
-          <Item icon="◉" title="Automatic Out-of-Stock Management" href="/feature/upsell" /> */}
         </div>
       </div>
-    </div>
-  );
-}
-
-function StoriesMenu() {
-  return (
-    <div
-      data-mega-panel
-      className="absolute top-full left-[210px] z-[120] grid w-[865px] grid-cols-[270px_1fr] gap-8 rounded-b-2xl bg-white px-9 py-9 shadow-[0_18px_35px_#00000018]"
-    >
-      <div className="grid content-start gap-6">
-        <Item icon="♛" title="Case Studies" href="/customer-stories" />
-        <Item icon="★" title="Wall of love" href="/reviews" />
-        <Item
-          icon="▰"
-          title="Template Gallery"
-          href="/template-gallery"
-          description="Personalize flows & reduce subscriber churn"
-        />
-      </div>
-      <Link
-        href="/customer-stories/primal-queen"
-        className="grid min-h-[200px] grid-cols-[55%_45%] overflow-hidden rounded-xl bg-[#faf8fb] p-3"
-      >
-        <span
-          className="rounded-lg bg-cover bg-center"
-          style={{
-            backgroundImage:
-              'url("https://cdn.prod.website-files.com/625e799b877c107387cdf3ac/6a5633b3f28ba56e56def608_image%20(74).avif")',
-          }}
-        />
-        <span className="flex flex-col p-3">
-          <b className="text-sm text-[#8b43fd] uppercase">Primal Queen</b>
-          <strong className="mt-4 text-[15px] leading-[1.35]">
-            Scaled subscription revenue 50× in under two years.
-          </strong>
-          <span className="mt-auto text-sm font-semibold">
-            Read success story →
-          </span>
-        </span>
-      </Link>
     </div>
   );
 }
@@ -182,7 +130,7 @@ function ResourcesMenu() {
   return (
     <div
       data-mega-panel
-      className="absolute top-full left-[510px] z-[120] grid w-[580px] grid-cols-[220px_1fr] gap-8 rounded-b-2xl bg-white px-9 py-9 shadow-[0_18px_35px_#00000018]"
+      className="absolute top-full left-[410px] z-[120] rounded-b-2xl bg-white px-9 py-9 shadow-[0_18px_35px_#00000018]"
     >
       <div className="grid gap-[18px]">
         <Item icon="▤" title="Blogs" href="/blog" />
@@ -196,84 +144,7 @@ function ResourcesMenu() {
           title="Developer Hub"
           href="https://developer.loopwork.co/reference/api-reference"
         />
-        <Item
-          icon="✣"
-          title="Integrations directory"
-          href="/integrations-overview"
-        />
-        <Item
-          icon="▤"
-          title="Changelog 2026"
-          href="https://updates.loopwork.co/"
-        />
-        <Item icon="◉" title="Playbooks" href="/playbooks" />
       </div>
-      <a
-        href="https://demo.loopwork.co/"
-        className="rounded-xl bg-[#faf8fb] p-3"
-      >
-        <span
-          className="block h-20 rounded-lg bg-cover bg-center"
-          style={{
-            backgroundImage:
-              'url("https://cdn.prod.website-files.com/625e799b877c107387cdf3ac/6a019b4ed0faa0f83cf72454_Rectangle%203426%20(1).avif")',
-          }}
-        />
-        <strong className="mt-3 block text-[15px]">
-          Take a tour of our demo store
-        </strong>
-        <p className="mt-2 text-sm leading-[1.45] text-[#555]">
-          Get a sneak peek of our intuitive demo store now!
-        </p>
-        <span className="mt-3 block text-sm font-medium">View demo store</span>
-      </a>
-    </div>
-  );
-}
-
-function CompareMenu() {
-  const comparisons = [
-    ["Recharge", "/compare/recharge-alternative"],
-    ["Skio", "/compare/skio-alternative"],
-    ["Ordergroove", "/compare/ordergroove-alternative"],
-    ["Stay AI", "/compare/stayai-alternative"],
-  ];
-  return (
-    <div
-      data-mega-panel
-      className="absolute top-full right-[32px] z-[120] w-[390px] rounded-b-2xl bg-white px-8 py-8 shadow-[0_18px_35px_#00000018]"
-    >
-      <div className="flex flex-wrap gap-4">
-        {comparisons.map(([name, href]) => (
-          <Link
-            className="rounded-full bg-[linear-gradient(100deg,#f0ecff,#faeeee)] px-5 py-2 text-sm font-medium text-[#4b258d]"
-            href={href}
-            key={name}
-          >
-            {name}
-          </Link>
-        ))}
-      </div>
-      <form className="mt-8 rounded-xl bg-[#f8f7fb] p-4">
-        <b className="text-base text-[#5630ae]">Get a detailed comparison</b>
-        <div className="mt-3 flex gap-3">
-          <label className="sr-only" htmlFor="comparison-email">
-            Email
-          </label>
-          <input
-            id="comparison-email"
-            className="h-10 min-w-0 flex-1 rounded-xl border border-[#ddd] bg-white px-3 text-sm"
-            type="email"
-            placeholder="Enter your email"
-          />
-          <button
-            className="h-10 rounded-full bg-[linear-gradient(90deg,#b274ff,#6f9bf5)] px-6 text-sm text-white"
-            type="submit"
-          >
-            Submit
-          </button>
-        </div>
-      </form>
     </div>
   );
 }
@@ -402,7 +273,7 @@ function MobileDrawer({ open, close, pathname }) {
               close={close}
               href="/feature/cancellation-flows"
             >
-              <span className={iconClass}>⇄</span>New Product Launches
+              <span className={iconClass}>⇄</span>Templates
             </MobileRouteLink>
             <MobileRouteLink
               className={mobileItem}
@@ -412,14 +283,7 @@ function MobileDrawer({ open, close, pathname }) {
             >
               <span className={iconClass}>▣</span>Customer Segmentation
             </MobileRouteLink>
-            <MobileRouteLink
-              className={mobileItem}
-              pathname={pathname}
-              close={close}
-              href="/feature/dunning-management"
-            >
-              <span className={iconClass}>◈</span>Restock & Price Alerts
-            </MobileRouteLink>
+
             <MobileRouteLink
               className={mobileItem}
               pathname={pathname}
@@ -428,96 +292,17 @@ function MobileDrawer({ open, close, pathname }) {
             >
               <span className={iconClass}>◉</span>Delivery Updates
             </MobileRouteLink>
-            {/* <MobileRouteLink
-              className={mobileItem}
-              pathname={pathname}
-              close={close}
-              href="/feature/dunning-management"
-            >
-              <span className={iconClass}>◈</span>Custom Collection Sorting
-            </MobileRouteLink>
-            <MobileRouteLink
-              className={mobileItem}
-              pathname={pathname}
-              close={close}
-              href="/feature/upsell"
-            >
-              <span className={iconClass}>◉</span>Automatic Out-of-Stock Management
-            </MobileRouteLink> */}
           </div>
         </div>
       </MobileAccordion>
-      <MobileAccordion
-        id="stories"
-        label="Success Stories"
-        openSection={openSection}
-        setOpenSection={setOpenSection}
-      >
-        <div className="rounded-b-2xl border-t-4 border-[#6030aa] bg-white px-8 py-6 shadow-[0_20px_35px_#00000015]">
-          <div className="grid gap-5">
-            <MobileRouteLink
-              className={mobileItem}
-              pathname={pathname}
-              close={close}
-              href="/customer-stories"
-            >
-              <span className={iconClass}>♛</span>Case Studies
-            </MobileRouteLink>
-            <MobileRouteLink
-              className={mobileItem}
-              pathname={pathname}
-              close={close}
-              href="/reviews"
-            >
-              <span className={iconClass}>★</span>Wall of love
-            </MobileRouteLink>
-            <MobileRouteLink
-              className={mobileItem}
-              pathname={pathname}
-              close={close}
-              href="/template-gallery"
-            >
-              <span className={iconClass}>▰</span>
-              <span>
-                Template Gallery
-                <small className="block text-sm font-normal text-[#666]">
-                  Personalize flows & reduce subscriber churn
-                </small>
-              </span>
-            </MobileRouteLink>
-          </div>
-          <MobileRouteLink
-            pathname={pathname}
-            close={close}
-            href="/customer-stories/primal-queen"
-            className="mt-6 block rounded-xl bg-[#faf8fb] p-3"
-          >
-            <span
-              className="block aspect-[1.45] rounded-lg bg-cover bg-center"
-              style={{
-                backgroundImage:
-                  'url("https://cdn.prod.website-files.com/625e799b877c107387cdf3ac/6a5633b3f28ba56e56def608_image%20(74).avif")',
-              }}
-            />
-            <b className="mt-4 block text-base text-[#8b43fd] uppercase">
-              Primal Queen
-            </b>
-            <strong className="mt-3 block text-[15px]">
-              Scaled subscription revenue 50× in under two years.
-            </strong>
-            <span className="mt-4 block text-sm font-semibold">
-              Read success story →
-            </span>
-          </MobileRouteLink>
-        </div>
-      </MobileAccordion>
+
       <MobileRouteLink
         className="block py-5 text-[16px]"
         pathname={pathname}
         close={close}
-        href="/migration"
+        href="/success-stories"
       >
-        Migration
+        Success Stories
       </MobileRouteLink>
       <MobileRouteLink
         className="block py-5 text-[16px]"
@@ -559,111 +344,10 @@ function MobileDrawer({ open, close, pathname }) {
             >
               <span className={iconClass}>◷</span>Developer Hub
             </MobileRouteLink>
-            <MobileRouteLink
-              className={mobileItem}
-              pathname={pathname}
-              close={close}
-              href="/integrations-overview"
-            >
-              <span className={iconClass}>✣</span>Integrations directory
-            </MobileRouteLink>
-            <MobileRouteLink
-              className={mobileItem}
-              pathname={pathname}
-              close={close}
-              href="https://updates.loopwork.co/"
-            >
-              <span className={iconClass}>▤</span>Changelog 2026
-            </MobileRouteLink>
-            <MobileRouteLink
-              className={mobileItem}
-              pathname={pathname}
-              close={close}
-              href="/playbooks"
-            >
-              <span className={iconClass}>◉</span>Playbooks
-            </MobileRouteLink>
           </div>
-          <a
-            href="https://demo.loopwork.co/"
-            className="mt-6 block rounded-xl bg-[#faf8fb] p-3"
-          >
-            <span
-              className="block h-24 rounded-lg bg-cover bg-center"
-              style={{
-                backgroundImage:
-                  'url("https://cdn.prod.website-files.com/625e799b877c107387cdf3ac/6a019b4ed0faa0f83cf72454_Rectangle%203426%20(1).avif")',
-              }}
-            />
-            <strong className="mt-3 block text-[15px]">
-              Take a tour of our demo store
-            </strong>
-            <p className="mt-2 text-sm">
-              Get a sneak peek of our intuitive demo store now!
-            </p>
-            <span className="mt-3 block text-sm">View demo store</span>
-          </a>
         </div>
       </MobileAccordion>
-      <MobileAccordion
-        id="compare"
-        label="Comparing subscriptions app?"
-        openSection={openSection}
-        setOpenSection={setOpenSection}
-      >
-        <div className="rounded-b-2xl border-t-4 border-[#6030aa] bg-white px-8 py-6 shadow-[0_20px_35px_#00000015]">
-          <div className="grid gap-5">
-            <MobileRouteLink
-              className="font-semibold"
-              pathname={pathname}
-              close={close}
-              href="/compare/recharge-alternative"
-            >
-              Loop vs. Recharge
-            </MobileRouteLink>
-            <MobileRouteLink
-              className="font-semibold"
-              pathname={pathname}
-              close={close}
-              href="/compare/skio-alternative"
-            >
-              Loop vs. Skio
-            </MobileRouteLink>
-            <MobileRouteLink
-              className="font-semibold"
-              pathname={pathname}
-              close={close}
-              href="/compare/ordergroove-alternative"
-            >
-              Loop vs. Ordergroove
-            </MobileRouteLink>
-            <MobileRouteLink
-              className="font-semibold"
-              pathname={pathname}
-              close={close}
-              href="/compare/stayai-alternative"
-            >
-              Loop vs. Stay.ai
-            </MobileRouteLink>
-          </div>
-          <form className="mt-6 rounded-xl bg-[#f8f7fb] p-4">
-            <b className="text-base text-[#5630ae]">
-              Get a detailed comparison
-            </b>
-            <div className="mt-3 flex gap-3">
-              <input
-                className="h-11 min-w-0 flex-1 rounded-xl border border-[#ddd] px-3"
-                type="email"
-                placeholder="Enter your email"
-                aria-label="Email"
-              />
-              <button className="rounded-full bg-[linear-gradient(90deg,#b274ff,#6f9bf5)] px-6 text-white">
-                Submit
-              </button>
-            </div>
-          </form>
-        </div>
-      </MobileAccordion>
+
       <MobileRouteLink
         pathname={pathname}
         close={close}
@@ -727,18 +411,11 @@ export default function Header() {
             >
               Platform
             </MenuButton>
-            <MenuButton
-              id="stories"
-              openMenu={openMenu}
-              setOpenMenu={setOpenMenu}
+            <Link
+              className={`text-sm font-medium ${pathname === "/success-stories" ? "text-[#8b43fd]" : "text-[#2d2c2b]"}`}
+              href="/success-stories"
             >
               Success Stories
-            </MenuButton>
-            <Link
-              className={`text-sm font-medium ${pathname === "/migration" ? "text-[#8b43fd]" : "text-[#2d2c2b]"}`}
-              href="/migration"
-            >
-              Migration
             </Link>
             <Link
               className={`text-sm font-medium ${pathname === "/pricing" ? "text-[#8b43fd]" : "text-[#2d2c2b]"}`}
@@ -754,14 +431,34 @@ export default function Header() {
               Resources
             </MenuButton>
           </nav>
-          <div className="ml-auto flex items-center gap-[42px] max-lg:hidden">
-            <MenuButton
-              id="compare"
-              openMenu={openMenu}
-              setOpenMenu={setOpenMenu}
+          <div className="ml-auto flex items-center gap-5 max-lg:hidden">
+            <Link
+              href="/login"
+              className="group inline-flex items-center gap-2 border-b border-[#8b43fd] pb-1 text-[#8b43fd]"
             >
-              Comparing Loop with?
-            </MenuButton>
+              Login
+              <svg
+                className="h-5 w-5 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                viewBox="0 0 20 20"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M5 15 15 5m0 0H7m8 0v8"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </Link>
+            <Link
+              href="/signup"
+              className="inline-flex items-center justify-center rounded-full border border-[#8b43fd] text-[#8b43fd] px-[27px] py-[11px] text-[15px] font-semibold"
+            >
+              Sign up
+            </Link>
+
             <Link
               href="/book-a-demo"
               className="loop-liquid-button inline-flex items-center justify-center rounded-full bg-[linear-gradient(100deg,#8d43ff,#315be7)] px-[27px] py-[11px] text-[15px] font-semibold text-white"
@@ -790,9 +487,7 @@ export default function Header() {
             </span>
           </button>
           {openMenu === "platform" && <PlatformMenu />}
-          {openMenu === "stories" && <StoriesMenu />}
           {openMenu === "resources" && <ResourcesMenu />}
-          {openMenu === "compare" && <CompareMenu />}
         </div>
       </header>
       <MobileDrawer
