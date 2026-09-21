@@ -67,7 +67,7 @@ export default function RetentionZone({ zone, index }) {
                   <img
                     src={card.image}
                     alt={card.title}
-                    className="aspect-[1.6] w-full object-cover"
+                    className="w-full object-cover"
                   />
                 </div>
                 <h3 className="mt-4 text-xl font-semibold">{card.title}</h3>

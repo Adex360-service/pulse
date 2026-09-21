@@ -8,7 +8,7 @@ export default function AnalyticsUpgrade() {
     <section className="pt-[100px] pb-[120px] text-center max-[700px]:pt-[60px] max-[700px]:pb-20">
       <Container>
         <AnalyticsIntro title={upgrade.title} description={upgrade.description} compact />
-        <ManagementButton href="https://www.klaviyo.com/products/personalization">See advanced features</ManagementButton>
+        <ManagementButton href="https://www.klaviyo.com/products/personalization">Explore the rest of Pulse</ManagementButton>
       </Container>
     </section>
   );
