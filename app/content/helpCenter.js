@@ -40,7 +40,7 @@ export const helpCollections = [
     `${asset}/806139/2423b092c1daacc178953881ece9/994d2d446e692d66abad56d9843fbef4.png`,
   ],
   [
-    "Contact",
+    "Profile",
     `${asset}/818568/67cab72afdfdc137664862479746/d4719ef42cb4046f1be3ce1ee47afbe1.png`,
   ],
   [
@@ -83,7 +83,7 @@ const collectionIds = {
   "Email Marketing": "collection-acquire",
   "WhatsApp Marketing": "collection-grow",
   "Push Notifications": "collection-retain",
-  Contact: "collection-experiments",
+  Profile: "collection-experiments",
   Segment: "collection-integrations",
   "Product Catalog": "collection-customer-portal",
   Templates: "collection-loyalty-and-referral",

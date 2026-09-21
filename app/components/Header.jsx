@@ -93,6 +93,9 @@ function PlatformMenu() {
             title="Web Push Notifications"
             href="/management-features"
           />
+          <Item icon="✦" title="Email Marketing" href="/email-marketing" />
+          <Item icon="◔" title="WhatsApp Marketing" href="/whatsapp-marketing" />
+          <Item icon="$" title="Web Push Notifications" href="/web-push-notifications" />
           <Item icon="$" title="Analytics" href="/analytics" />
         </div>
       </div>
@@ -344,7 +347,7 @@ function MobileDrawer({ open, close, pathname }) {
               className={mobileItem}
               pathname={pathname}
               close={close}
-              href="/acquire"
+              href="/email-marketing"
             >
               <span className={iconClass}>◔</span>Email Marketing
             </MobileRouteLink>
@@ -352,7 +355,7 @@ function MobileDrawer({ open, close, pathname }) {
               className={mobileItem}
               pathname={pathname}
               close={close}
-              href="/retention"
+              href="/whatsapp-marketing"
             >
               <span className={iconClass}>$</span>WhatsApp Marketing
             </MobileRouteLink>
@@ -360,7 +363,7 @@ function MobileDrawer({ open, close, pathname }) {
               className={mobileItem}
               pathname={pathname}
               close={close}
-              href="/management-features"
+              href="/web-push-notifications"
             >
               <span className={iconClass}>✦</span>Web Push Notifications
             </MobileRouteLink>
