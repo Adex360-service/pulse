@@ -1,0 +1,218 @@
+[
+  {
+    "id": "grow",
+    "label": "Grow",
+    "posts": [
+      {
+        "title": "How to Offer Subscription Products on Shopify: Step-by-Step Guide | Best Shopify Subscriptions App",
+        "slug": "offer-subscription-products-on-shopify-guide",
+        "image": "/images/blog/6839ccfe543538c1ef1697f2.jpeg",
+        "readTime": "5 min read",
+        "date": "Jul 14 2025",
+        "href": "/blog/offer-subscription-products-on-shopify-guide"
+      },
+      {
+        "title": "How to Add a Custom Subscription Widget to Your Shopify Store with Loop",
+        "slug": "add-custom-subscription-widget",
+        "image": "/images/blog/6839ccfe2e5a74b84a4b97d1.jpeg",
+        "readTime": "7 min read",
+        "date": "Jul 14 2025",
+        "href": "/blog/add-custom-subscription-widget"
+      },
+      {
+        "title": "Customize Your Shopify Subscription Widget Like a Pro with Loop",
+        "slug": "customize-shopify-subscription-widget",
+        "image": "/images/blog/6839ccff9f3d13d72ebed4f5.jpeg",
+        "readTime": "4 min read",
+        "date": "Sep 25 2025",
+        "href": "/blog/customize-shopify-subscription-widget"
+      },
+      {
+        "title": "The Ultimate Shopify Subscription Bundle Guide",
+        "slug": "the-ultimate-shopify-subscription-bundle-guide",
+        "image": "/images/blog/6839ccff9f3d13d72ebed4e6.jpeg",
+        "readTime": "8 min read",
+        "date": "Jul 14 2025",
+        "href": "/blog/the-ultimate-shopify-subscription-bundle-guide"
+      },
+      {
+        "title": "How to Create Bundles on Your Shopify Store with Loop Subscriptions",
+        "slug": "create-bundles-on-your-shopify-store",
+        "image": "/images/blog/6839ccfe2061ceffa46a7eb7.jpeg",
+        "readTime": "10 min read",
+        "date": "Jul 14 2025",
+        "href": "/blog/create-bundles-on-your-shopify-store"
+      },
+      {
+        "title": "How does a great subscriber experience increase subscription revenue for DTC brands? (2024 Update)",
+        "slug": "great-subscriber-experience-increase-subscription-revenue",
+        "image": "/images/blog/6839cdb243acbf796f823b7d.jpeg",
+        "readTime": "5 Minute Read",
+        "date": "Jul 14 2025",
+        "href": "/blog/great-subscriber-experience-increase-subscription-revenue"
+      }
+    ]
+  },
+  {
+    "id": "retain",
+    "label": "Retain",
+    "posts": [
+      {
+        "title": "8 Cancellation Flow Strategies to Reduce Churn for DTC Brands",
+        "slug": "cancellation-flows-strategies-to-reduce-churn-for-dtc-brands",
+        "image": "/images/blog/6839cd7695328e43e871ac56.jpeg",
+        "readTime": "6 min read",
+        "date": "Jul 14 2025",
+        "href": "/blog/cancellation-flows-strategies-to-reduce-churn-for-dtc-brands"
+      },
+      {
+        "title": "The Best Apps for Churn Management on Shopify: Reduce Customer Churn and Increase Retention",
+        "slug": "apps-for-churn-management-on-shopify-reduce-customer-churn",
+        "image": "/images/blog/6839cd3a521a6406bb78f828.jpeg",
+        "readTime": "6 min read",
+        "date": "Jul 14 2025",
+        "href": "/blog/apps-for-churn-management-on-shopify-reduce-customer-churn"
+      },
+      {
+        "title": "How DTC brands can reduce passive churn due to failed payments?",
+        "slug": "dtc-brands-payment-failures",
+        "image": "/images/blog/6839cdb2d66f3b21d32d43f0.jpeg",
+        "readTime": "5 Minute Read",
+        "date": "Jul 14 2025",
+        "href": "/blog/dtc-brands-payment-failures"
+      },
+      {
+        "title": "Dunning Management Tips: Increase Revenue & Reduce Involuntary Churn",
+        "slug": "dunning-management-tips",
+        "image": "/images/blog/6839cd3bfb20ac1985245a8f.png",
+        "readTime": "6 min read",
+        "date": "Jul 14 2025",
+        "href": "/blog/dunning-management-tips"
+      },
+      {
+        "title": "Manage Involuntary Churn with Loop’s Smart Dunning Management",
+        "slug": "manage-involuntary-churn-with-smart-dunning-management",
+        "image": "/images/blog/6839cd3b9f3d13d72ebf1f78.png",
+        "readTime": "8 min read",
+        "date": "Jul 14 2025",
+        "href": "/blog/manage-involuntary-churn-with-smart-dunning-management"
+      },
+      {
+        "title": "Subscription Retention Strategy with Content: Keep Shopify Subscribers Engaged",
+        "slug": "subscription-retention-strategies",
+        "image": "/images/blog/6839cd3ac9746cb661621e2c.png",
+        "readTime": "8 min read",
+        "date": "Jul 14 2025",
+        "href": "/blog/subscription-retention-strategies"
+      }
+    ]
+  },
+  {
+    "id": "optimise",
+    "label": "Optimise",
+    "posts": [
+      {
+        "title": "How to Increase AOV on Shopify (7 Proven Strategies That Actually Work)",
+        "slug": "how-to-increase-aov-shopify-7-proven-strategies-2026",
+        "image": "/images/blog/6926d955ddb134a4059f15ec.png",
+        "readTime": "8 min read",
+        "date": "Jan 06 2026",
+        "href": "/blog/how-to-increase-aov-shopify-7-proven-strategies-2026"
+      },
+      {
+        "title": "AOV or LTV: What makes more sense for your subscription?",
+        "slug": "aov-vs-ltv-shopify-prioritize",
+        "image": "/images/blog/69206957a9f06138a7a67f0b.jpg",
+        "readTime": "7 min read",
+        "date": "Nov 21 2025",
+        "href": "/blog/aov-vs-ltv-shopify-prioritize"
+      },
+      {
+        "title": "From Acquisition to Retention: Advanced Shopify Subscription Optimization Strategies in 2026",
+        "slug": "advanced-shopify-subscription-optimization-strategies",
+        "image": "/images/blog/6839ccfeb235c7b0cc798f23.jpeg",
+        "readTime": "12 min read",
+        "date": "Jan 06 2026",
+        "href": "/blog/advanced-shopify-subscription-optimization-strategies"
+      },
+      {
+        "title": "Cart Upsell vs. Post-Purchase Upsell vs. One-Click Upsell — Which Converts Best?",
+        "slug": "cart-upsell-vs-post-purchase-upsell-one-click-upsell-shopify",
+        "image": "/images/blog/69282e6a80bb30b76edfc48e.png",
+        "readTime": "7 min read",
+        "date": "Nov 27 2025",
+        "href": "/blog/cart-upsell-vs-post-purchase-upsell-one-click-upsell-shopify"
+      },
+      {
+        "title": "Shopify Post-Purchase Upsell: How One-Click Offers Boost AOV",
+        "slug": "shopify-post-purchase-upsell-boost-aov",
+        "image": "/images/blog/692418de1ccd6b5dd50e54ef.jpg",
+        "readTime": "5 min read",
+        "date": "Jan 06 2026",
+        "href": "/blog/shopify-post-purchase-upsell-boost-aov"
+      },
+      {
+        "title": "Shopify Subscription Optimization: Perfecting Your Checkout Flow for Maximum Conversions",
+        "slug": "shopify-subscription-optimization",
+        "image": "/images/blog/6839ccfeed36a8da269acef9.jpeg",
+        "readTime": "4 min read",
+        "date": "Jul 14 2025",
+        "href": "/blog/shopify-subscription-optimization"
+      }
+    ]
+  },
+  {
+    "id": "compare",
+    "label": "Compare",
+    "posts": [
+      {
+        "title": "Shopify Subscriptions vs Recharge vs Loop : Which app is the best?",
+        "slug": "shopify-subscriptions-vs-recharge-vs-loop-which-app-is-the-best",
+        "image": "/images/blog/6839cd3a19269f7f22eb825d.jpeg",
+        "readTime": "8 min read",
+        "date": "Jul 14 2025",
+        "href": "/blog/shopify-subscriptions-vs-recharge-vs-loop-which-app-is-the-best"
+      },
+      {
+        "title": "Recharge vs Skio vs Loop: Which is a better Shopify subscription app for your DTC brand?",
+        "slug": "recharge-payments-vs-skio-subscriptions",
+        "image": "/images/blog/6839cd76e965b6b144c35cd3.jpeg",
+        "readTime": "7 min read",
+        "date": "Jul 14 2025",
+        "href": "/blog/recharge-payments-vs-skio-subscriptions"
+      },
+      {
+        "title": "Why Brands Are Switching from Stay AI to Loop Subscriptions (2026)",
+        "slug": "why-brands-switch-stayai-loop-subscriptions-2026",
+        "image": "/images/blog/695cef43156a938c0e3367eb.png",
+        "readTime": "10 min read",
+        "date": "Jan 06 2026",
+        "href": "/blog/why-brands-switch-stayai-loop-subscriptions-2026"
+      },
+      {
+        "title": "Stay.ai Subscriptions: Complete Platform Guide for 2026",
+        "slug": "stay-ai-subscriptions-complete-guide-2026",
+        "image": "/images/blog/695cef6b8ab149ee5dce6dc3.png",
+        "readTime": "12 min read",
+        "date": "Jan 06 2026",
+        "href": "/blog/stay-ai-subscriptions-complete-guide-2026"
+      },
+      {
+        "title": "Recharge vs. Bold vs. Loop: Which Shopify Subscription App is best?",
+        "slug": "recharge-legacy-vs-bold-subscriptions",
+        "image": "/images/blog/6839cd76bea761b032c7c5e9.jpeg",
+        "readTime": "13 min read",
+        "date": "Jul 14 2025",
+        "href": "/blog/recharge-legacy-vs-bold-subscriptions"
+      },
+      {
+        "title": "Yotpo vs Recharge vs Loop: The best Subscription App",
+        "slug": "recharge-vs-yotpo-vs-loop-subscriptions",
+        "image": "/images/blog/6839cd768cf8a03f76202f84.jpeg",
+        "readTime": "9 min read",
+        "date": "Sep 25 2025",
+        "href": "/blog/recharge-vs-yotpo-vs-loop-subscriptions"
+      }
+    ]
+  }
+]

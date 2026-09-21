@@ -67,21 +67,32 @@ function Item({ icon, title, href, description }) {
     </>
   );
   return resolvedHref.startsWith("http") ? (
-    <a className={menuLink} href={resolvedHref}>{content}</a>
+    <a className={menuLink} href={resolvedHref}>
+      {content}
+    </a>
   ) : (
-    <Link className={menuLink} href={resolvedHref}>{content}</Link>
+    <Link className={menuLink} href={resolvedHref}>
+      {content}
+    </Link>
   );
 }
 
 function PlatformMenu() {
   return (
-     <div
+    <div
       data-mega-panel
       className="absolute top-full left-[100px] z-[120] grid w-[1060px] grid-cols-[330px_1fr] gap-8 rounded-b-2xl bg-white px-8 py-9 shadow-[0_18px_35px_#00000018]"
     >
       <div className="border-r border-[#ddd] pr-7">
         <p className="mb-5 text-xs font-bold text-[#666] uppercase">Product</p>
         <div className="grid gap-5">
+          <Item icon="✦" title="Email Marketing" href="/acquire" />
+          <Item icon="◔" title="WhatsApp Marketing " href="/retention" />
+          <Item
+            icon="$"
+            title="Web Push Notifications"
+            href="/management-features"
+          />
           <Item icon="✦" title="Email Marketing" href="/email-marketing" />
           <Item icon="◔" title="WhatsApp Marketing" href="/whatsapp-marketing" />
           <Item icon="$" title="Web Push Notifications" href="/web-push-notifications" />
@@ -91,13 +102,21 @@ function PlatformMenu() {
       <div>
         <p className="mb-5 text-xs font-bold text-[#666] uppercase">Features</p>
         <div className="grid grid-cols-1 gap-x-12 gap-y-5">
-          <Item icon="⌘" title="Abandoned Cart Recovery" href="/feature/loop-flows" />
+          <Item
+            icon="⌘"
+            title="Abandoned Cart Recovery"
+            href="/feature/loop-flows"
+          />
           <Item
             icon="▣"
             title="Customer Retention & Winback"
             href="/feature/customer-portal"
           />
-          <Item icon="♧" title="New Product Launches" href="/feature/bundle-builder" />
+          <Item
+            icon="♧"
+            title="New Product Launches"
+            href="/feature/bundle-builder"
+          />
           <Item
             icon="◈"
             title="Customer Segmentation"
@@ -338,7 +357,7 @@ function MobileDrawer({ open, close, pathname }) {
               close={close}
               href="/whatsapp-marketing"
             >
-              <span className={iconClass}>$</span>WhatsApp Marketing 
+              <span className={iconClass}>$</span>WhatsApp Marketing
             </MobileRouteLink>
             <MobileRouteLink
               className={mobileItem}
@@ -356,7 +375,6 @@ function MobileDrawer({ open, close, pathname }) {
             >
               <span className={iconClass}>✦</span>Analytics
             </MobileRouteLink>
-            
           </div>
           <p className="mt-7 mb-4 text-sm font-bold text-[#666] uppercase">
             Features
@@ -722,7 +740,10 @@ export default function Header() {
             >
               Migration
             </Link>
-            <Link className={`text-sm font-medium ${pathname === "/pricing" ? "text-[#8b43fd]" : "text-[#2d2c2b]"}`} href="/pricing">
+            <Link
+              className={`text-sm font-medium ${pathname === "/pricing" ? "text-[#8b43fd]" : "text-[#2d2c2b]"}`}
+              href="/pricing"
+            >
               Pricing
             </Link>
             <MenuButton

@@ -68,6 +68,9 @@ export default function Footer() {
             <div className="max-sm:w-full" key={i}>
               {column.map(([title, ...links]) => (
                 <section className="mb-[22px] max-sm:mb-8" key={title}>
+
+                  <h3 className="mb-[15px] text-base leading-[1.2] font-bold max-sm:text-lg">{title}</h3>
+                  {links.map((link) => <Link className="mb-3 block text-sm text-[#363432] max-sm:mb-5 max-sm:text-lg" href={link === "Blogs" ? "/blog" : link === "Help Center" ? "/help-center" : link === "Developer hub" ? "/developer-hub" : "#"} key={link}>{link}</Link>)}
                   <h3 className="mb-[15px] text-base leading-[1.2] font-bold max-sm:text-lg">
                     {title}
                   </h3>
