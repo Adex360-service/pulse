@@ -440,7 +440,7 @@ function MobileDrawer({ open, close, pathname }) {
               href="/integrations"
             >
               <span className={iconClass}>
-                <Icon name="integration" />
+                <Icon name="integrations" />
               </span>
               Integrations
             </MobileRouteLink>
