@@ -13,9 +13,9 @@ import {
 } from "../../content/customerPortal";
 
 export const metadata = {
-  title: "Subscription Customer Portal | 100% Customizable & Fast with Loop",
+  title: "Subscription Customer Portal | 100% Customizable & Fast with Pulse",
   description:
-    "Reduce subscriber tickets with Loop’s Shopify customer portal. Fully customizable, mobile-friendly, and lightning-fast for a seamless subscription management experience.",
+    "Reduce subscriber tickets with Pulse Shopify customer portal. Fully customizable, mobile-friendly, and lightning-fast for a seamless subscription management experience.",
 };
 
 export default function CustomerPortalPage() {

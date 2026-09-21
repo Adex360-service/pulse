@@ -11,7 +11,7 @@ export async function generateMetadata({ params }) {
   const collection = helpCenterCollections.find((item) => item.slug === slug);
   return {
     title: collection
-      ? `${collection.title} | Loop Subscriptions Help Center`
+      ? `${collection.title} | Pulse Subscriptions Help Center`
       : "Help Center",
   };
 }

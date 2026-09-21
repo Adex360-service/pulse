@@ -16,9 +16,9 @@ import {
 } from "../content/migration";
 
 export const metadata = {
-  title: "Seamless Shopify Subscription App Migration | Loop",
+  title: "Seamless Shopify Subscription App Migration | Pulse Subscriptions",
   description:
-    "Move your subscription business to Loop with dedicated, white-glove migration support.",
+    "Move your subscription business to Pulse with dedicated, white-glove migration support.",
 };
 
 export default function MigrationPage() {

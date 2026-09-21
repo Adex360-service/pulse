@@ -130,7 +130,7 @@ export const inventory = {
 };
 export const apiSection = {
   title: "API and integration capabilities",
-  copy: "Connect Loop with your existing tools and build custom experiences with our developer-friendly API platform.",
+  copy: "Connect Pulse with your existing tools and build custom experiences with our developer-friendly API platform.",
   cards: [
     {
       icon: `${cdn}/686d229a844ea2064417f0c8_Icon-6.svg`,

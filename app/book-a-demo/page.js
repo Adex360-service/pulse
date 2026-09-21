@@ -13,7 +13,7 @@ import {
 export const metadata = {
   title: "Book a Demo – Best Shopify Subscription App for DTC Brands",
   description:
-    "See Loop Subscriptions in action. Book a personalized demo of the Shopify subscription app trusted by leading DTC brands.",
+    "See Pulse Subscriptions in action. Book a personalized demo of the Shopify subscription app trusted by leading DTC brands.",
 };
 
 export default function BookDemoPage() {

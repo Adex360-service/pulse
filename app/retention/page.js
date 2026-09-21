@@ -16,9 +16,9 @@ import {
 } from "../content/retention";
 
 export const metadata = {
-  title: "How to reduce churn of your ecommerce business | Loop Subscriptions",
+  title: "How to reduce churn of your ecommerce business | Pulse Subscriptions",
   description:
-    "Learn how Loop helps Shopify ecommerce brands improve subscriber retention and reduce churn.",
+    "Learn how Pulse helps Shopify ecommerce brands improve subscriber retention and reduce churn.",
 };
 
 export default function Retention() {

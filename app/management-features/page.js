@@ -13,13 +13,13 @@ import {
   managementCta,
   managementHero,
   managementLogos,
-  pushNotificationFaqs
+  pushNotificationFaqs,
 } from "../content/management";
 
 export const metadata = {
-  title: "Best Subscription Management App for Shopify | Loop Subscriptions",
+  title: "Best Subscription Management App for Shopify | Pulse Subscriptions",
   description:
-    "Scale your recurring revenue with Loop. Automate, customize, and optimize Shopify subscriptions effortlessly.",
+    "Scale your recurring revenue with Pulse. Automate, customize, and optimize Shopify subscriptions effortlessly.",
 };
 
 export default function ManagementFeaturesPage() {
@@ -40,7 +40,7 @@ export default function ManagementFeaturesPage() {
         title={managementCta.title}
         copy={managementCta.copy}
       />
-      <TextAccordion items={pushNotificationFaqs}/>
+      <TextAccordion items={pushNotificationFaqs} />
     </main>
   );
 }

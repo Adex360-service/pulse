@@ -15,9 +15,9 @@ import {
 } from "../content/acquire";
 
 export const metadata = {
-  title: "Increase Subscription Take Rate | Loop",
+  title: "Increase Subscription Take Rate | Pulse",
   description:
-    "Convert one-time buyers into subscribers with Loop's optimized widgets, localized offers, bundles, and one-click checkout links.",
+    "Convert one-time buyers into subscribers with Pulse optimized widgets, localized offers, bundles, and one-click checkout links.",
 };
 
 export default function AcquirePage() {

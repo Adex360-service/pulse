@@ -27,7 +27,8 @@ const fraunces = localFont({
 });
 
 export const metadata = {
-  title: "Loop Subscriptions — The subscription platform for Shopify",
+  title:
+    "Grow, retain, and manage subscribers with a platform built for ambitious Shopify brands.",
   description:
     "Grow, retain, and manage subscribers with a platform built for ambitious Shopify brands.",
 };

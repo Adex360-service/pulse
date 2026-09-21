@@ -6,21 +6,36 @@ import BlogExplore from "../components/blog/BlogExplore";
 import BlogMerchantStories from "../components/blog/BlogMerchantStories";
 import { blogCategories } from "../content/blog";
 
+import ComingSoon from "../components/coming-soon/ComingSoon";
+
 export const metadata = {
   title: "Subscription Insights & Growth Tips | Pulse Blog",
-  description: "Explore subscription strategies to acquire, grow, and retain subscribers, plus merchant success stories and Shopify guides.",
+  description:
+    "Explore subscription strategies to acquire, grow, and retain subscribers, plus merchant success stories and Shopify guides.",
 };
 
 export default function BlogPage() {
   return (
-    <main id="top" className="bg-white text-[#262522] [&_a:focus-visible]:outline-2 [&_a:focus-visible]:outline-offset-4 [&_a:focus-visible]:outline-[#7138e8] [&_button:focus-visible]:outline-2 [&_button:focus-visible]:outline-offset-4 [&_button:focus-visible]:outline-[#7138e8]">
-      <BlogSearchProvider>
+    <main
+      id="top"
+      className="bg-white text-[#262522] [&_a:focus-visible]:outline-2 [&_a:focus-visible]:outline-offset-4 [&_a:focus-visible]:outline-[#7138e8] [&_button:focus-visible]:outline-2 [&_button:focus-visible]:outline-offset-4 [&_button:focus-visible]:outline-[#7138e8]"
+    >
+      {/* <BlogSearchProvider>
         <BlogHero />
         <BlogRecommended />
         {blogCategories.map(category => <BlogCategorySection key={category.id} category={category} />)}
         <BlogExplore />
       </BlogSearchProvider>
-      <BlogMerchantStories />
+      <BlogMerchantStories /> */}
+      <ComingSoon
+        eyebrow="Insights & Growth Tips"
+        title="Pulse Blog"
+        description="Explore subscription strategies to acquire, grow, and retain subscribers, plus merchant success stories and Shopify guides."
+        message="Coming soon"
+        messageDescription="We’re preparing the blog. Check back soon to read the latest insights and growth tips for subscription businesses."
+        actionLabel="Explore Pulse"
+        actionHref="/"
+      />
     </main>
   );
 }

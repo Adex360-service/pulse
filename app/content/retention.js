@@ -122,7 +122,7 @@ export const retentionZones = [
       },
       {
         title: "Delivered",
-        text: "Confirms delivery and closes the loop, no follow-up needed",
+        text: "Confirms delivery and closes the Pulse, no follow-up needed",
         image: `/images/whatsapp-section-5-4.png`,
       },
     ],
@@ -170,7 +170,7 @@ export const retentionStories = [
   {
     metric: "Advanced migration wins",
     quote:
-      "Loop has been fantastic. When we decided to go headless, we searched for a subscription service with a robust API, knowing we had big plans. Loop has exceeded our expectations...",
+      "Pulse has been fantastic. When we decided to go headless, we searched for a subscription service with a robust API, knowing we had big plans. Pulse has exceeded our expectations...",
     brand: "Keto Chow",
     migratedFrom: "Skio",
     logo: `${cdn}/67f3a88e5fc302da464bcfa3_327915298915a66c471f1cb3155179b4_Keto-chow_logo.svg`,
@@ -178,7 +178,7 @@ export const retentionStories = [
   {
     metric: "Immediate ROI impact",
     quote:
-      "We chose Loop because we were sure its features, especially in churn prevention and upselling, would boost our subscription business. Even with a tight migration deadline, the Loop Migration Team stuck to it 100%...",
+      "We chose Pulse because we were sure its features, especially in churn prevention and upselling, would boost our subscription business. Even with a tight migration deadline, the Pulse Migration Team stuck to it 100%...",
     brand: "mammaly",
     migratedFrom: "Recharge",
     logo: `${cdn}/685e53436ca0deeacf7b1f83_0c_mammaly_logo.avif`,

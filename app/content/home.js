@@ -68,7 +68,7 @@ export const reviews = [
   [
     "GENERATION",
     " FASHION & LIFESTYLE",
-    "A+ support makes Loop my favorite piece of SaaS.",
+    "A+ support makes Pulse my favorite piece of SaaS.",
     "/images/brand-3.png",
   ],
   [
@@ -98,11 +98,7 @@ export const reviews = [
 ];
 
 export const features = [
-  [
-    " ",
-    "Composer, your AI marketing agent.",
-    "/images/home-agent-1.png",
-  ],
+  [" ", "Composer, your AI marketing agent.", "/images/home-agent-1.png"],
   [
     " ",
     "Sort Agent, your 24/7 merchandising agent.",
@@ -162,8 +158,7 @@ export const migrationSteps = [
 
 export const items = [
   {
-    heading:
-      "Do I need to use features, or can I start with just one?",
+    heading: "Do I need to use features, or can I start with just one?",
     copy: "You can start with any single feature, Email, WhatsApp, Push, Product Feed, or Sorting, and add the others whenever you're ready. Everything shares the same customer and product data, so nothing needs to be rebuilt when you expand.",
   },
   {
@@ -175,7 +170,8 @@ export const items = [
     copy: "No. Pulse runs independently of your storefront and syncs through Shopify's standard data connections, so there's no impact on page speed or checkout performance.",
   },
   {
-    heading: "I'm already using Klaviyo, Brevo, or Mailchimp. Can I switch without losing my data?",
+    heading:
+      "I'm already using Klaviyo, Brevo, or Mailchimp. Can I switch without losing my data?",
     copy: "Yes. We help you migrate your flows, segments, and subscriber list at no extra cost, so switching doesn't mean starting from zero.",
   },
   {
