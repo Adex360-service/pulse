@@ -50,7 +50,7 @@ export default function AnalyticsSpotlight() {
                     <Visual asset={story.logo} alt={story.name} fill sizes="180px" className="object-contain object-left" />
                   </span>
                   <div className="mt-auto">
-                    <strong className="block font-[family-name:var(--font-fraunces)] text-[clamp(42px,4.8vw,80px)] leading-none font-normal whitespace-nowrap text-[#ff4934] max-[1000px]:text-[48px] max-[700px]:text-[clamp(38px,8vw,55px)]">
+                    <strong className="block font-[family-name:var(--font-fraunces)] text-[clamp(42px,4.8vw,60px)] leading-none font-normal whitespace-nowrap text-[#ff4934] max-[1000px]:text-[48px] max-[700px]:text-[clamp(38px,8vw,55px)]">
                       {story.stat}<span className="ml-[3px] text-[.5em]" aria-hidden="true">↗</span>
                     </strong>
                     <p className="mt-4 mb-[42px] text-[15px] leading-[1.55] max-[1000px]:mb-[25px] max-[1000px]:text-[13px]">{story.description}</p>

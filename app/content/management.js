@@ -53,7 +53,7 @@ export const automation = {
 export const bulk = {
   title: "Target the right subscribers, every time",
   copy: "Build segments based on behavior, location and purchase history and track exactly how each one performs.",
-  image: `${cdn}/685d45e4f77c0c0883ecbd6b_ad06d2c06001077169d4be90f1f6eb73_Group%2018998%20%281%29.avif`,
+  image: `/images/push-image-1.png`,
   points: [
     {
       icon: `${cdn}/686d23a3b0f0f80f160c5ead_rocket-outline%20(1).svg`,
@@ -109,7 +109,7 @@ export const alerts = {
 export const inventory = {
   title: "Every automation reports its own numbers",
   copy: "No blended totals. See exactly how each trigger performs, one automation at a time.",
-  image: `${cdn}/68710372f414ecccaa6798b2_image%20%2844%29.avif`,
+  image: `/images/push-image-2.png`,
   points: [
     {
       icon: `${cdn}/686d229a6115bb7a33c38323_auto-flash.svg`,

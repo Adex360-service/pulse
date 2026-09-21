@@ -1,35 +1,11 @@
 [
   {
     "tag": "h1",
-    "text": "Grow fast with customer analytics, insights, and personalisation"
+    "text": "Grow faster with customer insights that actually drive action"
   },
   {
     "tag": "p",
-    "text": "Make your best moves automatically. Predictive analytics reveal valuable opportunities, and AI personalization instantly takes action—driving loyalty and revenue at scale."
-  },
-  {
-    "tag": "h3",
-    "text": "Stay on top of performance"
-  },
-  {
-    "tag": "p",
-    "text": "Track revenue, engagement and growth across every channel with pre-built dashboards that give you an instant view of business performance."
-  },
-  {
-    "tag": "h3",
-    "text": "See how you compare"
-  },
-  {
-    "tag": "p",
-    "text": "Performance is easier to understand with context. Personalised benchmarks show where you're ahead and where there's room to grow."
-  },
-  {
-    "tag": "h3",
-    "text": "Understand every journey"
-  },
-  {
-    "tag": "p",
-    "text": "Follow the customer journey from first click to repeat purchase, using funnel and cohort analysis to spot patterns, drop-offs and opportunities."
+    "text": "See exactly what's working across Email, Push, and WhatsApp, then let AI turn those insights into your next move."
   },
   {
     "tag": "h3",
@@ -37,7 +13,31 @@
   },
   {
     "tag": "p",
-    "text": "Instead of reacting after the fact, use predictive analytics to forecast lifetime value, churn risk and the next purchase date for every customer."
+    "text": "Pulse's AI watches every campaign in the background and points out what's working, so your next send is based on what actually happened, not a guess."
+  },
+  {
+    "tag": "h3",
+    "text": "Stay on top of performance"
+  },
+  {
+    "tag": "p",
+    "text": "Track revenue, delivery, and engagement across Email, Push, and WhatsApp in one Executive summary, updated against the previous period automatically."
+  },
+  {
+    "tag": "h3",
+    "text": "See how you compare"
+  },
+  {
+    "tag": "p",
+    "text": "Every deliverability metric, from delivery rate to spam complaints, is shown next to a real industry benchmark, so you know exactly where you stand."
+  },
+  {
+    "tag": "h3",
+    "text": " Understand every journey"
+  },
+  {
+    "tag": "p",
+    "text": "Follow the path from impression to click to purchase with a full conversion funnel, and see exactly which automation path is converting best."
   },
   {
     "tag": "p",
@@ -45,43 +45,43 @@
   },
   {
     "tag": "h2",
-    "text": "Deliver smarter personalisation, powered by your data"
+    "text": "Data that tells you what to do next, not just what happened"
   },
   {
     "tag": "p",
-    "text": "Send the right message every time with deep personalization, purchase insights, and predictive analytics."
+    "text": "Every number on this page comes with context, and Pulse's AI turns that context into your next move automatically."
   },
   {
     "tag": "p",
-    "text": "Identify your best customers and biggest churn risks with customised recency, frequency and monetary value (RFM) analysis."
+    "text": "See which segments are actually growing and reachable, so you know exactly where to focus your next campaign."
   },
   {
     "tag": "p",
-    "text": "Visualise how customers go from engagement to conversion with funnel and cohort analysis—filter by specific audiences to uncover patterns, spot drop-off points, and find new opportunities."
+    "text": "Follow the exact path from impression to click to purchase, filtered by campaign, automation, or segment."
   },
   {
     "tag": "p",
-    "text": "Forecast what’s next with predictive analytics and Klaviyo AI—automatically refining audiences, optimising send times, and delivering messages on customers’ go-to channels."
+    "text": "AI reviews your campaign history automatically and hands you a specific, ready-to-apply suggestion, not just a chart to interpret."
   },
   {
     "tag": "h2",
-    "text": "Keep powerful customer insights in sight"
+    "text": "Every touchpoint, tracked in one place"
   },
   {
     "tag": "p",
-    "text": "From first click to repeat purchase, track every interaction across channels, segments, and seasons—so you always know what’s driving results."
+    "text": "From first impression to completed order, track engagement across Email, Push, WhatsApp, and every segment, so you always know what's driving results."
   },
   {
     "tag": "p",
-    "text": "Answer key questions at a glance with pre-built dashboards."
+    "text": "Answer key questions at a glance with the Executive summary."
   },
   {
     "tag": "p",
-    "text": "Take a deeper dive into campaigns, flows, product performance and more with custom reports."
+    "text": "Take a deeper dive into how each channel performs, delivery, opens, clicks, and conversions, filtered exactly the way you need."
   },
   {
     "tag": "p",
-    "text": "Gain clear insight into your marketing impact across touchpoints, with flexible attribution settings that apply retrospectively."
+    "text": "Gain clear insight into what actually matters to you, turn any section on or off and your report updates instantly."
   },
   {
     "tag": "p",
@@ -89,11 +89,11 @@
   },
   {
     "tag": "p",
-    "text": "YoY growth in revenue from Klaviyo automations in last 12 months"
+    "text": "In email-driven revenue, from 138 campaigns reaching 291,785 subscribers."
   },
   {
     "tag": "p",
-    "text": "Increase in revenue from “loyal” customer engagement"
+    "text": "In email-driven revenue, across 76 campaigns reaching 5+ countries."
   },
   {
     "tag": "p",
@@ -105,47 +105,47 @@
   },
   {
     "tag": "h2",
-    "text": "Create the smoothest customer journey for every shopper"
+    "text": "One record for every customer, updated in real time"
   },
   {
     "tag": "p",
-    "text": "Discover what’s driving purchase behaviour with advanced tools such as funnel and cohort analyses, and multi-touch attribution."
+    "text": "Compare your top campaigns and automations side by side, ranked by real revenue, not guesswork."
   },
   {
     "tag": "p",
-    "text": "Track every shopper’s on-site behaviour, conversions and Customer Hub checkouts, all in one place."
+    "text": "Every channel, every message, every reply, one unified profile instead of piecing it together across three tools."
   },
   {
     "tag": "p",
-    "text": "Keep your customers happy – and coming back – with guidance from Review Sentiment AI."
+    "text": "Bounce rate, unsubscribes, and spam complaints are watched continuously, so a dip gets flagged while it's still small."
   },
   {
     "tag": "h2",
-    "text": "Seize hidden opportunities all day, every day"
+    "text": "The questions every marketer asks, answered without asking"
   },
   {
     "tag": "p",
-    "text": "Continuously hone your strategy for the biggest payoff with peer insights, testing, and tailored recommendations."
+    "text": "No digging required, Pulse surfaces the answer before you even think to ask the question."
   },
   {
     "tag": "p",
-    "text": "Fine-tune tactics through iteration, global holdout groups, AI-driven A/B testing, and audience optimisation."
+    "text": "Stop guessing which subject line or send time works better. The winner takes over automatically. No decision needed."
   },
   {
     "tag": "p",
-    "text": "Uncover opportunities with personalised benchmarks that show how your metrics compare with peer brands."
+    "text": "Every metric sits next to the industry average, so good stops being a guess."
   },
   {
     "tag": "p",
-    "text": "Get personalised recommendations on best practices for marketing, deliverability and targeting."
+    "text": "The automation quietly sending to nobody gets flagged before it becomes a bigger problem."
   },
   {
     "tag": "h2",
-    "text": "Upgrade to our advanced Personalisation features"
+    "text": "Every plan comes with powerful analytics, built in"
   },
   {
     "tag": "p",
-    "text": "Every Klaviyo Marketing plan includes powerful analytics tools from day one. But if you’re ready to get the most from your data, then it’s time to check out all the ways you can grow with advanced customer and product insights."
+    "text": "From your first campaign to full-funnel reporting, analytics isn't an upsell, it's part of every Pulse plan from day one."
   },
   {
     "tag": "h3",
@@ -169,7 +169,7 @@
   },
   {
     "tag": "h2",
-    "text": "Explore the rest of B2C CRM"
+    "text": "Explore the rest of Pulse"
   },
   {
     "tag": "h2",
@@ -177,50 +177,58 @@
   },
   {
     "tag": "h3",
-    "text": "What analytics can I access with a Klaviyo Marketing plan?"
+    "text": "What analytics do I get with a Pulse plan?"
   },
   {
     "tag": "p",
-    "text": "Whether you’re using Klaviyo Email, SMS, Mobile Push or Reviews, Klaviyo Marketing offers best-in-class reporting so you can measure marketing performance and growth. Easily track subscriber trends, marketing engagement, deliverability and industry benchmarks through clear dashboards and customisable reports."
+    "text": "Every plan includes a full Marketing overview, Executive summary, revenue attribution, channel performance across Email, Push, and WhatsApp, deliverability quality, and automation analytics, from day one."
   },
   {
     "tag": "h3",
-    "text": "What analytics can I access with a Klaviyo Marketing Analytics plan?"
+    "text": "How is revenue attribution calculated?"
   },
   {
     "tag": "p",
-    "text": "Marketers need more than clicks and opens, so Klaviyo Marketing Analytics makes it easy to predict, personalise and automate outreach based on customer behaviour and business trends."
+    "text": "Revenue is traced back to a specific campaign or automation once a tracked order is linked to a marketing touch. Until there's enough activity in a period, you'll see \"Attribution unavailable\" rather than a misleading number."
   },
   {
     "tag": "h3",
-    "text": "What are my benchmarks based on?"
+    "text": "What are the industry benchmarks based on?"
   },
   {
     "tag": "p",
-    "text": "Klaviyo provides detailed benchmarks so you can track your performance and opportunities to improve, compared with your personalised peer group. Benchmarks are based on anonymised data from businesses in your industry of a similar size, scope and market position."
+    "text": "Delivery rate, open rate, click rate, unsubscribe rate, and spam complaint rate are each shown alongside a real industry average, so you can judge your own numbers against a genuine reference point, not just in isolation."
   },
   {
     "tag": "h3",
-    "text": "How can I use AI in Klaviyo Analytics?"
+    "text": "Can I customize what shows up on my report?"
   },
   {
     "tag": "p",
-    "text": "Klaviyo AI helps you unlock powerful insights and analytics, which act as fuel for automatic 1:1 marketing personalisation. Klaviyo Analytics features use AI to automate A/B testing, optimise audiences, deliver campaigns at personalised send times, summarise review sentiments, and more."
+    "text": "Yes. Use Customize report to turn sections like Revenue & attribution, Channel performance, or Automations on or off, so your report reflects what actually matters to you."
   },
   {
     "tag": "h3",
-    "text": "How is Klaviyo Analytics different from other analytics solutions?"
+    "text": "How does Pulse's AI fit into analytics?"
   },
   {
     "tag": "p",
-    "text": "Klaviyo Analytics connects your entire B2C CRM, so you can quickly and easily understand performance, identify opportunities, and optimise experiences across the full customer journey."
+    "text": "Pulse's AI reviews your campaign data in the background and surfaces plain-language insights automatically, like which channel or flow is outperforming the rest, along with a specific suggested next move."
   },
   {
     "tag": "h3",
-    "text": "Can I customize Klaviyo Analytics?"
+    "text": "Can I export or schedule reports?"
   },
   {
     "tag": "p",
-    "text": "Yes! Klaviyo Analytics gives you the flexibility to easily filter, customise and export reports and dashboards."
+    "text": "Yes. Use Export to download your data, or Schedule report to have it sent to you automatically on a recurring basis."
+  },
+  {
+    "tag": "h3",
+    "text": "Does analytics work the same across Email, Push, and WhatsApp?"
+  },
+  {
+    "tag": "p",
+    "text": "Each channel tracks the metrics that make sense for it. WhatsApp tracks Read since read receipts are part of the platform, for example, while all three are still comparable side by side in Channel performance."
   }
 ]

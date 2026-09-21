@@ -9,7 +9,7 @@ export default function AnalyticsInsights() {
       <Container>
         <AnalyticsIntro title={insights.title} description={insights.description} />
         <article className="mb-16 max-[700px]:mb-[35px]">
-          <Visual asset={insights.main.asset} alt={insights.main.alt} className="aspect-video object-cover" />
+          <Visual asset={insights.main.asset} alt={insights.main.alt} className="object-contain" />
           <p className="pt-6 text-base leading-[1.55] text-[#55514f] max-[700px]:pt-[18px]">{insights.main.description}</p>
         </article>
         <div className="grid grid-cols-2 gap-7 max-[700px]:grid-cols-1">
