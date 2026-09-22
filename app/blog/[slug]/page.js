@@ -15,7 +15,6 @@ export async function generateMetadata({ params }) {
   return {
     title: `${article.title} | Pulse Blog`,
     description: article.description,
-    ...(article.hasFullContent ? {} : { robots: { index: false, follow: true } }),
   };
 }
 

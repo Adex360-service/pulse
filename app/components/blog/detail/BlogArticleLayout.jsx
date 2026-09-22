@@ -13,7 +13,13 @@ export default function BlogArticleLayout({ article }) {
       <BlogArticleHeader article={article} />
       <Container className="max-w-[800px]">
         <article id="blog-article-content">
-          <BlogArticleAuthor article={article} />
+          <BlogArticleAuthor
+            author={article.author}
+            date={article.date}
+            readTime={article.readTime}
+            thumbnail={article.thumbnail}
+            badge={article.category}
+          />
           <BlogArticleBody article={article} />
         </article>
       </Container>

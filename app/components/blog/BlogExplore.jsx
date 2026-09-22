@@ -3,10 +3,13 @@
 import Container from "../ui/Container";
 import BlogPostCard from "./BlogPostCard";
 import BlogSearch from "./BlogSearch";
-import { useBlogSearch } from "./BlogSearchProvider";
+import { filterBlogPosts, useBlogSearch } from "./BlogSearchProvider";
 
-export default function BlogExplore() {
-  const { query, changeQuery, filteredPosts, visibleCount, loadMore } = useBlogSearch();
+export default function BlogExplore({ posts = [] }) {
+  const { query, changeQuery, visibleCount, loadMore } = useBlogSearch();
+  if (posts.length === 0) return null;
+
+  const filteredPosts = filterBlogPosts(posts, query);
   const visiblePosts = filteredPosts.slice(0, visibleCount);
   return (
     <section id="explore-blogs" className="scroll-mt-24 pt-20 pb-[72px] max-sm:py-12" aria-labelledby="explore-title">
