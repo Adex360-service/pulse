@@ -8,7 +8,6 @@ export function getBlogArticle(slug) {
 
   return {
     ...article,
-    category: article.category || "Subscriptions",
     readTime: article.readTime || "",
   };
 }
