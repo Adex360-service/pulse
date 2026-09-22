@@ -28,7 +28,7 @@ export default function BlogMerchantStories({ posts = [], categories = [] }) {
   return (
     <section className="bg-[#f7f7fc] py-12 max-sm:py-10" aria-labelledby="merchant-stories-title">
       <Container>
-        <h2 id="merchant-stories-title" className="text-center font-[family-name:var(--font-fraunces)] text-[32px] leading-[1.2] font-semibold tracking-[-.5px] max-sm:text-[28px]">Merchant success stories from Loop</h2>
+        <h2 id="merchant-stories-title" className="text-center font-[family-name:var(--font-fraunces)] text-[32px] leading-[1.2] font-semibold tracking-[-.5px] max-sm:text-[28px]">Merchant success stories from Pulse</h2>
         <div className="mt-6 mb-8 flex flex-wrap justify-center gap-3" role="tablist" aria-label="Merchant story categories">
           {categories.map((category, index) => (
             <button

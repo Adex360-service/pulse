@@ -102,7 +102,7 @@ export const blogArticles = [
   },
   {
     slug: "recharge-vs-bold-subscriptions",
-    title: "Recharge vs. Bold vs. Loop: Which Shopify Subscription App Is Best in 2026?",
+    title: "Recharge vs. Bold vs. Pulse: Which Shopify Subscription App Is Best in 2026?",
     description:
       "Compare subscription platforms by pricing, operations, flexibility, and customer experience.",
     image: "/images/blog/6a0c43668a6077ce9a5af162.avif",

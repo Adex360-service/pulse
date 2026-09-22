@@ -112,7 +112,7 @@ export default function Footer() {
             href="https://apps.shopify.com/loop-subscriptions"
             target="_blank"
             rel="noreferrer"
-            aria-label="Find Loop on the Shopify App Store"
+            aria-label="Find Pulse on the Shopify App Store"
           />
           <nav
             className="ml-auto flex gap-3 text-[13px] max-lg:ml-0 max-lg:w-full max-lg:flex-wrap max-sm:mt-2 max-sm:gap-x-3 max-sm:gap-y-4 max-sm:text-base"

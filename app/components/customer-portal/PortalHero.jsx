@@ -29,7 +29,7 @@ export default function PortalHero() {
         </div>
         <img
           src={`${portalCdn}/68595cfdd7c293a4141e0cf3_8b3d3f7568b7b112437da04c86e84fa2_Customer%20portal-2.avif`}
-          alt="Loop retention-first customer portal"
+          alt="Pulse retention-first customer portal"
           className="mx-auto max-h-[540px] w-full object-contain"
         />
       </Container>

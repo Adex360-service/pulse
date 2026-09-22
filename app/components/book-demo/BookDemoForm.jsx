@@ -65,11 +65,11 @@ export default function BookDemoForm() {
       <label className="mt-3 block text-[10px] font-semibold tracking-[1.5px] text-[#666370] uppercase">
         Where did you hear about us?
         <select defaultValue="" className={inputClass} name="source">
-          <option value="">How did you hear about Loop? (Optional)</option>
+          <option value="">How did you hear about Pulse? (Optional)</option>
           <option>Google or Bing Search</option>
           <option>Shopify App Store</option>
           <option>Merchant or Partner Referral</option>
-          <option>Loop Marketing Emails</option>
+          <option>Pulse Marketing Emails</option>
           <option>Social media</option>
           <option>ChatGPT</option>
           <option>Other</option>

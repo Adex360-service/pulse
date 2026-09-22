@@ -24,7 +24,7 @@ export default function AcquireHero({ logos }) {
           <AcquireButton>Book a demo</AcquireButton>
         </div>
         <p className="mt-20 text-base text-[#8376b5] max-sm:mt-16">
-          Trusted by 1100+ brands that migrated to Loop
+          Trusted by 1,100+ brands that migrated to Pulse
         </p>
       </Container>
       <div className="absolute bottom-7 left-1/2 z-10 w-[calc(100%_-_48px)] max-w-[1280px] -translate-x-1/2 overflow-hidden max-sm:bottom-10 max-sm:w-[calc(100%_-_32px)]">

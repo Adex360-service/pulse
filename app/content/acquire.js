@@ -72,7 +72,7 @@ export const resultStories = [
   {
     image: `${acquireCdn}/6863bcaaa8927e0177c7cbf6_181adc4c67a298a8e53315f2aa15298f_image%20130.png`,
     title: "Achieved 3X subscription growth",
-    description: "73.5% increase in subscription revenue over 9 months - from 5% to 28.6% of total revenue with Loop Subscriptions",
+    description: "73.5% increase in subscription revenue over 9 months - from 5% to 28.6% of total revenue with Pulse subscriptions",
     name: "Connor Westby",
     role: "Co-Founder & Director, NutriPaw",
     headshot: `${acquireCdn}/686cfccdbe8ddaf6d66cffb4_headshot.svg`,
@@ -85,7 +85,7 @@ export const resultStories = [
   {
     image: `${acquireCdn}/6863c00b48ee3f1ee66ca95c_image%20(44).png`,
     title: "OSEA Malibu cut churn in half",
-    description: "Reduced churn from 10% to 5% in 6 months while increasing upsell revenue from 4.5% to 6.8% with Loop Subscriptions",
+    description: "Reduced churn from 10% to 5% in 6 months while increasing upsell revenue from 4.5% to 6.8% with Pulse subscriptions",
     name: "OSEA Malibu Team",
     role: "Premium Clean Beauty Brand",
     outcomes: [
@@ -97,7 +97,7 @@ export const resultStories = [
   {
     image: `${acquireCdn}/686d076e28837773c9fd9aef_image%20134.svg`,
     title: "Achieved API-powered growth",
-    description: "18% YTD subscription revenue growth ($1.16M) and 36% cancellation save rate through comprehensive API integration with Loop",
+    description: "18% YTD subscription revenue growth ($1.16M) and 36% cancellation save rate through comprehensive API integration with Pulse",
     name: "Ketochow Team",
     role: "Migrated from Skio",
     outcomes: [
@@ -121,11 +121,11 @@ export const resultStories = [
   {
     image: `${acquireCdn}/686d06db423af05b1b792370_image%20135.svg`,
     title: "Mammaly maximized subscriber engagement",
-    description: "30% of subscribers updated payment methods via Quick Actions and 18% reactivation rate through seamless customer experience with Loop",
+    description: "30% of subscribers updated payment methods via Quick Actions and 18% reactivation rate through seamless customer experience with Pulse",
     name: "Mammaly Team",
     role: "Pet wellness subscription brand",
     outcomes: [
-      ["Loop Flows with rewards journey", "Created subscriber engagement with rewards at 3rd, 4th, 6th, and 9th orders, reducing second-order churn and overall churn rates"],
+      ["Pulse Flows with rewards journey", "Created subscriber engagement with rewards at 3rd, 4th, 6th, and 9th orders, reducing second-order churn and overall churn rates"],
       ["Quick Actions functionality", "30% of subscribers updated payment methods seamlessly, while 18% of reactivations were facilitated through streamlined user experience"],
       ["Custom portal with product carousel", "Early access to new products for subscribers with Product of the Month highlights to increase AOV and reduce shipping costs"],
     ],

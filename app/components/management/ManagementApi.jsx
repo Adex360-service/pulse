@@ -32,7 +32,7 @@ export default function ManagementApi({ section }) {
           ))}
           <img
             src={section.codeImage}
-            alt="Loop Storefront API code example"
+            alt="Pulse Storefront API code example"
             className="h-full max-h-[310px] w-full rounded-[20px] object-cover"
           />
         </div>

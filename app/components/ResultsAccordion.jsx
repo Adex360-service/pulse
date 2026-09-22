@@ -15,7 +15,7 @@ const stories = [
   },
   {
     brand: "OSEA Malibu",
-    copy: "reported churn moved from 10% to 5% after migration to Loop",
+    copy: "reported churn moved from 10% to 5% after migration to Pulse",
     logo: "https://cdn.prod.website-files.com/625e799b877c107387cdf3ac/685503c4c975cfc8b23faaa0_16_osea-logo.avif",
     image:
       "https://cdn.prod.website-files.com/625e799b877c107387cdf3ac/6a030dcf35a812dba2a3dd09_osea.avif",
@@ -23,7 +23,7 @@ const stories = [
   },
   {
     brand: "Livingood Daily",
-    copy: "migrated ~130K subscribers from Recharge to Loop",
+    copy: "migrated ~130K subscribers from Recharge to Pulse",
     logo: "https://cdn.prod.website-files.com/625e799b877c107387cdf3ac/6a019e857e0294e01b8faa9e_9.avif",
     image:
       "https://cdn.prod.website-files.com/625e799b877c107387cdf3ac/6a01b4e6f2138feb4d1fd8d4_3858d6e488145b5ac92dd007d81a097e_dropdownimage1.avif",
@@ -39,7 +39,7 @@ const stories = [
   },
   {
     brand: "Because Market",
-    copy: "from Custom Setup to Loop.",
+    copy: "from Custom Setup to Pulse.",
     logo: "https://cdn.prod.website-files.com/625e799b877c107387cdf3ac/685503c1515d0a522726b5f8_6_Because_New_logo.avif",
     image:
       "https://cdn.prod.website-files.com/625e799b877c107387cdf3ac/6a01be498d7cb047894c62a8_because-drop-dwon.avif",
@@ -71,7 +71,7 @@ export default function ResultsAccordion() {
             Shows up as your results
           </p>
           <h2 className="font-[family-name:var(--font-fraunces)] text-[66px] leading-[1.06] font-normal tracking-[-1.8px] text-[#3b197f] max-sm:text-[32px] max-sm:text-center">
-            1,100+ brands <em>migrated</em>&nbsp; to Loop.
+            1,100+ brands <em>migrated</em>&nbsp; to Pulse.
             <br />
             Here&apos;s what happened.
           </h2>

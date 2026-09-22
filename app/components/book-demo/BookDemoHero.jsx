@@ -13,7 +13,7 @@ export default function BookDemoHero() {
         <div className="grid grid-cols-[0.95fr_1.05fr] items-center gap-24 max-lg:grid-cols-1 max-lg:gap-12">
           <div>
             <h1 className="max-w-[580px] font-[family-name:var(--font-display)] text-[64px] leading-[1.08] text-[#2d155f] max-sm:text-[44px]">Transform your subscription business</h1>
-            <p className="mt-10 max-w-[600px] text-xl leading-[1.45] text-[#6a6768] max-sm:mt-6 max-sm:text-lg">Loop helps brands increase retention, boost revenue, and create flexible subscription experiences that customers love.</p>
+            <p className="mt-10 max-w-[600px] text-xl leading-[1.45] text-[#6a6768] max-sm:mt-6 max-sm:text-lg">Pulse helps brands increase retention, boost revenue, and create flexible subscription experiences that customers love.</p>
           </div>
           <form className="rounded-[24px] border-2 border-white bg-white/20 p-7 shadow-[0_14px_40px_#6e52a512] backdrop-blur-[2px] max-sm:p-5">
             <h2 className="mb-6 font-[family-name:var(--font-display)] text-[30px] text-[#262226]">Book your demo</h2>
@@ -25,8 +25,8 @@ export default function BookDemoHero() {
             </div>
             <textarea className="mt-5 min-h-24 w-full rounded-lg border border-[#dedede] bg-white p-4 outline-none focus:border-[#8b43fd]" maxLength={550} placeholder="Message (max 100 words)" />
             <select defaultValue="" className="mt-5 h-12 w-full rounded-lg border border-[#dedede] bg-white px-4 text-[#666] outline-none focus:border-[#8b43fd]">
-              <option value="" disabled>How did you hear about Loop? (Optional)</option>
-              <option>Google or Bing Search</option><option>Shopify App Store</option><option>Merchant or Partner Referral</option><option>Loop Marketing Emails</option><option>Social media</option><option>ChatGPT</option><option>Other</option>
+              <option value="" disabled>How did you hear about Pulse? (Optional)</option>
+              <option>Google or Bing Search</option><option>Shopify App Store</option><option>Merchant or Partner Referral</option><option>Pulse Marketing Emails</option><option>Social media</option><option>ChatGPT</option><option>Other</option>
             </select>
             <button className="loop-liquid-button mt-5 h-14 w-full rounded-full bg-[#873cff] font-semibold text-white" type="submit"><span>Book a Demo</span><LiquidButtonLayers /></button>
             <label className="mt-5 flex items-center justify-center gap-3 text-sm text-[#555] max-sm:items-start">

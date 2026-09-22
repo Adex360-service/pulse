@@ -28,7 +28,7 @@ function Plans() {
             </span>
           </h1>
           <p className="mt-4 text-[#898285]">
-            Transparent Loop Subscriptions pricing for Shopify — flat monthly
+            Transparent Pulse subscription pricing for Shopify — flat monthly
             plans, $0 per-order fees, free migration.
           </p>
         </div>
@@ -93,7 +93,7 @@ function Comparison() {
     <section className="bg-[#fbf8f4] py-20">
       <Container>
         <p className="text-center text-sm font-semibold uppercase tracking-[0.16em] text-[#8b43fd]">
-          Compare Loop Subscriptions Plans
+          Compare Pulse Plans
         </p>
         <h2
           className={`${heading} mt-5 text-center text-[52px] leading-tight max-sm:text-[36px]`}
@@ -228,7 +228,7 @@ function Proof() {
           {[
             ["Subscription revenue processed", "$4B+"],
             ["Shopify brands", "2,400+"],
-            ["Migrations to Loop", "1,100+"],
+            ["Migrations completed", "1,100+"],
             ["App Store rating", "4.9 ★"],
           ].map(([label, value]) => (
             <div
@@ -250,7 +250,7 @@ function Proof() {
           <p className="text-base">
             <b>White-glove migration.</b>{" "}
             <span className="text-[#666]">
-              Fully managed by Loop end to end.
+              Fully managed by Pulse end to end.
             </span>
           </p>
           <Link
@@ -288,7 +288,7 @@ function Faq() {
               </button>
               {open === i && (
                 <p className="pb-5 leading-7 text-[#777]">
-                  Loop offers transparent month-to-month pricing with no
+                  Pulse offers transparent month-to-month pricing with no
                   per-order flat fees, setup fees, migration fees, or hidden
                   add-on charges.
                 </p>
@@ -311,12 +311,12 @@ export default function PricingPage() {
       <section className="bg-[linear-gradient(120deg,#6d35bd,#a945c1)] py-24 text-center text-white">
         <Container>
           <h2 className="font-[family-name:var(--font-display)] text-[48px] leading-tight">
-            See what Loop looks like
+            See what Pulse looks like
             <br />
             for your brand.
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-sm">
-            Book a call and we'll walk through your monthly cost on Loop and how
+            Book a call and we'll walk through your monthly cost with Pulse and how
             a switch would work for your setup — no pressure, no pitch.
           </p>
           <Link
