@@ -95,7 +95,7 @@ export default function BookDemoForm() {
             Terms of Service
           </Link>{" "}
           and{" "}
-          <Link className="font-semibold text-[#68636d]" href="/legal/privacy">
+          <Link className="font-semibold text-[#68636d]" href="/privacy-policy">
             Privacy Policy
           </Link>
           .

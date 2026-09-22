@@ -122,7 +122,7 @@ export default function Footer() {
             <i>•</i>
             <Link href="/">Cookie Policy</Link>
             <i>•</i>
-            <Link href="/">Privacy Policy</Link>
+            <Link href="/privacy-policy">Privacy Policy</Link>
           </nav>
         </div>
 
