@@ -20,61 +20,86 @@ function Plans() {
       <Container>
         <div className="text-center">
           <h1
-            className={`${heading} text-[56px] leading-tight max-sm:text-[40px]`}
+            className={`${heading} text-[36px] leading-tight max-sm:text-[24px]`}
           >
-            Scale your subscriptions.{" "}
-            <span className="text-black">
-              Not your <em>fees</em>
-            </span>
+            Email, Push Notifications and WhatsApp —{" "}
+            <span className="text-black">all in one powerful platform.</span>
           </h1>
           <p className="mt-4 text-[#898285]">
-            Transparent Pulse subscription pricing for Shopify — flat monthly
-            plans, $0 per-order fees, free migration.
+            Start free and scale as you grow. Flexible pricing based on your
+            usage.
           </p>
         </div>
-        <div className="mx-auto mt-16 grid max-w-[1365px] grid-cols-3 items-stretch gap-8 max-lg:grid-cols-1">
+        <div className="mt-8 flex justify-center gap-4 text-sm font-semibold max-md:flex-wrap">
+          {["Email Marketing", "Push Notifications", "WhatsApp Messaging"].map(
+            (channel, index) => (
+              <span
+                key={channel}
+                className="rounded-full border border-[#e7e0d8] bg-white px-5 py-2 text-[#29283a]"
+              >
+                <span
+                  className={`mr-2 inline-block h-5 w-5 rounded-full align-middle ${index === 0 ? "bg-[#2e78dd]" : index === 1 ? "bg-[#e9a315]" : "bg-[#22aa54]"}`}
+                />
+                {channel}
+              </span>
+            ),
+          )}
+        </div>
+        <div className="mx-auto mt-8 grid max-w-[1365px] grid-cols-3 items-stretch gap-5 max-lg:grid-cols-1">
           {plans.map((plan) => (
             <article
               key={plan.name}
-              className={`relative flex min-h-[740px] flex-col bg-white p-10 max-sm:min-h-0 max-sm:p-7 ${plan.best ? "border-2 border-[#ebd47c]" : "border border-[#eee]"}`}
+              className={`relative flex min-h-[545px] flex-col rounded-2xl bg-white p-6 max-sm:min-h-0 max-sm:p-6 ${plan.best ? "border-2 border-[#3f48e8]" : "border border-[#e9e3db]"}`}
             >
               {plan.best && (
-                <span className="absolute inset-x-[-2px] -top-10 h-10 bg-[#dfc9ff] pt-3 text-center text-[11px] font-semibold uppercase tracking-widest text-[#8b43fd]">
-                  Best value
+                <span className="absolute left-1/2 -top-4 -translate-x-1/2 rounded-full bg-[#3f48e8] px-5 py-1 text-xs font-semibold text-white">
+                  Most Popular
                 </span>
               )}
-              <h2 className="text-[28px] font-semibold">{plan.name}</h2>
-              <p className="mt-2 min-h-10 text-base text-[#777]">
-                {plan.subtitle}
-              </p>
-              <div className="mt-12 flex min-h-[62px] items-end">
-                <strong className={`${heading} text-[52px] leading-none font-normal text-black`}>
+              <h2 className="text-[25px] font-semibold text-[#202033]">
+                {plan.name}
+              </h2>
+              <div className="mt-2 flex items-baseline gap-2">
+                <strong className="text-[43px] leading-none text-[#151526]">
                   {plan.price}
                 </strong>
-                {plan.price.startsWith("$") && (
-                  <span className="mb-1 text-base">/month</span>
-                )}
+                <span className="text-sm text-[#777]">/month</span>
               </div>
-              <div className="mt-8 min-h-[54px]"><p className="text-base text-[#873cff]">Transaction <b>{plan.rate}</b></p><p className="mt-2 text-base text-black">Per order $0</p></div>
+              <p className="mt-2 min-h-10 text-sm text-[#777]">
+                {plan.subtitle}
+              </p>
+              <div className="mt-5 grid grid-cols-3 gap-2">
+                {plan.usage.map((item, index) => {
+                  const [value, ...labelParts] = item.split(" ");
+                  return (
+                    <div
+                      key={item}
+                      className="rounded-lg border border-[#e7e0d8] px-2 py-2 text-center"
+                    >
+                      <span
+                        className={`mx-auto mb-1 block h-4 w-4 rounded-full border-2 ${index === 0 ? "border-[#2e78dd]" : index === 1 ? "border-[#e9a315]" : "border-[#22aa54]"}`}
+                      />
+                      <b className="block text-lg leading-none text-[#202033]">
+                        {value}
+                      </b>
+                      <small className="text-[10px] leading-tight text-[#666]">
+                        {labelParts.join(" ")}
+                      </small>
+                    </div>
+                  );
+                })}
+              </div>
               <Link
-                href={
-                  plan.name === "Starter"
-                    ? "https://apps.shopify.com/loop-subscriptions"
-                    : "/book-a-demo"
-                }
-                className="mt-6 block bg-black py-4 text-center text-base text-white"
+                href="/book-a-demo"
+                className={`order-last mt-auto block rounded-lg py-3 text-center text-base font-semibold text-white ${plan.best ? "bg-[#3f48e8]" : "bg-[#171722]"}`}
               >
                 {plan.action}
               </Link>
-              <p className="mt-10 text-[12px] font-semibold uppercase tracking-[0.13em]">
-                {plan.label}
-              </p>
-              <ul className="mt-6 space-y-5 text-[17px] text-[#555]">
+              <ul className="mt-5 space-y-2 text-sm text-[#353542]">
                 {plan.features.map((item) => (
-                  <li key={item} className="flex items-center gap-3">
-                    <span className="text-[#873cff]">•</span>
+                  <li key={item} className="flex items-start gap-2">
+                    <span className="text-base text-[#20a753]">✓</span>
                     <span>{item}</span>
-                    <span className="group relative ml-1 inline-grid h-5 w-5 shrink-0 cursor-help place-items-center rounded-full border border-[#d7bf8b] text-[11px] text-[#b38c42]" tabIndex={0}>i<span role="tooltip" className="pointer-events-none absolute bottom-[calc(100%+10px)] left-1/2 z-20 hidden w-56 -translate-x-1/2 rounded-lg bg-[#281650] px-3 py-2 text-center text-xs leading-5 font-normal normal-case tracking-normal text-white shadow-lg group-hover:block group-focus:block">Learn more about {item.toLowerCase()} included with the {plan.name} plan.</span></span>
                   </li>
                 ))}
               </ul>
@@ -277,21 +302,17 @@ function Faq() {
           you book the call.
         </h2>
         <div className="mt-10">
-          {pricingFaqs.map((q, i) => (
-            <div className="border-b" key={q}>
+          {pricingFaqs.map((item, i) => (
+            <div className="border-b" key={item.question}>
               <button
                 onClick={() => setOpen(open === i ? null : i)}
                 className="flex w-full justify-between py-5 text-left font-semibold text-[#432184]"
               >
-                {q}
+                {item.question}
                 <span>{open === i ? "−" : "+"}</span>
               </button>
               {open === i && (
-                <p className="pb-5 leading-7 text-[#777]">
-                  Pulse offers transparent month-to-month pricing with no
-                  per-order flat fees, setup fees, migration fees, or hidden
-                  add-on charges.
-                </p>
+                <p className="pb-5 leading-7 text-[#777]">{item.answer}</p>
               )}
             </div>
           ))}
@@ -305,8 +326,8 @@ export default function PricingPage() {
   return (
     <>
       <Plans />
-      <Comparison />
-      <Proof />
+      {/* <Comparison /> */}
+      {/* <Proof /> */}
       <Faq />
       <section className="bg-[linear-gradient(120deg,#6d35bd,#a945c1)] py-24 text-center text-white">
         <Container>
@@ -316,8 +337,8 @@ export default function PricingPage() {
             for your brand.
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-sm">
-            Book a call and we'll walk through your monthly cost with Pulse and how
-            a switch would work for your setup — no pressure, no pitch.
+            Book a call and we'll walk through your monthly cost with Pulse and
+            how a switch would work for your setup — no pressure, no pitch.
           </p>
           <Link
             href="/book-a-demo"
