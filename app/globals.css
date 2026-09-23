@@ -214,6 +214,16 @@
   animation-play-state: paused;
 }
 
+@keyframes successStoriesVertical {
+  from { transform: translateY(0); }
+  to { transform: translateY(-50%); }
+}
+
+@keyframes successStoriesVerticalReverse {
+  from { transform: translateY(-50%); }
+  to { transform: translateY(0); }
+}
+
 /* Shared Loop-style liquid hover for primary CTAs. */
 .loop-liquid-button {
   position: relative;

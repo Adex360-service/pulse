@@ -1,5 +1,6 @@
 import SectionIntro from "./SectionIntro";
 import Container from "../ui/Container";
+import ReviewMarquee from "../ui/ReviewMarquee";
 
 export default function Team({ reviews }) {
   return (
@@ -21,19 +22,21 @@ export default function Team({ reviews }) {
               headingClassName="text-[66px] leading-[1.05] max-sm:text-[32px] max-sm:leading-[1.08] max-sm:tracking-[-1px]"
             >
               Real updates
-              <br className="max-sm:hidden" />Right in
+              <br className="max-sm:hidden" />
+              Right in
               <br className="max-sm:hidden" /> their pocket.
             </SectionIntro>
             <p className="mt-6 max-w-[560px] text-[17px] leading-[1.55] text-white max-sm:hidden">
-              Instant push notifications for every order milestone from confirmation to delivery. Keep customers in the loop, automatically.
+              Instant push notifications for every order milestone from
+              confirmation to delivery. Keep customers in the loop,
+              automatically.
             </p>
           </div>
           <div className="relative h-[600px] self-stretch max-lg:h-[420px] max-sm:h-[330px]">
             <div
               className="absolute inset-0 bg-[length:auto_84%] bg-[position:82%_100%] bg-no-repeat max-sm:bg-[length:auto_100%] max-sm:bg-[position:78%_100%]"
               style={{
-                backgroundImage:
-                  'url("/images/first-banner.png")',
+                backgroundImage: 'url("/images/first-banner.png")',
               }}
             />
             {/* <div
@@ -46,30 +49,7 @@ export default function Team({ reviews }) {
           </div>
         </Container>
       </section>
-      <section className="overflow-hidden border-b border-[#eee] bg-white py-[38px] hover:[&>div]:[animation-play-state:paused]">
-        <div className="flex w-max gap-6 animate-[reviewMarquee_55s_linear_infinite]">
-          {reviews.concat(reviews).map(([brand, meta, quote, image], index) => (
-            <article
-              className="grid h-[195px] w-[620px] grid-cols-[56%_44%] overflow-hidden rounded-lg border border-[#eadfda] bg-white max-sm:h-[150px] max-sm:w-[340px] max-sm:grid-cols-[62%_38%]"
-              key={`${brand}-${index}`}
-            >
-              <div className="px-6 py-[30px] max-sm:p-[18px]">
-                <b className="text-base text-[#7726d9]">{brand}</b>
-                <small className="mt-3.5 block text-[10px] text-[#555] uppercase">
-                  {meta}
-                </small>
-                <p className="mt-5 font-[family-name:var(--font-fraunces)] text-xl leading-[1.25] italic text-[#3b197f] max-sm:text-sm">
-                  “{quote}”
-                </p>
-              </div>
-              <span
-                className="block bg-cover bg-center bg-no-repeat"
-                style={{ backgroundImage: `url("${image}")`, clipPath: "polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%)", }}
-              />
-            </article>
-          ))}
-        </div>
-      </section>
+      <ReviewMarquee reviews={reviews} />
     </>
   );
 }
