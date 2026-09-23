@@ -36,7 +36,7 @@ export default function Team({ reviews }) {
             <div
               className="absolute inset-0 bg-[length:auto_84%] bg-[position:82%_100%] bg-no-repeat max-sm:bg-[length:auto_100%] max-sm:bg-[position:78%_100%]"
               style={{
-                backgroundImage: 'url("/images/first-banner.png")',
+                backgroundImage: 'url("/images/cougar-new-image-22.png")',
               }}
             />
             {/* <div

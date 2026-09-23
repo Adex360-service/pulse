@@ -18,8 +18,7 @@ export default function Problems({ items }) {
                 className="mb-4 block h-[58px] w-[58px] shrink-0 bg-contain bg-center bg-no-repeat max-sm:h-[62px] max-sm:w-[62px]"
                 aria-hidden="true"
                 style={{
-                  backgroundImage:
-                    'url("https://cdn.prod.website-files.com/625e799b877c107387cdf3ac/6a0329deba25ddd297c23cc9_Group%2048096372.avif")',
+                  backgroundImage: `url("${problem.icon}")`,
                 }}
               />
               <h4 className="mb-1.5 text-[13px] font-semibold text-[#3b197f] max-sm:text-base">

@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useMemo, useState } from "react";
 
 export default function SuccessStoriesGrid({ stories }) {
@@ -80,7 +81,7 @@ export default function SuccessStoriesGrid({ stories }) {
           <div className="grid grid-cols-3 gap-x-7 gap-y-10 max-md:grid-cols-2 max-sm:grid-cols-1">
             {filtered.slice(0, visible).map((story) => (
               <article key={story.title}>
-                <a href={`/success-stories/${story.slug}`} className="group block">
+                <Link href={`/success-stories/${story.slug}`} className="group block">
                   <img
                     src={story.image}
                     alt=""
@@ -89,7 +90,7 @@ export default function SuccessStoriesGrid({ stories }) {
                   <h2 className="mt-4 line-clamp-2 text-[16px] leading-[1.35] font-semibold group-hover:text-[#7138e8]">
                     {story.title}
                   </h2>
-                </a>
+                </Link>
               </article>
             ))}
           </div>
