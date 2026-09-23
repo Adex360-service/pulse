@@ -9,7 +9,9 @@ export default function AnalyticsVisual({
   fill = false,
   sizes = "(max-width: 700px) 100vw, 60vw",
 }) {
-  const src = assets[Object.keys(assets).find(key => key.startsWith(asset))];
+  const src = asset.startsWith("/")
+    ? asset
+    : assets[Object.keys(assets).find(key => key.startsWith(asset))];
   const [, width, height] = src.match(/-(\d+)x(\d+)\./) || [null, 1200, 800];
   const dimensions = fill ? { fill: true } : { width: Number(width), height: Number(height) };
 

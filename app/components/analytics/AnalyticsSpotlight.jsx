@@ -9,8 +9,11 @@ export default function AnalyticsSpotlight() {
   const [active, setActive] = useState(0);
   const id = useId();
   return (
-    <section className="pt-5 pb-[100px] max-[700px]:pb-[60px]" aria-label="Customer spotlight">
-      <div className="group/ribbon mb-[100px] overflow-hidden bg-[#ff4934] text-white max-[700px]:mb-12" aria-hidden="true">
+    <section
+      className="pt-5 pb-[100px] max-[700px]:pb-[60px]"
+      aria-label="Customer spotlight"
+    >
+      {/* <div className="group/ribbon mb-[100px] overflow-hidden bg-[#ff4934] text-white max-[700px]:mb-12" aria-hidden="true">
         <div className="flex w-max animate-[marquee_45s_linear_infinite] group-hover/ribbon:[animation-play-state:paused] motion-reduce:animate-none">
           {Array.from({ length: 10 }, (_, index) => (
             <span className="flex items-center gap-10 p-5 font-[family-name:var(--font-inter)] text-xl tracking-[3px] max-[700px]:py-4 max-[700px]:text-[15px]" key={index}>
@@ -19,7 +22,7 @@ export default function AnalyticsSpotlight() {
             </span>
           ))}
         </div>
-      </div>
+      </div> */}
       <Container>
         <div className="flex h-[clamp(460px,36vw,660px)] gap-[22px] max-[1000px]:h-[500px] max-[1000px]:gap-3 max-[700px]:h-auto max-[700px]:flex-col">
           {stories.map((story, index) => {
@@ -36,9 +39,20 @@ export default function AnalyticsSpotlight() {
                   aria-controls={`${id}-story-${index}`}
                   onClick={() => setActive(index)}
                 >
-                  <Visual asset={story.asset} alt="" className={`h-full object-cover transition-[filter] duration-400 group-hover/story:brightness-100 max-[700px]:object-[center_35%] motion-reduce:transition-none ${expanded ? "brightness-100" : "brightness-[.72]"}`} />
-                  <span className={`absolute bottom-8 left-[10%] block h-[70px] w-4/5 max-[700px]:bottom-[18px] max-[700px]:left-6 max-[700px]:h-[60px] max-[700px]:w-[130px] ${expanded ? "opacity-0" : ""}`}>
-                    <Visual asset={story.logo} alt={story.name} fill sizes="180px" />
+                  <Visual
+                    asset={story.asset}
+                    alt=""
+                    className={`h-full object-cover transition-[filter] duration-400 group-hover/story:brightness-100 max-[700px]:object-[center_35%] motion-reduce:transition-none ${expanded ? "brightness-100" : "brightness-[.72]"}`}
+                  />
+                  <span
+                    className={`absolute bottom-8 left-[10%] block h-[70px] w-4/5 max-[700px]:bottom-[18px] max-[700px]:left-6 max-[700px]:h-[60px] max-[700px]:w-[130px] ${expanded ? "opacity-0" : ""}`}
+                  >
+                    <Visual
+                      asset={story.logo}
+                      alt={story.name}
+                      fill
+                      sizes="180px"
+                    />
                   </span>
                 </button>
                 <div
@@ -47,14 +61,31 @@ export default function AnalyticsSpotlight() {
                   hidden={!expanded}
                 >
                   <span className="relative block h-[68px] w-full max-w-[180px] shrink-0 max-[700px]:h-[55px]">
-                    <Visual asset={story.logo} alt={story.name} fill sizes="180px" className="object-contain object-left" />
+                    <Visual
+                      asset={story.logo}
+                      alt={story.name}
+                      fill
+                      sizes="180px"
+                      className="object-contain object-left"
+                    />
                   </span>
                   <div className="mt-auto">
                     <strong className="block font-[family-name:var(--font-fraunces)] text-[clamp(42px,4.8vw,60px)] leading-none font-normal whitespace-nowrap text-[#ff4934] max-[1000px]:text-[48px] max-[700px]:text-[clamp(38px,8vw,55px)]">
-                      {story.stat}<span className="ml-[3px] text-[.5em]" aria-hidden="true">↗</span>
+                      {story.stat}
+                      <span className="ml-[3px] text-[.5em]" aria-hidden="true">
+                        ↗
+                      </span>
                     </strong>
-                    <p className="mt-4 mb-[42px] text-[15px] leading-[1.55] max-[1000px]:mb-[25px] max-[1000px]:text-[13px]">{story.description}</p>
-                    <a className="text-sm leading-[1.8] underline underline-offset-8 max-[1000px]:text-xs" href={story.href}>Read {story.name}’s story <span aria-hidden="true">↗</span></a>
+                    <p className="mt-4 mb-[42px] text-[15px] leading-[1.55] max-[1000px]:mb-[25px] max-[1000px]:text-[13px]">
+                      {story.description}
+                    </p>
+                    {/* <a
+                      className="text-sm leading-[1.8] underline underline-offset-8 max-[1000px]:text-xs"
+                      href={story.href}
+                    >
+                      Read {story.name}’s story{" "}
+                      <span aria-hidden="true">↗</span>
+                    </a> */}
                   </div>
                 </div>
               </article>
