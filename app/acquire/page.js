@@ -10,9 +10,9 @@ import {
   bundleFeatures,
   countryFeatures,
   customerFeatures,
-  resultStories,
   widgetFeatures,
 } from "../content/acquire";
+import { successStories } from "../content/successStories";
 
 export const metadata = {
   title: "Increase Subscription Take Rate | Pulse",
@@ -43,7 +43,7 @@ export default function AcquirePage() {
           imageAlt="One-click subscription checkout flow"
           tinted
         />
-        <AcquireResults stories={resultStories} />
+        <AcquireResults stories={successStories} />
         <AcquireCta />
       </div>
     </>

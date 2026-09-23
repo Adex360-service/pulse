@@ -51,7 +51,7 @@ On Email, the brand ran over 50 focused campaigns to a growing list of nearly 28
 
 Rivaj UK's approach shows how a fashion brand can build meaningful revenue on Push as its primary channel, while Email works alongside it to reach a broader, complementary audience.`,
     image: `/images/Mask-group-8.png`,
-    category: "Fashion & Apparel",
+    category: "Beauty & Skincare",
     migratedFrom: "Skin Care",
   },
   {
@@ -79,7 +79,7 @@ Running consistent campaigns across all three channels, Butterfly built a growin
 
 Butterfly's approach shows how a fashion and lifestyle brand can build a coordinated, multi-channel engagement strategy on Pulse, one that grows with the store rather than adding complexity to it.`,
     image: `/images/Mask-group-10.png`,
-    category: "Fashion & Lifestyle",
+    category: "Feminine Care",
     migratedFrom: "Feminine Care",
   },
 ];
