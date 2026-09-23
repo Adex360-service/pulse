@@ -37,22 +37,22 @@ export const problems = [
   {
     heading: "Customer Engagement",
     text: "Customers visit your store but don't always come back.",
-    icon: "https://cdn.prod.website-files.com/625e799b877c107387cdf3ac/6a0329deba25ddd297c23cc9_Group%2048096372.avif",
+    icon: "/images/1.png",
   },
   {
     heading: "Product Visibility",
     text: "Your products deserve to be seen where your customers are searching.",
-    icon: "https://cdn.prod.website-files.com/625e799b877c107387cdf3ac/6a0329deba25ddd297c23cc9_Group%2048096372.avif",
+    icon: "/images/2.png",
   },
   {
     heading: "Email Marketing",
     text: "Email marketing takes time when every campaign has to be created manually.",
-    icon: "https://cdn.prod.website-files.com/625e799b877c107387cdf3ac/6a0329deba25ddd297c23cc9_Group%2048096372.avif",
+    icon: "/images/3.png",
   },
   {
     heading: "Product Discovery",
     text: "Customers shouldn't have to search through endless products to find what they need.",
-    icon: "https://cdn.prod.website-files.com/625e799b877c107387cdf3ac/6a0329deba25ddd297c23cc9_Group%2048096372.avif",
+    icon: "/images/4.png",
   },
 ];
 

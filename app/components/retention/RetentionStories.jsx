@@ -1,4 +1,6 @@
 import Reveal from "./Reveal";
+import Link from "next/link";
+import LiquidButtonLayers from "../ui/LiquidButtonLayers";
 
 export default function RetentionStories({ stories, clouds }) {
   return (
@@ -14,29 +16,38 @@ export default function RetentionStories({ stories, clouds }) {
         className="pointer-events-none absolute right-0 top-[24%] w-[25%] opacity-70"
       />
       <div className="relative mx-auto grid max-w-[1035px] grid-cols-3 gap-6 max-lg:max-w-[620px] max-lg:grid-cols-1">
-        {stories.map((story, index) => (
+        {stories.slice(0, 3).map((story, index) => (
           <Reveal
             key={story.brand}
             className={`h-full retention-delay-${index}`}
           >
-            <article className="flex h-[460px] flex-col rounded-[24px] bg-white/90 px-[22px] py-[44px] shadow-[0_10px_35px_rgba(70,40,110,.03)] backdrop-blur-[2px]">
-              <h3 className="font-[family-name:var(--font-fraunces)] text-[34px] leading-[1.16] font-semibold tracking-[-.025em]">
-                {story.metric}
+            <article className="flex flex-col rounded-[24px] bg-white/90 px-[22px] py-[44px] shadow-[0_10px_35px_rgba(70,40,110,.03)] backdrop-blur-[2px]">
+              <h3 className="font-[family-name:var(--font-fraunces)] text-[28px] leading-[1.16] font-semibold tracking-[-.025em]">
+                {story.title || story.metric}
               </h3>
-              <p className="mt-7 text-[16px] leading-[1.35] text-[#242126]">
-                “{story.quote}”
+              <p className="mt-7 line-clamp-6 text-[16px] leading-[1.35] text-[#242126]">
+                {story.description || `“${story.quote}”`}
               </p>
-              <img
-                src={story.logo}
-                alt={story.brand}
-                className="mt-auto h-[48px] max-w-[245px] object-contain object-left"
-              />
+              {/* <img
+                src={story.image || story.logo}
+                alt={story.brand || story.title}
+                className="mt-auto h-[92px] w-full rounded-lg object-cover"
+              /> */}
               <p className="mt-5 text-[16px] font-medium text-[#6c3bc0]">
-                Migrated from {story.migratedFrom}
+                {story.category} · Migrated from {story.migratedFrom || "—"}
               </p>
             </article>
           </Reveal>
         ))}
+      </div>
+      <div className="relative mt-12 text-center">
+        <Link
+          href="/success-stories"
+          className="loop-liquid-button relative inline-flex items-center justify-center rounded-full bg-[#7928dc] px-8 py-3 text-sm font-semibold text-white"
+        >
+          <span>View all success stories</span>
+          <LiquidButtonLayers />
+        </Link>
       </div>
     </section>
   );

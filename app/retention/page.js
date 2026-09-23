@@ -10,10 +10,10 @@ import {
   retentionCopy,
   retentionHeroCards,
   retentionPhases,
-  retentionStories,
   retentionZones,
   whatsappFaqs,
 } from "../content/retention";
+import { successStories } from "../content/successStories";
 
 export const metadata = {
   title: "How to reduce churn of your ecommerce business | Pulse Subscriptions",
@@ -35,7 +35,7 @@ export default function Retention() {
       ))}
       <ZoneNavigator zones={retentionZones} />
       <RetentionConsultation content={retentionCopy.consultation} />
-      <RetentionStories stories={retentionStories} clouds={retentionClouds} />
+      <RetentionStories stories={successStories} clouds={retentionClouds} />
       <TextAccordion items={whatsappFaqs} />
     </main>
   );
