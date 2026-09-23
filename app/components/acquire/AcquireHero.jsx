@@ -5,7 +5,7 @@ import { acquireCdn } from "../../content/acquire";
 export default function AcquireHero({ logos }) {
   return (
     <section
-      className="relative min-h-[640px] overflow-hidden bg-[#e8f4ff] bg-cover bg-center bg-no-repeat pt-[92px] text-center max-sm:min-h-[650px] max-sm:pt-16"
+      className="relative min-h-[700px] overflow-hidden bg-[#e8f4ff] bg-cover bg-center bg-no-repeat pt-[92px] text-center max-sm:min-h-[650px] max-sm:pt-16"
       style={{
         backgroundImage: `url("${acquireCdn}/6854005278ae0e3b1f6f4e74_Group%2048096260%20(1).webp")`,
       }}
@@ -18,7 +18,9 @@ export default function AcquireHero({ logos }) {
           Email marketing that already knows what your customer wants.
         </h1>
         <p className="mt-7 max-w-[730px] text-[20px] leading-[1.35] text-[#6e686d] max-sm:text-base">
-          Welcome series, abandoned cart, post-purchase, and winback flows, built from real behavior and live product data. Not templates you have to guess at.
+          Welcome series, abandoned cart, post-purchase, and winback flows,
+          built from real behavior and live product data. Not templates you have
+          to guess at.
         </p>
         <div className="mt-8">
           <AcquireButton>Book a demo</AcquireButton>
@@ -27,7 +29,7 @@ export default function AcquireHero({ logos }) {
           Trusted by 1,100+ brands that migrated to Pulse
         </p>
       </Container>
-      <div className="absolute bottom-7 left-1/2 z-10 w-[calc(100%_-_48px)] max-w-[1280px] -translate-x-1/2 overflow-hidden max-sm:bottom-10 max-sm:w-[calc(100%_-_32px)]">
+      <div className="absolute bottom-5 left-1/2 z-10 w-[calc(100%_-_48px)] max-w-[1280px] -translate-x-1/2 overflow-hidden max-sm:bottom-10 max-sm:w-[calc(100%_-_32px)]">
         <div className="flex w-max animate-[acquireLogoMarquee_34s_linear_infinite] items-center motion-reduce:animate-none">
           {[0, 1].map((copy) => (
             <div
