@@ -4,6 +4,7 @@ import { useId, useState } from "react";
 import Container from "../ui/Container";
 import Visual from "./AnalyticsVisual";
 import { stories } from "../../content/analytics";
+import Link from "next/link";
 
 export default function AnalyticsSpotlight() {
   const [active, setActive] = useState(0);
@@ -79,13 +80,13 @@ export default function AnalyticsSpotlight() {
                     <p className="mt-4 mb-[42px] text-[15px] leading-[1.55] max-[1000px]:mb-[25px] max-[1000px]:text-[13px]">
                       {story.description}
                     </p>
-                    {/* <a
+                    <Link
                       className="text-sm leading-[1.8] underline underline-offset-8 max-[1000px]:text-xs"
                       href={story.href}
                     >
                       Read {story.name}’s story{" "}
                       <span aria-hidden="true">↗</span>
-                    </a> */}
+                    </Link>
                   </div>
                 </div>
               </article>

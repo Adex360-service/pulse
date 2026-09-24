@@ -17,10 +17,11 @@ export default function AcquireBundles({ features }) {
             Sell more with ready-made flows.
           </h2>
           <p className="mt-5 text-xl text-[#746d73]">
-            Pre-built automation templates that recover revenue and make setup effortless.
+            Pre-built automation templates that recover revenue and make setup
+            effortless.
           </p>
           <div className="mt-8">
-            <AcquireButton href="/feature/bundle-builder">
+            <AcquireButton href="/email-marketing">
               Browse templates
             </AcquireButton>
           </div>

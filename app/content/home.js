@@ -14,7 +14,7 @@ export const heroContent = {
     text: "Book your consultation call",
     href: "#contact",
   },
-  trustedText: "Trusted by 2400+ Shopify subscription brands",
+  trustedText: "Trusted by 240+ Shopify subscription brands",
 };
 
 export const brandLogos = [

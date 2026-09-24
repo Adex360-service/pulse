@@ -14,14 +14,8 @@ export default function Hero({ logos }) {
           loop
           playsInline
         >
-          <source
-            src="/images/cougar-brand-video.mp4"
-            type="video/webm"
-          />
-          <source
-            src="/images/cougar-brand-video.mp4"
-            type="video/mp4"
-          />
+          <source src="/pulse-hero-banner-video.mp4" type="video/webm" />
+          <source src="/pulse-hero-banner-video.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-[linear-gradient(#2d111663,#2d11167a)] bg-[#4b1f1830]" />
         <div className="relative z-[2] flex flex-col items-center text-center">
@@ -51,7 +45,8 @@ export default function Hero({ logos }) {
             className="loop-liquid-button inline-flex items-center justify-center gap-3.5 bg-[linear-gradient(100deg,#8d43ff,#315be7)] px-[23px] py-4 text-[15px] font-semibold text-white"
             href="#contact"
           >
-            <span>{cta.text}</span> <span>→</span><LiquidButtonLayers />
+            <span>{cta.text}</span> <span>→</span>
+            <LiquidButtonLayers />
           </Link>
         </div>
       </section>
@@ -59,19 +54,19 @@ export default function Hero({ logos }) {
         <p className="mb-[29px] text-sm text-[#d7bdff] max-sm:hidden">
           {trustedText}
         </p>
-       <div className="overflow-hidden">
-      <div className="animate-marquee flex w-max items-center gap-12">
-        {[...logos, ...logos].map(([name, image], i) => (
-          <span
-            className="block h-12 w-[145px] shrink-0 bg-contain bg-center bg-no-repeat max-sm:h-[54px] max-sm:w-[120px]"
-            key={`${name}-${i}`}
-            role="img"
-            aria-label={name}
-            style={{ backgroundImage: `url("${image}")` }}
-          />
-        ))}
-      </div>
-    </div>
+        <div className="overflow-hidden">
+          <div className="animate-marquee flex w-max items-center gap-12">
+            {[...logos, ...logos].map(([name, image], i) => (
+              <span
+                className="block h-12 w-[145px] shrink-0 bg-contain bg-center bg-no-repeat max-sm:h-[54px] max-sm:w-[120px]"
+                key={`${name}-${i}`}
+                role="img"
+                aria-label={name}
+                style={{ backgroundImage: `url("${image}")` }}
+              />
+            ))}
+          </div>
+        </div>
       </section>
     </>
   );

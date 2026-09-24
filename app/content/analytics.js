@@ -54,7 +54,7 @@ export const stories = [
     "/images/Rectangle-91.png",
     "Breakout ",
     "/images/breakoutLogo.png",
-    // "https://www.klaviyo.com/customers/case-studies/half-magic",
+    "/success-stories/breakout-email-marketing",
   ],
   [
     "Rs 7.37M",
@@ -62,7 +62,7 @@ export const stories = [
     "/images/Rectangle-92.png",
     "Engine ",
     "/images/Engine_New_Logo-2026_white.avif",
-    // "https://www.klaviyo.com/au/customers/case-studies/dr-hydrate",
+    "/success-stories/engine-push-whatsapp-revenue",
   ],
   [
     "Rs 8.15M",
@@ -70,7 +70,7 @@ export const stories = [
     "/images/Mask-group.png",
     "Cougar",
     "/images/cougarLogo.png",
-    // "https://www.klaviyo.com/customers/case-studies/harney-and-sons",
+    "/success-stories/cougar-push-notifications-revenue",
   ],
   [
     "Rs 2.37M",
@@ -78,7 +78,7 @@ export const stories = [
     "/images/Mask-group-1.png",
     "Orient",
     "/images/orientLogo.png",
-    // "https://www.klaviyo.com/customers/case-studies/tibi",
+    "/success-stories",
   ],
 ].map(([stat, description, asset, name, logo, href]) => ({
   stat,
@@ -88,6 +88,7 @@ export const stories = [
   logo,
   href,
 }));
+
 export const journey = {
   title: text(26),
   items: [

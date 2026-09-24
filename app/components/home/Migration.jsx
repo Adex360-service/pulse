@@ -45,7 +45,7 @@ export default function Migration({ steps }) {
           </p>
           <Link
             className="rounded-[3px] bg-white px-[26px] py-4 text-[13px] font-semibold text-[#3b197f]"
-            href="#contact"
+            href="/book-a-demo"
           >
             Let's talk about your migration →
           </Link>

@@ -1,9 +1,5 @@
 import Link from "next/link";
-import {
-  HelpCenterFooter,
-  HelpCenterHeader,
-  HelpChat,
-} from "./HelpCenterChrome";
+import { HelpCenterFooter, HelpCenterHeader } from "./HelpCenterChrome";
 import ArticleToc from "./ArticleToc";
 
 export default function HelpCenterArticle({ article }) {

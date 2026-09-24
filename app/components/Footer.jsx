@@ -98,7 +98,7 @@ export default function Footer() {
         <div className="flex items-center gap-6 border-y border-[#eee] py-5 max-lg:flex-wrap max-sm:flex-col max-sm:items-start max-sm:gap-4 max-sm:py-6">
           <Link className="w-[106px] shrink-0" href="/" aria-label="Pulse home">
             <img
-              src="/images/pulse-logo.png"
+              src="/images/pulse-new-logo.png"
               alt="Pulse"
               className="h-auto w-full object-contain"
             />
@@ -118,9 +118,9 @@ export default function Footer() {
             className="ml-auto flex gap-3 text-[13px] max-lg:ml-0 max-lg:w-full max-lg:flex-wrap max-sm:mt-2 max-sm:gap-x-3 max-sm:gap-y-4 max-sm:text-base"
             aria-label="Legal links"
           >
-            <Link href="/">Terms of Service</Link>
+            <Link href="/terms-of-service">Terms of Service</Link>
             <i>•</i>
-            <Link href="/">Cookie Policy</Link>
+            <Link href="/cookie-policy">Cookie Policy</Link>
             <i>•</i>
             <Link href="/privacy-policy">Privacy Policy</Link>
           </nav>

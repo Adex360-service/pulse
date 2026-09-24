@@ -16,20 +16,20 @@ export default function BookDemoSections({
         <div className="min-w-0">
           <div className="flex min-h-[580px] flex-col justify-center px-16 py-16 max-sm:min-h-0 max-sm:px-0 max-sm:py-16">
             <p className="text-xs font-semibold tracking-[2px] text-[#8d42f5] uppercase">
-              Built for high growth Shopify brands
+              BUILT FOR GROWING SHOPIFY BRANDS
             </p>
             <h1 className="mt-6 max-w-[740px] font-[family-name:var(--font-display)] text-[54px] leading-[1.08] tracking-[-1px] text-[#18131e] max-sm:text-[44px]">
               Your subscription growth.
               <span className="block">Taken personally.</span>
             </h1>
             <p className="mt-8 max-w-[690px] text-[19px] leading-[1.55] text-[#625d68]">
-              The platform and the people to help you win more subscribers, keep
-              them longer and recover more recurring revenue.
+              The platform and the people to help you recover more revenue,
+              retain more customers, and grow across Email, Push, and WhatsApp.
             </p>
             <ul className="mt-11 grid max-w-[690px] grid-cols-3 text-left">
               <li>
                 <strong className="block font-[family-name:var(--font-display)] text-[32px] font-normal text-[#211d2b]">
-                  2,400+
+                  240+
                 </strong>
                 <span className="text-[9px] tracking-[1.5px] text-[#8c8795]">
                   SHOPIFY BRANDS
@@ -37,10 +37,10 @@ export default function BookDemoSections({
               </li>
               <li>
                 <strong className="block font-[family-name:var(--font-display)] text-[32px] font-normal text-[#211d2b]">
-                  $4B+
+                  Rs 500M+
                 </strong>
                 <span className="text-[9px] tracking-[1.5px] text-[#8c8795]">
-                  PROCESSED
+                  Revenue Processed
                 </span>
               </li>
               <li>
@@ -52,13 +52,16 @@ export default function BookDemoSections({
                 </span>
               </li>
             </ul>
-            <LogoMarquee
+            {/* <LogoMarquee
               logos={logos}
-              wrapperClassName="mt-16 overflow-hidden border-y border-[#ebe7ee] py-7"
+              wrapperClassName="mt-16 overflow-hidden border-y border-[#ebe7ee] bg-[#f2f0ff] py-7"
               trackClassName="flex w-max animate-[migrationLogoMarquee_28s_linear_infinite] items-center motion-reduce:animate-none"
               groupClassName="flex shrink-0 items-center gap-12 pr-12"
               imageClassName="h-10 w-[120px] shrink-0 object-contain grayscale"
-            />
+            /> */}
+            <p className="mt-2 text-sm leading-[1.55] text-[#625d68]">
+              Trusted by Breakout, Engine, Cougar, Rivaj UK, CoNatural & more
+            </p>
           </div>
           <div className="px-16 pb-20 max-sm:px-0 max-sm:py-16">
             <p className="text-xs tracking-[2px] text-[#827b91] uppercase">
@@ -105,7 +108,7 @@ export default function BookDemoSections({
               White-glove migration
             </p>
             <h2 className="mt-6 font-[family-name:var(--font-display)] text-[50px] leading-[1.18] text-[#15101e] max-sm:text-[39px]">
-              1,100+ migrations.
+              1,000+ migrations.
               <span className="block">Every detail accounted for.</span>
             </h2>
             <p className="mt-6 text-[#625e6b]">

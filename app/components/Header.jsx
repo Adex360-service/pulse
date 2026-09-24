@@ -501,7 +501,7 @@ export default function Header() {
             className="w-[88px] shrink-0 leading-none text-[#8b43fd]"
             aria-label="Pulse home"
           >
-            <img src="/images/pulse-logo.png" alt="Pulse" />
+            <img src="/images/pulse-new-logo.png" alt="Pulse" />
           </Link>
           <nav className="flex items-center gap-[34px] max-lg:hidden">
             <MenuButton

@@ -5,6 +5,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Container from "../ui/Container";
+import LiquidButtonLayers from "../ui/LiquidButtonLayers";
 import {
   featureGroups,
   plans,
@@ -340,11 +341,13 @@ export default function PricingPage() {
             Book a call and we'll walk through your monthly cost with Pulse and
             how a switch would work for your setup — no pressure, no pitch.
           </p>
+
           <Link
             href="/book-a-demo"
-            className="mt-8 inline-block bg-[#e5c47c] px-10 py-4 text-sm font-semibold text-white"
+            className="loop-liquid-button mt-8 inline-flex items-center justify-center rounded-full bg-[linear-gradient(100deg,#8d43ff,#315be7)] px-[27px] py-[11px] text-[15px] font-semibold text-white"
           >
-            Book a demo →
+            Book a demo
+            <LiquidButtonLayers />
           </Link>
         </Container>
       </section>

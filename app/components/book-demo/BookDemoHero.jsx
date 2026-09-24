@@ -36,7 +36,7 @@ export default function BookDemoHero() {
           </form>
         </div>
         <div className="mt-14 overflow-hidden">
-          <h2 className="text-xl font-semibold text-[#2d155f]">Trusted by 2400+ Shopify subscription brands</h2>
+          <h2 className="text-xl font-semibold text-[#2d155f]">Trusted by 240+ Shopify subscription brands</h2>
           <LogoMarquee logos={demoLogos} wrapperClassName="mt-7 overflow-hidden" trackClassName="flex w-max animate-[migrationLogoMarquee_32s_linear_infinite] items-center motion-reduce:animate-none" groupClassName="flex shrink-0 items-center gap-16 pr-16" imageClassName="h-12 w-[145px] shrink-0 object-contain grayscale" />
         </div>
       </Container>

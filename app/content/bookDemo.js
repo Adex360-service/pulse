@@ -18,13 +18,13 @@ export const demoBenefits = [
   },
   {
     icon: `${cdn}/6a86f810e268d02d850ea21c_user.avif`,
-    title: "Your dedicated CSM & Slack",
+    title: "Your dedicated CSM & support",
     copy: "Direct access to a dedicated CSM who knows your business and helps move work forward.",
   },
   {
     icon: `${cdn}/6a7dc26c700207163b184578_coin.avif`,
     title: "Simple, transparent pricing",
-    copy: "A 0.75% transaction fee with zero per-order, setup or migration fees.",
+    copy: "Usage-based pricing with no per-order or setup fees.",
     link: "/pricing",
   },
 ];
@@ -33,51 +33,52 @@ export const demoMigrationSteps = [
   [
     "01",
     "Your subscribers stay uninterrupted",
-    "Payment details transfer securely, without asking customers to re-enter their cards.",
+    "Contact details and preferences transfer securely, without asking customers to re-opt-in.",
   ],
   [
     "02",
-    "Renewals stay on schedule",
-    "Renewal dates, pricing and subscription details carry over exactly as they are.",
+    "Your automations stay on schedule",
+    "Cart recovery, welcome flows, and campaign schedules carry over exactly as they are.",
   ],
   [
     "03",
     "Your team stays in control",
-    "We map and verify every contract, product and pricing rule before anything goes live.",
+    "We map and verify every segment, template, and automation rule before anything goes live.",
   ],
 ];
 
 export const demoResults = [
   {
-    href: "/customer-stories/primal-queen",
-    image: `${cdn}/6a56370e7b673b9eb2484623_PQ%20founder.webp`,
+    href: "/success-stories/breakout-email-marketing",
+    image: "/images/Rectangle-91.png",
     title:
-      "Primal Queen built a 9-figure subscription experience that executes flawlessly",
-    metric: "$2M to $100M+",
-    label: "subscription revenue",
+      "In email-driven revenue, from 138 campaigns reaching 291,785 subscribers.",
+    metric: "Rs 10.6M↗",
+    label: "Breakout ",
   },
   {
-    href: "/customer-stories/osea-malibu",
-    image: `${cdn}/6a7dd2382a01774460d6be3f_image%20153.avif`,
-    title: "OSEA Malibu cut churn in half from 10% to 5%.",
-    metric: "50%",
-    label: "reduced churn",
+    href: "/success-stories/engine-push-whatsapp-revenue",
+    image: "/images/Rectangle-92.png",
+    title:
+      "In email-driven revenue, across 76 campaigns reaching 5+ countries.",
+    metric: "Rs 7.37M↗",
+    label: "Engine ",
   },
   {
-    href: "/customer-stories/livingood-daily",
-    image: `${cdn}/6a86f352aea6a861b82622c7_6839c9d3214f0884677e7b60_20250530T0306-c5f180ea-a3eb-4e6a-a78c-84a8f3fc6a3f.avif`,
+    href: "/success-stories/cougar-push-notifications-revenue",
+    image: "/images/Mask-group.png",
     title:
-      "Livingood Daily moved reported churn from ~10% to ~2% after migration",
-    metric: "130K",
-    label: "subscribers migrated",
+      "In revenue-attributed growth, from 4 products driving measurable results.",
+    metric: "Rs 8.15M↗",
+    label: "Cougar",
   },
   {
-    href: "/customer-stories/four-sigmatic-90-increase-subscription-save-rate",
-    image: `${cdn}/6a79e5de9e2eb70bc821569c_68d6707882a3639190a39620_FourSigmatic_Case%20Study_Hero_Thumbnail.avif`,
+    href: "/success-stories",
+    image: "/images/Mask-group-1.png",
     title:
-      "Four Sigmatic measured a 90% rise in subscription cancellation save rate",
-    metric: "90%",
-    label: "increase in save rate",
+      "In revenue-attributed growth, across the last year of sustained performance.",
+    metric: "Rs 2.37M↗",
+    label: "Orient",
   },
 ];
 
@@ -116,23 +117,35 @@ export const demoReviews = [
 
 export const demoFaqs = [
   [
-    "What is Pulse Subscriptions?",
-    "Pulse Subscriptions is a Shopify-native subscription management platform built for high-growth DTC brands. It runs the complete subscription experience on Shopify, including plans, billing cycles, the customer portal, cancellation flows, and failed-payment recovery.",
+    "What is Pulse?",
+    "Pulse is a unified marketing platform that combines Email, Push Notifications, and WhatsApp Marketing for Shopify stores, all managed from one dashboard.",
   ],
   [
-    "How much does Pulse Subscriptions cost?",
-    "The Starter plan is $99/month + 1.0%, and Pro is $399/month + 0.75%, with no per-order fee. Enterprise pricing is customized for brands operating at scale, and every paid plan includes white-glove migration.",
+    "What does the Pulse demo cover?",
+    "We'll walk through your store's setup, show how automations work across Email, Push, and WhatsApp, and answer any questions specific to your business and goals.",
   ],
   [
-    "What results do brands see with Pulse Subscriptions?",
-    "Brands using Pulse report meaningful retention and revenue gains. Results vary by brand, vertical, product, and implementation.",
+    "How much does Pulse cost?",
+    "Plans start free, with paid plans from $29/month based on your usage. Your demo call is a good time to figure out which plan fits your store.",
   ],
   [
-    "What does the Pulse Subscriptions demo cover?",
-    "The demo is tailored to your goals and covers subscription plans, the self-serve customer portal, cancellation flows, failed-payment recovery, smart dunning, and upsells.",
+    "Can I switch to Pulse from another platform?",
+    "Yes. Our migration team handles the switch, including contacts, automations, and campaign history, with zero downtime and no migration fee.",
   ],
   [
-    "Can I switch to Pulse from another Shopify subscription app?",
-    "Yes. Pulse’s migration team handles subscriber data, payment tokens, and billing-cycle preservation, with a dedicated CSM supporting the move.",
+    "What results do brands see with Pulse?",
+    "Brands using Pulse typically see stronger cart recovery and measurable revenue growth by running Email, Push, and WhatsApp together instead of managing them separately.",
+  ],
+  [
+    "Is the demo a sales pitch or a real walkthrough?",
+    "It's a real walkthrough. We look at your store, your current setup, and show you exactly how Pulse would work for your specific use case.",
+  ],
+  [
+    "Do I need a developer to set up Pulse?",
+    "No. Most merchants can connect their store and start sending campaigns without any technical help, and our team is available if you need support.",
+  ],
+  [
+    "How long does the demo take?",
+    "Most demo calls run 20-30 minutes, enough time to see the platform and ask questions specific to your store.",
   ],
 ];

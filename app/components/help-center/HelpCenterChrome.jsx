@@ -38,7 +38,7 @@ export function HelpCenterHeader({ home = false, query = "", onQueryChange }) {
       <div className="mx-auto flex w-[min(960px,calc(100%-40px))] items-center justify-between pt-5">
         <Link href="/help-center">
           <img
-            src="/images/pulse-logo.png"
+            src="/images/pulse-new-logo.png"
             alt="Pulse"
             className="h-auto w-[88px] object-contain"
           />
@@ -97,7 +97,7 @@ export function HelpCenterFooter() {
     <footer className="mx-auto mt-36 grid w-[min(960px,calc(100%-40px))] grid-cols-[1.3fr_repeat(3,1fr)] gap-12 pb-12 text-[14px] text-[#9ca7b2] max-md:grid-cols-2">
       <div>
         <img
-          src="/images/pulse-logo.png"
+          src="/images/pulse-new-logo.png"
           alt="Pulse"
           className="h-auto w-[92px] object-contain"
         />
@@ -113,23 +113,5 @@ export function HelpCenterFooter() {
         </div>
       ))}
     </footer>
-  );
-}
-
-export function HelpChat() {
-  return (
-    <button
-      aria-label="Open help chat"
-      className="fixed right-5 bottom-5 grid h-[50px] w-[50px] place-items-center rounded-full bg-[#793cff] text-white shadow-lg"
-    >
-      <svg className="h-7 w-7" viewBox="0 0 24 24" fill="none">
-        <path
-          d="M5 5.5h14v10H9l-4 3v-13Z"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinejoin="round"
-        />
-      </svg>
-    </button>
   );
 }

@@ -1,9 +1,5 @@
 import Link from "next/link";
-import {
-  HelpCenterFooter,
-  HelpCenterHeader,
-  HelpChat,
-} from "./HelpCenterChrome";
+import { HelpCenterFooter, HelpCenterHeader } from "./HelpCenterChrome";
 
 export default function HelpCenterCollection({ collection }) {
   return (
@@ -67,7 +63,6 @@ export default function HelpCenterCollection({ collection }) {
         )}
       </section>
       <HelpCenterFooter />
-      <HelpChat />
     </main>
   );
 }
