@@ -3,7 +3,7 @@ import ManagementButton from "./ManagementButton";
 export default function ManagementHero({ content, logos }) {
   return (
     <section
-      className="relative box-border h-[730px] overflow-hidden bg-[#e5f3ff] px-5 pt-[100px] pb-8 text-center text-[#281466] max-md:h-auto max-md:pt-16 max-md:pb-28"
+      className="relative box-border h-[630px] overflow-hidden bg-[#e5f3ff] px-5 pt-[100px] pb-8 text-center text-[#281466] max-md:h-auto max-md:pt-16 max-md:pb-28"
       style={{
         backgroundImage: `url("${content.background}")`,
         backgroundPosition: "center",
@@ -21,9 +21,9 @@ export default function ManagementHero({ content, logos }) {
         <p className="mx-auto mt-6 max-w-[700px] text-[20px] leading-[1.3] font-light text-[#62605d]">
           {content.copy}
         </p>
-        <div className="mt-8">
+        {/* <div className="mt-8">
           <ManagementButton>Start Free</ManagementButton>
-        </div>
+        </div> */}
       </div>
       <div className="mx-auto mt-[70px] max-w-[1280px]">
         <p className="mb-8 text-[16px] font-light text-[#897cb6]">

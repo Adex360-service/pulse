@@ -43,7 +43,7 @@ export default function Hero({ logos }) {
           </h1>
           <Link
             className="loop-liquid-button inline-flex items-center justify-center gap-3.5 bg-[linear-gradient(100deg,#8d43ff,#315be7)] px-[23px] py-4 text-[15px] font-semibold text-white"
-            href="#contact"
+            href="/book-a-demo"
           >
             <span>{cta.text}</span> <span>→</span>
             <LiquidButtonLayers />

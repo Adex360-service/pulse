@@ -14,9 +14,9 @@ export default function ManagementCardGrid({ section, tone = "peach" }) {
             <p className="max-w-[590px] text-[20px] font-light leading-[1.3] text-[#62605d]">
               {section.copy}
             </p>
-            <div className="mt-8">
+            {/* <div className="mt-8">
               <ManagementButton>See all automations</ManagementButton>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="mt-[60px] grid grid-cols-3 gap-6 max-md:grid-cols-1">
