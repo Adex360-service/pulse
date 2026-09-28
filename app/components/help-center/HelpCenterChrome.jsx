@@ -20,8 +20,8 @@ const footerGroups = [
   [
     "Others",
     [
-      ["Terms of service", "/"],
-      ["Privacy", "/"],
+      ["Terms of service", "/terms-of-service"],
+      ["Privacy", "/privacy-policy"],
     ],
   ],
 ];

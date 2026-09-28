@@ -29,8 +29,8 @@ export default function HelpCenter() {
             key={slug}
             className="flex min-h-[138px] flex-col rounded-[17px] border border-[#dedede] bg-white p-6 shadow-[0_2px_3px_#0000000d] transition hover:-translate-y-0.5 hover:border-[#8b43fd]"
           >
-            <span className="grid h-9 w-9 place-items-center rounded-xl bg-[#f0e7ff]">
-              <img src={icon} alt="" className="h-7 w-7 object-contain" />
+            <span className="grid h-9 w-9 p-2 place-items-center rounded-xl bg-[#f0e7ff]">
+              <img src={icon} alt="" className="object-contain" />
             </span>
             <strong className="mt-3 text-[15px]">{title}</strong>
             <span className="mt-auto pt-4 text-sm text-[#696969]">

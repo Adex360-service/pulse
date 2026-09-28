@@ -20,11 +20,11 @@ export default function AcquireBundles({ features }) {
             Pre-built automation templates that recover revenue and make setup
             effortless.
           </p>
-          <div className="mt-8">
+          {/* <div className="mt-8">
             <AcquireButton href="/email-marketing">
               Browse templates
             </AcquireButton>
-          </div>
+          </div> */}
           <div className="mt-12 grid grid-cols-2 gap-8 max-sm:grid-cols-1">
             {features.map((feature) => (
               <AcquireFeatureCard key={feature.title} feature={feature} />

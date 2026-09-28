@@ -12,12 +12,8 @@ export default function HelpCenterCollection({ collection }) {
           <span className="text-[#676767]">{collection.title}</span>
         </nav>
         <div className="mt-8">
-          <span className="grid h-[62px] w-[62px] place-items-center rounded-[16px] bg-[#efe5ff]">
-            <img
-              src={collection.icon}
-              alt=""
-              className="h-[50px] w-[50px] object-contain"
-            />
+          <span className="grid h-[62px] w-[62px] p-3 place-items-center rounded-[16px] bg-[#efe5ff]">
+            <img src={collection.icon} alt="" className="object-contain" />
           </span>
           <h1 className="mt-5 text-[36px] leading-tight font-bold">
             {collection.title}
